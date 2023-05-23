@@ -1,9 +1,7 @@
-import { contentData } from "../../utils/content.data";
-
 import { Layout, List } from "antd";
 const { Content } = Layout;
 
-const ConTent = ({ colorBgContainer }) => {
+const ConTent = ({ colorBgContainer, contentData }) => {
   return (
     <Content
       style={{

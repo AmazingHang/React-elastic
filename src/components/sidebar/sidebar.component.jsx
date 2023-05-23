@@ -1,7 +1,7 @@
 //import
-import React from "react";
+import React, { useState } from "react";
 
-import { Card, Layout, Divider, Typography } from "antd";
+import { Card, Layout, Divider, Typography, Button } from "antd";
 
 import CheckBox from "../check-box/check-box.component";
 //
@@ -12,14 +12,32 @@ const onRightClickHandler = checkedValues => {
   console.log("checked = ", checkedValues);
 };
 
-const Sidebar = ({ title, items, style, TYPE, ...otherprops }) => {
+const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
+  const { clear } = otherProps;
+  const [checked, setChecked] = useState(true);
+
+  const onClearHandler = () => {
+    setChecked(!checked);
+  };
   return (
     <>
       <Sider theme="light" style={style}>
-        <Title level={3} style={{ textAlign: "center" }}>
+        <Title level={3} style={{ textAlign: "left", marginLeft: "10%" }}>
           {title}
+          {clear && (
+            <Button
+              type="primary"
+              size="small"
+              onClick={onClearHandler}
+              style={{ marginLeft: "40%", border: "0px" }}
+              ghost>
+              清除
+            </Button>
+          )}
         </Title>
+
         <Divider />
+
         {TYPE === "left" &&
           items &&
           items.map(item => (
@@ -27,7 +45,7 @@ const Sidebar = ({ title, items, style, TYPE, ...otherprops }) => {
               key={item.title}
               title={item.title}
               style={{ width: "auto", height: "auto", margin: 7 }}>
-              <CheckBox list={item.list} />
+              <CheckBox setFalse={checked} list={item.list} />
             </Card>
           ))}
         {TYPE === "right" &&
@@ -45,4 +63,5 @@ const Sidebar = ({ title, items, style, TYPE, ...otherprops }) => {
     </>
   );
 };
+
 export default Sidebar;
