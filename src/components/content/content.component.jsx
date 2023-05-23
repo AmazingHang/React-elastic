@@ -1,42 +1,36 @@
-import React from "react";
-import CardItem from "../card/card-item.compoent";
+import { contentData } from "../../utils/content.data";
 
-import { Layout, Space } from "antd";
+import { Layout, List } from "antd";
 const { Content } = Layout;
 
-const ConTent = ({ colorBgContainer }) => (
-  <Content
-    style={{
-      margin: "24px 16px 0",
-      overflow: "initial",
-    }}>
-    <div
+const ConTent = ({ colorBgContainer }) => {
+  return (
+    <Content
       style={{
-        padding: 24,
-        textAlign: "center",
-        background: colorBgContainer,
+        margin: "24px 16px 0",
+        overflow: "initial",
       }}>
-      {
-        // indicates very long content
-        Array.from(
-          {
-            length: 100,
-          },
-          (_, index) => (
-            <Space
-              key={index}
-              direction="vertical"
-              size="middle"
-              style={{
-                margin: "15px",
-                display: "flex",
-              }}>
-              <CardItem key={index} />
-            </Space>
-          )
-        )
-      }
-    </div>
-  </Content>
-);
+      {contentData && (
+        <List
+          pagination={{
+            defaultPageSize: 5,
+            position: "bottom",
+            align: "center",
+            defaultCurrent: 1,
+
+            pageSizeOptions: [5, 10, 20, 30, 50],
+          }}
+          style={{
+            padding: 24,
+            textAlign: "center",
+            background: colorBgContainer,
+          }}
+          dataSource={contentData}
+          renderItem={(item, index) => {
+            return <List.Item>{item}</List.Item>;
+          }}></List>
+      )}
+    </Content>
+  );
+};
 export default ConTent;

@@ -1,7 +1,9 @@
 import { Checkbox, Col } from "antd";
+
 const onChange = checkedValues => {
   console.log("checked = ", checkedValues);
 };
+
 const CheckBox = ({ list }) => {
   const checks = list;
   return (
@@ -12,8 +14,8 @@ const CheckBox = ({ list }) => {
       onChange={onChange}>
       {checks.map(check => (
         <Col span="auto" key={check}>
-          <Checkbox key={check} value={check}>
-            {check}
+          <Checkbox key={check} value={check} style={{ fontSize: "1px" }}>
+            {`${check}()`}
           </Checkbox>
         </Col>
       ))}
