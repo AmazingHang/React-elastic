@@ -13,6 +13,7 @@ const onRightClickHandler = checkedValues => {
 };
 
 const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
+  //clear理清楚按钮的实现
   const { clear } = otherProps;
   const [checked, setChecked] = useState(true);
 
