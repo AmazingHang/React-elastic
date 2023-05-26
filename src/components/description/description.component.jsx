@@ -1,6 +1,6 @@
 import { Descriptions } from "antd";
 
-const JobDescription = props => (
+const JobDescription = ({ props }) => (
   <Descriptions size="default">
     <Descriptions.Item label="公司">{props.company}</Descriptions.Item>
     <Descriptions.Item label="位置">{props.location}</Descriptions.Item>

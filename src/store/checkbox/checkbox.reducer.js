@@ -8,16 +8,16 @@ export const checksReducer = (state = INITIANL_STATE, action = {}) => {
   const { type, payload } = action;
   switch (type) {
     case CHECKS_TYPE.SET_CHECKS:
-      console.log("payload: " + payload);
+      console.log("set_checks: payload: " + payload);
       return { ...state, checks: payload };
     case CHECKS_TYPE.REDUCE_CHECKS:
-      console.log("diff: " + payload);
+      console.log("reducer_checks: diff: " + payload);
       const reducedChecks = state.checks.filter(
         item => !payload.includes(item)
       );
       return { ...state, checks: reducedChecks };
     case CHECKS_TYPE.CLEAR_CHECKS:
-      console.log("clear");
+      console.log("clear_checks: clear");
       return { ...state, checks: [] };
     default:
       return state;

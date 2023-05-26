@@ -1,35 +1,31 @@
 //组件
-import Sidebar from "../sidebar/sidebar.component";
 import FooTer from "../footer/fooTer.component";
 import ConTent from "../content/content.component";
 import SearchInput from "../search/search.component";
+
+import LeftSidebar from "../left-sidebar/left-sidebar.component";
+import RightSidebar from "../right-sidebar/right-sidebar.component";
+import CardItem from "../../components/card-item/card-item.compoent";
 
 //样式
 import { Layout, theme, Typography } from "antd";
 const { Header } = Layout;
 const { Title } = Typography;
 
-const HomePage = ({ leftSideData, rightSideData, contentData }) => {
+const HomePage = ({ leftSideData, rightSideData, jobsData }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  //生成要展示的数据
+  const contentData = Array.from(
+    jobsData.map(job => <CardItem key={job.id} props={job} />)
+  );
+
   return (
     <>
       <Layout hasSider>
-        <Sidebar
-          clear="true"
-          TYPE="left"
-          title="筛选"
-          items={leftSideData}
-          style={{
-            overflow: "auto",
-            height: "100vh",
-            position: "fixed",
-            left: 0,
-            top: 0,
-            bottom: 0,
-          }}
-        />
+        <LeftSidebar leftSideData={leftSideData} />
         <Layout
           className="site-layout"
           style={{
@@ -51,19 +47,7 @@ const HomePage = ({ leftSideData, rightSideData, contentData }) => {
           />
           <FooTer />
         </Layout>
-        <Sidebar
-          TYPE="right"
-          title="热门搜索"
-          items={rightSideData}
-          style={{
-            overflow: "auto",
-            height: "100vh",
-            position: "fixed",
-            right: 0,
-            top: 0,
-            bottom: 0,
-          }}
-        />
+        <RightSidebar rightSideData={rightSideData} />
       </Layout>
     </>
   );

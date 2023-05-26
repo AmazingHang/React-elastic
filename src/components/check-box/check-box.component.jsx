@@ -10,17 +10,17 @@ import {
 import { selectChecks } from "../../store/checkbox/checkbox.selector";
 
 const CheckBox = ({ list, ...otherProps }) => {
-  const { setFalse } = otherProps;
-  const crurrentChecks = useSelector(selectChecks);
-
   const dispatch = useDispatch();
+  const crurrentChecks = useSelector(selectChecks);
+  const { setFalse } = otherProps;
   const [checkedList, setCheckedList] = useState(crurrentChecks);
   const [lastChecks, setLastChecks] = useState(checkedList);
 
   const onChange = list => {
     setCheckedList(list);
   };
-  //我们使用了一个名为 updateChecks 的回调函数来确保在 useEffect 中使用最新的 checkedList 值。这样，无论异步操作是否完成，都会正确地传递最新的 checkedList 值给 dispatch。
+
+  //使用了一个名为 updateChecks 的回调函数来确保在 useEffect 中使用最新的 checkedList 值。这样，无论异步操作是否完成，都会正确地传递最新的 checkedList 值给 dispatch。
   useEffect(() => {
     const updateChecks = () => {
       console.log("More!!!");
@@ -45,7 +45,9 @@ const CheckBox = ({ list, ...otherProps }) => {
   }, [checkedList, dispatch]);
 
   useEffect(() => {
+    //清理前端的选项
     setCheckedList([]);
+    //清理redux中的数据
     dispatch(clearChecks());
   }, [dispatch, setFalse]);
 

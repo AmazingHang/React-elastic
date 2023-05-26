@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,26 +8,32 @@ import HomePage from "../../components/home/home.component";
 import {
   leftSideData,
   rightSideData,
-  contentData,
   getDataFromDatabase,
 } from "../../utils/database/database.utils";
 //jobs-redux组件
 import { selectTotalJobs } from "../../store/jobs/jobs.selector";
-
 import { setTotalJobs } from "../../store/jobs/jobs.action";
 
 const Home = () => {
   const dispatch = useDispatch();
+  //从后端获得的数据
+  const jobsArray = getDataFromDatabase();
+  //从redux中获得的数据
+  const totalJobs = useSelector(selectTotalJobs);
+  //传入组件的数据
+  const [jobsData, setJobsData] = useState(totalJobs);
+
   useEffect(() => {
-    const getJobsArray = async () => {
-      const jobsArray = await getDataFromDatabase();
+    const getJobsArray = () => {
       dispatch(setTotalJobs(jobsArray));
     };
     getJobsArray();
-  }, [dispatch]);
+  }, [dispatch, jobsArray]);
 
-  // eslint-disable-next-line no-unused-vars
-  const totalJobs = useSelector(selectTotalJobs);
+  useEffect(() => {
+    setJobsData(totalJobs);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [totalJobs]);
 
   return (
     <>
@@ -35,7 +41,7 @@ const Home = () => {
       <HomePage
         leftSideData={leftSideData}
         rightSideData={rightSideData}
-        contentData={contentData}
+        jobsData={jobsData}
       />
     </>
   );

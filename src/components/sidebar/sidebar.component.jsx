@@ -1,8 +1,6 @@
 //import
 import React, { useState } from "react";
-
 import { Card, Layout, Divider, Typography, Button } from "antd";
-
 import CheckBox from "../check-box/check-box.component";
 //
 const { Sider } = Layout;
@@ -18,8 +16,10 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
   const [checked, setChecked] = useState(true);
 
   const onClearHandler = () => {
+    console.log("clear trrigered");
     setChecked(!checked);
   };
+
   return (
     <>
       <Sider theme="light" style={style}>
