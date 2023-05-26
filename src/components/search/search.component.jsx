@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+
 import { Input } from "antd";
 const { Search } = Input;
 
 const SearchInput = () => {
-  const dispatch = useDispatch();
+  // eslint-disable-next-line no-unused-vars
   const [searchField, setSearchField] = useState("");
 
   const onSearchChange = value => {
@@ -18,6 +18,7 @@ const SearchInput = () => {
       enterButton="Search"
       size="large"
       onSearch={onSearchChange}
+      disabled
     />
   );
 };

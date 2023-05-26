@@ -1,4 +1,3 @@
 export const JOBS_TYPE = {
   SET_TOTAL_JOBS: "jobs/SET_TOTAL_JOBS",
-  SET_FILTERED_JOBS: "jobs/SET_FILTERED_JOBS",
 };

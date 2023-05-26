@@ -1,7 +1,7 @@
 const jobsData = [
   {
     id: "baidu_J58445",
-    company: "百度",
+    company: "阿里",
     name: "2024AIDU-机器学习/数据挖掘方向",
     location: "北京市,上海市",
     type: "AIDU项目",
@@ -14,7 +14,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58555",
-    company: "百度",
+    company: "阿里",
     name: "2024AIDU-搜索产品研发方向",
     location: "北京市",
     type: "AIDU项目",
@@ -183,7 +183,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58704",
-    company: "百度",
+    company: "阿里",
     name: "市场策略与中台组_市场实习生",
     location: "北京市",
     type: "日常",
@@ -222,7 +222,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58692",
-    company: "百度",
+    company: "阿里",
     name: "元宇宙应用研发组_U3D实习生",
     location: "北京市",
     type: "日常",
@@ -586,7 +586,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58342",
-    company: "百度",
+    company: "阿里",
     name: "演艺数字人及机器人产品组_数字人产品经理实习生",
     location: "北京市",
     type: "日常",
@@ -1171,7 +1171,7 @@ const jobsData = [
   },
   {
     id: "baidu_J57874",
-    company: "百度",
+    company: "阿里",
     name: "商业质量效能组_测试开发实习生（电商方向）",
     location: "北京市",
     type: "日常",
@@ -1483,7 +1483,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58621",
-    company: "百度",
+    company: "阿里",
     name: "知识图谱部_C端产品运营",
     location: "北京市",
     type: "日常",
@@ -1496,7 +1496,7 @@ const jobsData = [
   },
   {
     id: "baidu_J57097",
-    company: "百度",
+    company: "阿里",
     name: "健康内容业务部_百度健康平台运营实习生",
     location: "北京市",
     type: "日常",
@@ -1730,7 +1730,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58690",
-    company: "百度",
+    company: "阿里",
     name: "问一问业务部_实习生",
     location: "北京市",
     type: "日常",
@@ -1756,7 +1756,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58665",
-    company: "百度",
+    company: "阿里",
     name: "百度APP业务部_基础设施中台实习生",
     location: "北京市",
     type: "日常",
@@ -1769,7 +1769,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58641",
-    company: "百度",
+    company: "阿里",
     name: "矩阵产品组_产品实习生（视频方向）",
     location: "北京市",
     type: "日常",
@@ -2133,7 +2133,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58538",
-    company: "百度",
+    company: "阿里",
     name: "健康商城业务部_消费医疗实习生",
     location: "北京市",
     type: "日常",
@@ -2224,7 +2224,7 @@ const jobsData = [
   },
   {
     id: "baidu_J57861",
-    company: "百度",
+    company: "腾讯",
     name: "视频推荐产品部_视频推荐策略产品实习生",
     location: "北京市",
     type: "日常",
@@ -2406,7 +2406,7 @@ const jobsData = [
   },
   {
     id: "baidu_J57266",
-    company: "百度",
+    company: "阿里",
     name: "自然语言处理部北京组_百度翻译PC用户产品实习生",
     location: "北京市",
     type: "日常",
@@ -2666,7 +2666,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58480",
-    company: "百度",
+    company: "阿里",
     name: "内容风控研发组_自然语言算法工程师实习生",
     location: "北京市",
     type: "日常",
@@ -2692,7 +2692,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58457",
-    company: "百度",
+    company: "百阿里",
     name: "统管通办研发组_生成式大模型数据标注专员",
     location: "北京市,深圳市",
     type: "日常",
@@ -2731,7 +2731,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58278",
-    company: "百度",
+    company: "阿里",
     name: "视频推荐产品部_视频推荐策略产品实习生",
     location: "北京市",
     type: "日常",
@@ -2835,7 +2835,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58024",
-    company: "百度",
+    company: "阿里",
     name: "智能客服及服务型数字人产品组_AI产品运营实习生",
     location: "北京市,上海市",
     type: "日常",
@@ -2848,7 +2848,7 @@ const jobsData = [
   },
   {
     id: "baidu_J18230",
-    company: "百度",
+    company: "阿里",
     name: "国际化产品研发中心(深圳)_HR实习生",
     location: "海淀区",
     type: "日常",
@@ -2965,7 +2965,7 @@ const jobsData = [
   },
   {
     id: "baidu_J45410",
-    company: "百度",
+    company: "腾讯",
     name: "百家号内容运营部_人力实习生",
     location: "北京市",
     type: "日常",
@@ -2978,7 +2978,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56902",
-    company: "百度",
+    company: "腾讯",
     name: "内容生态策略部_运营平台产品实习生",
     location: "北京市",
     type: "日常",
@@ -3004,7 +3004,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56912",
-    company: "百度",
+    company: "腾讯",
     name: "问一问研发组_后端研发实习生",
     location: "北京市",
     type: "日常",
@@ -3017,7 +3017,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56737",
-    company: "百度",
+    company: "腾讯",
     name: "健康商城业务部_产品经理实习生",
     location: "北京市",
     type: "日常",
@@ -3030,7 +3030,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56798",
-    company: "百度",
+    company: "腾讯",
     name: "商业中台技术研发组_机器学习/自然语言处理算法实习生",
     location: "北京市",
     type: "日常",
@@ -3043,7 +3043,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55992",
-    company: "百度",
+    company: "腾讯",
     name: "在线行业业务部_商业策略产品经理实习生",
     location: "北京市",
     type: "日常",
@@ -3056,7 +3056,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56780",
-    company: "百度",
+    company: "腾讯",
     name: "贴吧业务部_社群运营(实习生)",
     location: "北京市",
     type: "日常",
@@ -3069,7 +3069,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56776",
-    company: "百度",
+    company: "腾讯",
     name: "贴吧业务部_大神挖掘、分享型内容运营、校园资源拓展(实习生)",
     location: "北京市",
     type: "日常",
@@ -3082,7 +3082,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56774",
-    company: "百度",
+    company: "腾讯",
     name: "贴吧业务部_直播运营(实习生)",
     location: "北京市",
     type: "日常",
@@ -3121,7 +3121,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56767",
-    company: "百度",
+    company: "腾阿里",
     name: "问一问业务部_增长交易实习生",
     location: "北京市",
     type: "日常",
@@ -3134,7 +3134,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56046",
-    company: "百度",
+    company: "阿里",
     name: "搜索客户端研发组_移动端研发实习生",
     location: "北京市,上海市",
     type: "日常",
@@ -3147,7 +3147,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55920",
-    company: "百度",
+    company: "腾讯",
     name: "问一问业务部_生态运营实习生",
     location: "北京市",
     type: "日常",
@@ -3160,7 +3160,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56012",
-    company: "百度",
+    company: "腾讯",
     name: "首页推荐产品部_商业策略实习生",
     location: "北京市",
     type: "日常",
@@ -3173,7 +3173,7 @@ const jobsData = [
   },
   {
     id: "baidu_J14160",
-    company: "百度",
+    company: "腾讯",
     name: "知识图谱部_HR实习生",
     location: "北京市",
     type: "日常",
@@ -3225,7 +3225,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56779",
-    company: "百度",
+    company: "腾讯",
     name: "贴吧业务部_贴吧大神创作者运营(实习生)",
     location: "北京市",
     type: "日常",
@@ -3238,7 +3238,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56775",
-    company: "百度",
+    company: "阿里",
     name: "贴吧业务部_会员运营(实习生)",
     location: "北京市",
     type: "日常",
@@ -3251,7 +3251,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55865",
-    company: "百度",
+    company: "阿里",
     name: "首页推荐产品部_功能产品实习生",
     location: "北京市",
     type: "日常",
@@ -3264,7 +3264,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55475",
-    company: "百度",
+    company: "阿里",
     name: "百家号内容运营部_MCN机构运营实习生",
     location: "北京市",
     type: "日常",
@@ -3316,7 +3316,7 @@ const jobsData = [
   },
   {
     id: "baidu_J12063",
-    company: "百度",
+    company: "阿里",
     name: "昆仑芯_HR招聘实习生",
     location: "北京市",
     type: "日常",
@@ -3329,7 +3329,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10335",
-    company: "百度",
+    company: "阿里",
     name: "昆仑芯_芯片设计工程师实习生",
     location: "北京市,上海市",
     type: "日常",
@@ -3342,7 +3342,7 @@ const jobsData = [
   },
   {
     id: "baidu_J12182",
-    company: "百度",
+    company: "腾讯",
     name: "ACG-GTM_HR实习生(招聘方向)",
     location: "北京市",
     type: "日常",
@@ -3355,7 +3355,7 @@ const jobsData = [
   },
   {
     id: "baidu_J54056",
-    company: "百度",
+    company: "腾讯",
     name: "云产品质量效能部_云产品测试开发实习生",
     location: "北京市,上海市",
     type: "日常",
@@ -3368,7 +3368,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55239",
-    company: "百度",
+    company: "阿里",
     name: "商业化运营实习生",
     location: "北京市",
     type: "日常",
@@ -3381,7 +3381,7 @@ const jobsData = [
   },
   {
     id: "baidu_J54990",
-    company: "百度",
+    company: "阿里",
     name: "国际化产品研发中心（深圳）_广告运营实习生",
     location: "深圳市",
     type: "日常",
@@ -3433,7 +3433,7 @@ const jobsData = [
   },
   {
     id: "baidu_J51498",
-    company: "百度",
+    company: "腾讯",
     name: "商业架构部_C++研发工程师",
     location: "北京市,上海市",
     type: "日常",
@@ -3446,7 +3446,7 @@ const jobsData = [
   },
   {
     id: "baidu_J54205",
-    company: "百度",
+    company: "腾讯",
     name: "智能小程序业务部_校园推广实习生",
     location: "海淀区",
     type: "日常",
@@ -3537,7 +3537,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10655",
-    company: "百度",
+    company: "阿里",
     name: "昆仑芯-综合管理部_设计实习生",
     location: "北京市",
     type: "日常",
@@ -3550,7 +3550,7 @@ const jobsData = [
   },
   {
     id: "baidu_J13963",
-    company: "百度",
+    company: "阿里",
     name: "自然语言处理部_生物计算算法实习生",
     location: "深圳市",
     type: "日常",
@@ -3563,7 +3563,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10678",
-    company: "百度",
+    company: "阿里",
     name: "政务产品部_人力资源实习生",
     location: "北京市",
     type: "日常",
@@ -3576,7 +3576,7 @@ const jobsData = [
   },
   {
     id: "baidu_J54638",
-    company: "百度",
+    company: "阿里",
     name: "度咔业务组_内容运营实习生",
     location: "北京市",
     type: "日常",
@@ -3732,7 +3732,7 @@ const jobsData = [
   },
   {
     id: "baidu_J12499",
-    company: "百度",
+    company: "腾讯",
     name: "百家号业务部_HR实习生",
     location: "北京市",
     type: "日常",
@@ -3836,7 +3836,7 @@ const jobsData = [
   },
   {
     id: "baidu_J18438",
-    company: "百度",
+    company: "腾讯",
     name: "视觉技术部_视觉算法实习生",
     location: "北京市",
     type: "日常",
@@ -3849,7 +3849,7 @@ const jobsData = [
   },
   {
     id: "baidu_J52117",
-    company: "百度",
+    company: "腾讯",
     name: "ACG物联网部_智能硬件产品经理实习生",
     location: "上海市",
     type: "日常",
@@ -3862,7 +3862,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10597",
-    company: "百度",
+    company: "腾讯",
     name: "小度IOT生态业务部_课程制作(拍摄剪辑)实习生",
     location: "北京市",
     type: "日常",
@@ -3875,7 +3875,7 @@ const jobsData = [
   },
   {
     id: "baidu_J47867",
-    company: "百度",
+    company: "腾讯",
     name: "深度学习技术平台部_深度学习技术平台部_算法实习生",
     location: "深圳市",
     type: "日常",
@@ -3888,7 +3888,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10065",
-    company: "百度",
+    company: "腾讯",
     name: "认知计算实验室_语言学实习生",
     location: "北京市",
     type: "日常",
@@ -3901,7 +3901,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10065",
-    company: "百度",
+    company: "腾讯",
     name: "认知计算实验室_语言学实习生",
     location: "北京市",
     type: "日常",
@@ -3979,7 +3979,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10335",
-    company: "百度",
+    company: "腾讯",
     name: "昆仑芯-芯片研发部_芯片设计工程师实习生",
     location: "北京市,上海市",
     type: "日常",
@@ -3992,7 +3992,7 @@ const jobsData = [
   },
   {
     id: "baidu_J10655",
-    company: "百度",
+    company: "腾讯",
     name: "昆仑芯-综合管理部_设计实习生",
     location: "北京市",
     type: "日常",
@@ -4005,7 +4005,7 @@ const jobsData = [
   },
   {
     id: "baidu_J47718",
-    company: "百度",
+    company: "腾讯",
     name: "智能小程序业务部_用户运营实习生",
     location: "北京市",
     type: "日常",
@@ -4018,7 +4018,7 @@ const jobsData = [
   },
   {
     id: "baidu_J47697",
-    company: "百度",
+    company: "腾讯",
     name: "HCG健康在线医疗中心_数据运营实习生",
     location: "上海市",
     type: "日常",
