@@ -6,87 +6,76 @@ import { useDispatch, useSelector } from "react-redux";
 
 //渲染组件
 import HomePage from "../../components/home/home.component";
-//数据：其中的 leftSideData,rightSideData,contentData 将被代编写的函数替换
+//公共项
+import { leftSideData, dateFilter } from "../../utils/database/utils";
+//发送axios请求
 import {
-  leftSideData,
-  rightSideData,
+  getSearchedData,
+  getHitsdData,
   getDataFromDatabase,
-} from "../../utils/database/database.utils";
-//jobs-redux组件
-import { selectTotalJobs } from "../../store/jobs/jobs.selector";
-import { setTotalJobs } from "../../store/jobs/jobs.action";
-import { selectChecks } from "../../store/checkbox/checkbox.selector";
-
-const dateFilter = (checks, totalJobs) => {
-  const filteredJobsData = totalJobs.filter(job => {
-    let filterFiled = true; // 默认为满足条件
-    if (
-      checks.includes("百度") ||
-      checks.includes("腾讯") ||
-      checks.includes("阿里")
-    ) {
-      filterFiled =
-        filterFiled && checks.some(check => job.company.includes(check));
-    }
-    if (
-      checks.includes("北京市") ||
-      checks.includes("上海市") ||
-      checks.includes("深圳市") ||
-      checks.includes("大连市") ||
-      checks.includes("成都市") ||
-      checks.includes("重庆市")
-    ) {
-      filterFiled =
-        filterFiled && checks.some(check => job.location.includes(check));
-    }
-    if (
-      checks.includes("校招") ||
-      checks.includes("日常") ||
-      checks.includes("AIDU项目")
-    ) {
-      filterFiled =
-        filterFiled && checks.some(check => job.type.includes(check));
-    }
-    if (
-      checks.includes("技术") ||
-      checks.includes("产品") ||
-      checks.includes("用户体验") ||
-      checks.includes("专业服务和管理支持")
-    ) {
-      filterFiled =
-        filterFiled && checks.some(check => job.category.includes(check));
-    }
-    return filterFiled;
-  });
-
-  return filteredJobsData;
-};
+} from "../../utils/database/api";
+//jobs-redux组件-action
+import { setReducerTotalJobs } from "../../store/jobs/jobs.action";
+import { setReducerSearchFiled } from "../../store/search/search.action";
+//jobs-redux组件-selector
+import { selectReducerTotalJobs } from "../../store/jobs/jobs.selector";
+import {
+  selectReducerSearchField,
+  selectReducerClear,
+} from "../../store/search/search.selector";
+import { selectReducerChecks } from "../../store/checkbox/checkbox.selector";
 
 const Home = () => {
   const dispatch = useDispatch();
-  //从后端获得的数据
+  //从后端获得的初始数据
   const jobsArray = getDataFromDatabase();
-  //从redux中获得的数据
-  const totalJobs = useSelector(selectTotalJobs);
-  const checks = useSelector(selectChecks);
+  //从redux中获得的 jobs,checks,searchFiled,clearSearch
+  const totalJobs = useSelector(selectReducerTotalJobs);
+  const checks = useSelector(selectReducerChecks);
+  const searchField = useSelector(selectReducerSearchField);
+  const isSearchCleared = useSelector(selectReducerClear);
   //传入组件的数据
   const [jobsData, setJobsData] = useState(totalJobs);
+  const [rightSideData, setRightSideData] = useState([]);
 
+  //设置热门搜索
   useEffect(() => {
-    const getJobsArray = () => {
-      dispatch(setTotalJobs(jobsArray));
-    };
-    getJobsArray();
-  }, [dispatch, jobsArray]);
+    getHitsdData().then(data => setRightSideData(data));
+  }, []);
 
+  //数据录入redux中
   useEffect(() => {
-    const setJobs = () => {
-      setJobsData(dateFilter(checks, totalJobs));
+    const setReducerJobsArray = () => {
+      dispatch(setReducerTotalJobs(jobsArray));
     };
-    if (checks.length === 0) {
-      setJobsData(totalJobs);
-    } else setJobs();
+    const jobsSearcherSetter = () => {
+      getSearchedData().then(data => dispatch(setReducerTotalJobs(data)));
+    };
+    //搜索框里没有内容，则录入原始数据
+    searchField.length === 0 && setReducerJobsArray();
+    //搜索框里有内容，则录入搜索结果
+    searchField.length !== 0 && jobsSearcherSetter();
+  }, [dispatch, jobsArray, searchField]);
+
+  //数据筛选后传入到组件中
+  useEffect(() => {
+    const setFilteredLocalJobs = () => {
+      const filtedData = dateFilter(checks, totalJobs);
+      setJobsData(filtedData);
+    };
+    //如果没有选择筛选，则返回原数据
+    checks.length === 0 && setJobsData(totalJobs);
+    //如果存在筛选，则返回筛选后的数据
+    checks.length !== 0 && setFilteredLocalJobs();
   }, [checks, totalJobs]);
+
+  //清除热门搜索的影响
+  useEffect(() => {
+    const clearLocalJobs = () => {
+      dispatch(setReducerSearchFiled(""));
+    };
+    clearLocalJobs();
+  }, [dispatch, isSearchCleared]);
 
   return (
     <>

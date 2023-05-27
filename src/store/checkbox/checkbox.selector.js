@@ -1,1 +1,1 @@
-export const selectChecks = state => state.checks.checks;
+export const selectReducerChecks = state => state.checks.checks;

@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import {
-  setChecks,
-  reduceChecks,
-  clearChecks,
+  setReducerChecks,
+  reduceReducerChecks,
+  clearReducerChecks,
 } from "../../store/checkbox/checkbox.action";
-import { selectChecks } from "../../store/checkbox/checkbox.selector";
+import { selectReducerChecks } from "../../store/checkbox/checkbox.selector";
 
-const CheckBox = ({ list, ...otherProps }) => {
+const LeftCheckBox = ({ list, ...otherProps }) => {
   const dispatch = useDispatch();
-  const crurrentChecks = useSelector(selectChecks);
+  //redux记录的checks
+  const crurrentChecks = useSelector(selectReducerChecks);
   const { setFalse } = otherProps;
+  //本地记录的checks
   const [checkedList, setCheckedList] = useState(crurrentChecks);
   const [lastChecks, setLastChecks] = useState(checkedList);
 
@@ -22,33 +24,31 @@ const CheckBox = ({ list, ...otherProps }) => {
 
   //使用了一个名为 updateChecks 的回调函数来确保在 useEffect 中使用最新的 checkedList 值。这样，无论异步操作是否完成，都会正确地传递最新的 checkedList 值给 dispatch。
   useEffect(() => {
-    const updateChecks = () => {
-      console.log("More!!!");
+    const updateAddedChecks = () => {
+      //把当前的checks添加到已保存的checks中
       const newChecks = Array.from(
         new Set([...crurrentChecks, ...checkedList])
       );
-      dispatch(setChecks(newChecks));
+      dispatch(setReducerChecks(newChecks));
       setLastChecks(checkedList);
     };
-    if (lastChecks.length > checkedList.length) {
-      console.log("Less!!!");
-      //注意diff是一个数组
+    const updateReducedChecks = () => {
+      //注意diff是一个数组 ，而不是一个单独的元素，所以在 reducedChecks 的筛选过程中，不能直接将 item 与 diff 进行比较。
       const diff = lastChecks.filter(item => !checkedList.includes(item));
-      //diff 是一个数组，而不是一个单独的元素，所以在 reducedChecks 的筛选过程中，你不能直接将 item 与 diff 进行比较。
-      dispatch(reduceChecks(diff));
+      dispatch(reduceReducerChecks(diff));
       setLastChecks(checkedList);
-    }
-    if (checkedList.length !== 0 && lastChecks.length <= checkedList.length) {
-      updateChecks();
-    }
+    };
+    lastChecks.length > checkedList.length && updateReducedChecks();
+    lastChecks.length <= checkedList.length &&
+      checkedList.length !== 0 &&
+      updateAddedChecks();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkedList, dispatch]);
 
+  //重新初始化数据
   useEffect(() => {
-    //清理前端的选项
     setCheckedList([]);
-    //清理redux中的数据
-    dispatch(clearChecks());
+    dispatch(clearReducerChecks());
   }, [dispatch, setFalse]);
 
   return (
@@ -61,4 +61,4 @@ const CheckBox = ({ list, ...otherProps }) => {
       onChange={onChange}></Checkbox.Group>
   );
 };
-export default CheckBox;
+export default LeftCheckBox;

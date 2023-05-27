@@ -1,14 +1,12 @@
 //import
 import React, { useState } from "react";
-import { Card, Layout, Divider, Typography, Button } from "antd";
-import CheckBox from "../check-box/check-box.component";
-//
+import { Card, Layout, Divider, Typography, Space } from "antd";
+import LeftCheckBox from "../left-check-box/left-check-box.component";
+import RightTitles from "../right-titles/right-titles.component";
+import ClearButton from "../clear-button/clear-button.component";
+//样式
 const { Sider } = Layout;
 const { Title } = Typography;
-
-const onRightClickHandler = checkedValues => {
-  console.log("checked = ", checkedValues);
-};
 
 const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
   //clear理清楚按钮的实现
@@ -25,20 +23,9 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
       <Sider theme="light" style={style}>
         <Title level={3} style={{ textAlign: "left", marginLeft: "10%" }}>
           {title}
-          {clear && (
-            <Button
-              type="primary"
-              size="small"
-              onClick={onClearHandler}
-              style={{ marginLeft: "40%", border: "0px" }}
-              ghost>
-              清除
-            </Button>
-          )}
+          {clear && <ClearButton onClearHandler={onClearHandler} />}
         </Title>
-
         <Divider />
-
         {TYPE === "left" &&
           items &&
           items.map(item => (
@@ -46,20 +33,16 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
               key={item.title}
               title={item.title}
               style={{ width: "auto", height: "auto", margin: 7 }}>
-              <CheckBox setFalse={checked} list={item.list} />
+              <LeftCheckBox setFalse={checked} list={item.list} />
             </Card>
           ))}
-        {TYPE === "right" &&
-          items &&
-          items.map(item => (
-            <Title
-              key={item}
-              level={5}
-              style={{ textAlign: "center" }}
-              onClick={onRightClickHandler}>
-              {item}
-            </Title>
-          ))}
+        {TYPE === "right" && items && (
+          <Space direction="horizontal" wrap>
+            {items.map(item => (
+              <RightTitles key={item} item={item} />
+            ))}
+          </Space>
+        )}
       </Sider>
     </>
   );

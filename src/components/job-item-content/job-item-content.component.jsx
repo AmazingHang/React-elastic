@@ -1,7 +1,7 @@
 import { Layout, List } from "antd";
 const { Content } = Layout;
 
-const ConTent = ({ colorBgContainer, contentData }) => {
+const JobItemContent = ({ colorBgContainer, contentData }) => {
   return (
     <Content
       style={{
@@ -30,4 +30,4 @@ const ConTent = ({ colorBgContainer, contentData }) => {
     </Content>
   );
 };
-export default ConTent;
+export default JobItemContent;

@@ -1,10 +1,10 @@
 import { Card } from "antd";
 
-import JobDescription from "../description/description.component";
+import JobDescription from "../job-description/job-description.component";
 
-const CardItem = ({ props }) => (
+const JobCardItem = ({ props }) => (
   <Card size="small" title={props.name} extra={<a href={props.url}>More</a>}>
     <JobDescription props={props} />
   </Card>
 );
-export default CardItem;
+export default JobCardItem;

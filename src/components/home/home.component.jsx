@@ -1,11 +1,10 @@
 //组件
 import FooTer from "../footer/fooTer.component";
-import ConTent from "../content/content.component";
-import SearchInput from "../search/search.component";
-
+import JobItemContent from "../job-item-content/job-item-content.component";
+import SearchInput from "../search-input/search-input.component";
 import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import RightSidebar from "../right-sidebar/right-sidebar.component";
-import CardItem from "../../components/card-item/card-item.compoent";
+import JobCardItem from "../job-card-item/job-card-item.compoent";
 
 //样式
 import { Layout, theme, Typography } from "antd";
@@ -19,7 +18,7 @@ const HomePage = ({ leftSideData, rightSideData, jobsData }) => {
 
   //生成要展示的数据
   const contentData = Array.from(
-    jobsData.map(job => <CardItem key={job.id} props={job} />)
+    jobsData.map(job => <JobCardItem key={job.id} props={job} />)
   );
 
   return (
@@ -41,7 +40,7 @@ const HomePage = ({ leftSideData, rightSideData, jobsData }) => {
             <Title>Welcome to use JobFinder APP !</Title>
             <SearchInput />
           </Header>
-          <ConTent
+          <JobItemContent
             colorBgContainer={colorBgContainer}
             contentData={contentData}
           />

@@ -1,9 +1,9 @@
-const jobsData = [
+const originJobsData = [
   {
     id: "baidu_J58445",
-    company: "阿里",
+    company: "百度",
     name: "2024AIDU-机器学习/数据挖掘方向",
-    location: "北京市,上海市",
+    location: "北京市",
     type: "AIDU项目",
     category: "技术",
     description:
@@ -16,7 +16,7 @@ const jobsData = [
     id: "baidu_J58555",
     company: "阿里",
     name: "2024AIDU-搜索产品研发方向",
-    location: "北京市",
+    location: "深圳市",
     type: "AIDU项目",
     category: "技术",
     description:
@@ -27,7 +27,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58553",
-    company: "百度",
+    company: "腾讯",
     name: "2024AIDU-向量检索方向",
     location: "北京市",
     type: "AIDU项目",
@@ -55,7 +55,7 @@ const jobsData = [
     id: "baidu_J58446",
     company: "百度",
     name: "2024AIDU-自然语言处理方向",
-    location: "北京市,深圳市",
+    location: "北京市",
     type: "AIDU项目",
     category: "技术",
     description:
@@ -1030,7 +1030,7 @@ const jobsData = [
     id: "baidu_J52599",
     company: "百度",
     name: "语音技术部_AI产品经理实习生",
-    location: "北京市",
+    location: "重庆市",
     type: "日常",
     category: "产品",
     description:
@@ -1316,7 +1316,7 @@ const jobsData = [
     id: "baidu_J55522",
     company: "百度",
     name: "北京-安全工程师",
-    location: "北京市",
+    location: "重庆市",
     type: "校招",
     category: "技术",
     description:
@@ -1511,7 +1511,7 @@ const jobsData = [
     id: "baidu_J58769",
     company: "百度",
     name: "问一问业务部_高考项目运营实习生",
-    location: "北京市",
+    location: "重庆市",
     type: "日常",
     category: "产品",
     description:
@@ -1589,7 +1589,7 @@ const jobsData = [
     id: "baidu_J15148",
     company: "百度",
     name: "小度应用与服务业务部_语文AI教育老师",
-    location: "北京市",
+    location: "大连市",
     type: "日常",
     category: "产品",
     description:
@@ -1771,7 +1771,7 @@ const jobsData = [
     id: "baidu_J58641",
     company: "阿里",
     name: "矩阵产品组_产品实习生（视频方向）",
-    location: "北京市",
+    location: "大连市",
     type: "日常",
     category: "产品",
     description:
@@ -2107,9 +2107,9 @@ const jobsData = [
   },
   {
     id: "baidu_J56038",
-    company: "百度",
+    company: "阿里",
     name: "自然语言处理部北京组_NLP研发实习生",
-    location: "北京市",
+    location: "大连市",
     type: "日常",
     category: "技术",
     description:
@@ -2159,7 +2159,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58216",
-    company: "百度",
+    company: "阿里",
     name: "搜索技术平台研发部_搜索产品服务化策略实习生",
     location: "北京市",
     type: "日常",
@@ -2237,7 +2237,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55036",
-    company: "百度",
+    company: "阿里",
     name: "百科研发组_GO/PHP研发实习生",
     location: "北京市",
     type: "日常",
@@ -2445,7 +2445,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56815",
-    company: "百度",
+    company: "阿里",
     name: "贴吧业务部_热点/事件运营（实习生）",
     location: "北京市",
     type: "日常",
@@ -2471,7 +2471,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58614",
-    company: "百度",
+    company: "腾讯",
     name: "视频推荐产品组_视频推荐策略产品实习生",
     location: "北京市",
     type: "日常",
@@ -2549,7 +2549,7 @@ const jobsData = [
   },
   {
     id: "baidu_J56897",
-    company: "百度",
+    company: "腾讯",
     name: "业务监察部_业务监察部实习生",
     location: "北京市",
     type: "日常",
@@ -2692,7 +2692,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58457",
-    company: "百阿里",
+    company: "阿里",
     name: "统管通办研发组_生成式大模型数据标注专员",
     location: "北京市,深圳市",
     type: "日常",
@@ -2705,7 +2705,7 @@ const jobsData = [
   },
   {
     id: "baidu_J58246",
-    company: "百度",
+    company: "阿里",
     name: "数字阅读业务部_产品经理实习生（作家平台方向）",
     location: "北京市",
     type: "日常",
@@ -2744,7 +2744,7 @@ const jobsData = [
   },
   {
     id: "baidu_J17286",
-    company: "百度",
+    company: "阿里",
     name: "ACG渠道生态部_HRBP实习生",
     location: "北京市",
     type: "日常",
@@ -2861,7 +2861,7 @@ const jobsData = [
   },
   {
     id: "baidu_J57363",
-    company: "百度",
+    company: "腾讯",
     name: "用户画像组_用户建模方向数据挖掘工程师（实习生）",
     location: "北京市,上海市",
     type: "日常",
@@ -2991,7 +2991,7 @@ const jobsData = [
   },
   {
     id: "baidu_J55397",
-    company: "百度",
+    company: "阿里",
     name: "策略算法工程师",
     location: "北京市",
     type: "日常",
@@ -3184,71 +3184,7 @@ const jobsData = [
       "-本科及以上学历，人力资源、心理学等相关专业优先 \r\n-人力资源方向实习经验优先，熟练应用办公软件的同学优先 \r\n-沟通表达能力好，计划及执行能力好，善于与别人沟通 \r\n-工作积极主动，能承担一定的工作压力，敢于接受挑战",
     url: "https://talent.baidu.com/jobs/detail/INTERN/f8f10296-dee3-4672-8845-6c79d90e5989",
   },
-  {
-    id: "baidu_J55957",
-    company: "百度",
-    name: "健康内容业务部_商业化运营实习生",
-    location: "北京市",
-    type: "日常",
-    category: "产品",
-    description:
-      "-负责百度健康多点挂号业务的日常跟进工作，信息的整理，数据的盘点和分析\n-负责健康医疗类达人库的储备完善、商家落单的跟进，流程的梳理工作\n-协助分析数据，辅助达成制定差异化运营规则\n-和销售、产品、运营协同，针对阶段性情况，产出不同运营数据分析和优化项目方向",
-    requirement:
-      "-一周最少实习4天，保证6个月的实习期，大三学生优先\n-有一定运营方法论，过去在流程梳理/策略制定/运营提效等方面经验积累者优先\n-熟悉项目管理的方法和经验，了解商业化产品售卖沟通模式\n-以目标为导向，高度的责任心和团队合作精神，抗压力强；有良好的逻辑思维能力、沟通表达能力，擅长ppt输出",
-    url: "https://talent.baidu.com/jobs/detail/INTERN/2a7bc833-c32c-4506-a607-aadeebfd1c4e",
-  },
-  {
-    id: "baidu_J56977",
-    company: "百度",
-    name: "智能小程序业务部_直播运营（主播）",
-    location: "北京市",
-    type: "日常",
-    category: "产品",
-    description:
-      "-负责在视频号、抖音平台直播、短视频出镜、产品讲解、促成加购、新品推荐、好物种草\n-不断优化直播技巧，引导粉丝购买推荐产品，促成销售转化\n-维护直播间粉丝，应对粉丝的提问，与粉丝积极互动。引导新粉关注\n-直播期间，调动粉丝情绪，增加粉丝的活跃度，引导粉丝多互动\n-日常短视频内容拍摄，协助策划直播话题、活动方案，一起头脑风暴~",
-    requirement:
-      "-有丰富的直播带货经验，男女不限，形象气质好 \n-熟悉抖音平台，对直播带货有自己的想法和见解 \n-亲和力强，镜头感强\n-普通话好，有良好的表达能力和临场反应能力 \n-从事过本地生活类目的小伙伴优先\n-每周需实习5天",
-    url: "https://talent.baidu.com/jobs/detail/INTERN/a15b188f-0de4-4a78-9b20-6a7a428f44ea",
-  },
-  {
-    id: "baidu_J56975",
-    company: "百度",
-    name: "智能小程序业务部_直播运营（主播）",
-    location: "重庆市",
-    type: "日常",
-    category: "产品",
-    description:
-      "-负责在视频号、抖音平台直播、短视频出镜、产品讲解、促成加购、新品推荐、好物种草\n-不断优化直播技巧，引导粉丝购买推荐产品，促成销售转化\n-维护直播间粉丝，应对粉丝的提问，与粉丝积极互动。引导新粉关注\n-直播期间，调动粉丝情绪，增加粉丝的活跃度，引导粉丝多互动\n-日常短视频内容拍摄，协助策划直播话题、活动方案，一起头脑风暴",
-    requirement:
-      "-有丰富的直播带货经验，男女不限，形象气质好 \n-熟悉抖音平台，对直播带货有自己的想法和见解 \n-亲和力强，镜头感强\n-普通话好，有良好的表达能力和临场反应能力 \n-从事过本地生活类目的小伙伴优先\n-每周需实习5天",
-    url: "https://talent.baidu.com/jobs/detail/INTERN/512291b7-d759-4e66-8e41-8e1780facb8a",
-  },
-  {
-    id: "baidu_J56779",
-    company: "腾讯",
-    name: "贴吧业务部_贴吧大神创作者运营(实习生)",
-    location: "北京市",
-    type: "日常",
-    category: "产品",
-    description:
-      "-负责数码、动漫、体育、植物等主要垂类大神创作者规模增长\n-通过线上活动、社群等手段运营大神作者\n-激励作者持续生产优质内容\n-创作者日常问题解决，满意度提升",
-    requirement:
-      "-大三及以上在校学生，要求一周至少在岗4天及以上\n-社区深度用户，对社区内容有自己的理解，有自己擅长的兴趣领域最佳\n-有想法、好学习、主动乐观、有很强的执行落地能力",
-    url: "https://talent.baidu.com/jobs/detail/INTERN/21063526-b1f8-43a0-8655-d66314579a5e",
-  },
-  {
-    id: "baidu_J56775",
-    company: "阿里",
-    name: "贴吧业务部_会员运营(实习生)",
-    location: "北京市",
-    type: "日常",
-    category: "产品",
-    description:
-      "-主要负责贴吧会员活动运营，策划活动玩法、执行落地、数据分析复盘等\n-具体负责会员活动站内资源申请，活动跟进及执行，包括不限于资源上下线、活动过程中监测、数据统计等工作\n-通过用户需求调研及竞品分析等途径，探索满足用户需求的会员活动玩法及会员权益，促进贴吧会员数增长的同时提升用户活跃及留存\n-收集并处理会员问题，依据问题反馈及活动运营效果，提出产品需求，与产品同学密切联动，推动会员产品优化迭代",
-    requirement:
-      "-本科及以上学历，营销相关专业优先（24届及以后毕业）\n-每周保证5天在岗时间，实习时长不少于4个月\n-思维严谨，逻辑性强，具备良好的数据分析能力，熟练掌握Excel等办公软件\n-互联网深度用户，做事负责有反馈，执行能力强",
-    url: "https://talent.baidu.com/jobs/detail/INTERN/1ad5935d-2f63-4d81-bcfb-2d2de47e1fce",
-  },
+  
   {
     id: "baidu_J55865",
     company: "阿里",
@@ -4031,4 +3967,4 @@ const jobsData = [
   },
 ];
 
-export default jobsData;
+export default originJobsData;
