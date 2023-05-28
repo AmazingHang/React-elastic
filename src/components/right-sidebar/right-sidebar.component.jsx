@@ -5,8 +5,8 @@ const RightSidebar = ({ rightSideData }) => (
     title="热门搜索"
     items={rightSideData}
     style={{
+      padding: "0.5%",
       overflow: "auto",
-      height: "100vh",
       position: "fixed",
       right: 0,
       top: 0,

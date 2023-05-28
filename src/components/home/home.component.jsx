@@ -1,5 +1,5 @@
 //组件
-import FooTer from "../footer/fooTer.component";
+import LayoutFooter from "../layout-footer/layout-footer.component";
 import JobItemContent from "../job-item-content/job-item-content.component";
 import SearchInput from "../search-input/search-input.component";
 import LeftSidebar from "../left-sidebar/left-sidebar.component";
@@ -28,14 +28,14 @@ const HomePage = ({ leftSideData, rightSideData, jobsData }) => {
         <Layout
           className="site-layout"
           style={{
-            marginLeft: 200,
-            marginRight: 200,
+            marginLeft: "17%",
+            marginRight: "17%",
           }}>
           <Header
             style={{
               height: "auto",
-              margin: "24px 16px 0",
-              background: colorBgContainer,
+              margin: "0% 1%",
+              background: "#F6F1F1",
             }}>
             <Title>Welcome to use JobFinder APP !</Title>
             <SearchInput />
@@ -44,7 +44,7 @@ const HomePage = ({ leftSideData, rightSideData, jobsData }) => {
             colorBgContainer={colorBgContainer}
             contentData={contentData}
           />
-          <FooTer />
+          <LayoutFooter />
         </Layout>
         <RightSidebar rightSideData={rightSideData} />
       </Layout>
