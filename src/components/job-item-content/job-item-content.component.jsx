@@ -5,7 +5,7 @@ const JobItemContent = ({ contentData }) => {
   return (
     <Content
       style={{
-        margin: "0% 1.35% ",
+        margin: "0% 1% ",
         overflow: "initial",
       }}>
       {contentData && (

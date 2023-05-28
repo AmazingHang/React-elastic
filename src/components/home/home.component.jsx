@@ -28,8 +28,8 @@ const HomePage = ({ leftSideData, rightSideData, jobsData }) => {
         <Layout
           className="site-layout"
           style={{
-            marginLeft: "17%",
-            marginRight: "17%",
+            marginLeft: 193,
+            marginRight: 193,
           }}>
           <Header
             style={{
