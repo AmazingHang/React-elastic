@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
-import { setReducerSearchFiled } from "../../store/search/search.action";
+import { setSearch_ACTION } from "../../store/search/search.action";
 
 import { Button } from "antd";
 
@@ -16,7 +16,7 @@ const RightTitles = ({ item }) => {
   //把热门搜索里的值录入redux中的热门搜索
   useEffect(() => {
     const submitHitSelected = () => {
-      dispatch(setReducerSearchFiled(hitSelected));
+      dispatch(setSearch_ACTION(hitSelected));
       //重制hitSelected，来接受更新的选择
       setHitSelected("");
     };

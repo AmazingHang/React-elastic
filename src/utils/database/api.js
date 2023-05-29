@@ -7,11 +7,6 @@ import fakeData from "./fake-data";
 const instance = axios.create({
   baseURL: "http://10.128.233.242:3000/", // 设置请求的基础URL
   timeout: 5000, // 设置请求超时时间
-  headers: {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-    "Access-Control-Allow-Headers": "Content-Type",
-  },
 });
 
 // 请求拦截器
@@ -59,5 +54,18 @@ export const getHitsdData = () =>
     //dev-设置返回结果
     const rightSideData = ["前端开发", "后端开发", "上海市", "北京市", "运维"];
     return (data = rightSideData);
+  });
+
+export const getFuzzySearchData = () =>
+  instance.get("/").then(data => {
+    //dev-设置返回结果
+    const fuzzySearchData = [
+      "前端开发",
+      "后端开发",
+      "上海市",
+      "北京市",
+      "运维",
+    ];
+    return (data = fuzzySearchData);
   });
 export const createPost = postData => instance.post("/posts", postData);

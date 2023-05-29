@@ -3,16 +3,16 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import {
-  setReducerChecks,
-  reduceReducerChecks,
-  clearReducerChecks,
+  setChecks_ACTION,
+  reduceChecks_ACTION,
+  clearChecks_ACTION,
 } from "../../store/checkbox/checkbox.action";
-import { selectReducerChecks } from "../../store/checkbox/checkbox.selector";
+import { selectChecks_SELECTOR } from "../../store/checkbox/checkbox.selector";
 
 const LeftCheckBox = ({ list, ...otherProps }) => {
   const dispatch = useDispatch();
   //redux记录的checks
-  const crurrentChecks = useSelector(selectReducerChecks);
+  const crurrentChecks = useSelector(selectChecks_SELECTOR);
   const { setFalse } = otherProps;
   //本地记录的checks
   const [checkedList, setCheckedList] = useState(crurrentChecks);
@@ -29,13 +29,13 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
       const newChecks = Array.from(
         new Set([...crurrentChecks, ...checkedList])
       );
-      dispatch(setReducerChecks(newChecks));
+      dispatch(setChecks_ACTION(newChecks));
       setLastChecks(checkedList);
     };
     const updateReducedChecks = () => {
       //注意diff是一个数组 ，而不是一个单独的元素，所以在 reducedChecks 的筛选过程中，不能直接将 item 与 diff 进行比较。
       const diff = lastChecks.filter(item => !checkedList.includes(item));
-      dispatch(reduceReducerChecks(diff));
+      dispatch(reduceChecks_ACTION(diff));
       setLastChecks(checkedList);
     };
     lastChecks.length > checkedList.length && updateReducedChecks();
@@ -48,7 +48,7 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
   //重新初始化数据
   useEffect(() => {
     setCheckedList([]);
-    dispatch(clearReducerChecks());
+    dispatch(clearChecks_ACTION());
   }, [dispatch, setFalse]);
 
   return (
