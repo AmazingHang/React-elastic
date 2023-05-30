@@ -13,5 +13,5 @@ export const setIsFuzzySearch_ACTION = isFuzzySearch =>
 export const setFuzzySearch_ACTION = fuzzySearch =>
   createAction(SEARCH_TYPE.FUZZY_SEARCH, fuzzySearch);
 
-export const setFuzzySearchField_ACTION = fuzzySearchFiled =>
-  createAction(SEARCH_TYPE.FUZZY_SEARCH_FIELD, fuzzySearchFiled);
+export const setFuzzySearchArray_ACTION = fuzzySearchArray =>
+  createAction(SEARCH_TYPE.FUZZY_SEARCH_ARRAY, fuzzySearchArray);

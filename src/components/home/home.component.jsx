@@ -5,7 +5,6 @@ import SearchFrom from "../search-form/search-form.component";
 import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import RightSidebar from "../right-sidebar/right-sidebar.component";
 import JobCardItem from "../job-card-item/job-card-item.compoent";
-
 import FuzzySearchItem from "../fuzzy-search-item/fuzzy-search-item.component";
 //样式
 import { Layout, Typography } from "antd";
@@ -17,7 +16,6 @@ const HomePage = ({
   rightSideData,
   jobsData,
   fuzzySearchFiled,
-  fuzzySearchLength,
 }) => {
   //生成要展示的数据
   const contentData = Array.from(
@@ -43,10 +41,7 @@ const HomePage = ({
               background: "#F6F1F1",
             }}>
             <Title>Welcome to use JobFinder APP !</Title>
-            <SearchFrom
-              fuzzySearchLength={fuzzySearchLength}
-              fuzzyFiledData={fuzzyFiledData}
-            />
+            <SearchFrom fuzzyFiledData={fuzzyFiledData} />
           </Header>
           <JobItemContent contentData={contentData} />
           <LayoutFooter />

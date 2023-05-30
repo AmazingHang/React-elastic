@@ -1,11 +1,11 @@
 import { List } from "antd";
-const FuzzySearchField = ({ fuzzyFiledData }) => {
+const FuzzySearchList = ({ fuzzyFiledData }) => {
   return (
     <List
+      bordered
       style={{
-        display: "block",
-        textAlign: "center",
         background: "white",
+        marginBottom: "3%",
       }}
       dataSource={fuzzyFiledData}
       renderItem={(item, index) => {
@@ -14,4 +14,4 @@ const FuzzySearchField = ({ fuzzyFiledData }) => {
   );
 };
 
-export default FuzzySearchField;
+export default FuzzySearchList;

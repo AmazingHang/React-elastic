@@ -6,5 +6,5 @@ export const selectIsFuzzySearch_SELECTOR = state => state.search.isFuzzySearch;
 
 export const selectFuzzySearch_SELECTOR = state => state.search.fuzzySearch;
 
-export const selectFuzzySearchField_SELECTOR = state =>
-  state.search.fuzzySearchFiled;
+export const selectFuzzySearchArray_SELECTOR = state =>
+  state.search.fuzzySearchArray;

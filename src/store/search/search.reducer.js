@@ -5,7 +5,7 @@ const INITIANL_STATE = {
   isClearedSearch: false,
   isFuzzySearch: false,
   fuzzySearch: "",
-  fuzzySearchFiled: [],
+  fuzzySearchArray: [],
 };
 
 export const searchReducer = (state = INITIANL_STATE, action = {}) => {
@@ -23,8 +23,8 @@ export const searchReducer = (state = INITIANL_STATE, action = {}) => {
     case SEARCH_TYPE.FUZZY_SEARCH:
       return { ...state, fuzzySearch: payload };
 
-    case SEARCH_TYPE.FUZZY_SEARCH_FIELD:
-      return { ...state, fuzzySearchFiled: payload };
+    case SEARCH_TYPE.FUZZY_SEARCH_ARRAY:
+      return { ...state, fuzzySearchArray: payload };
 
     default:
       return state;

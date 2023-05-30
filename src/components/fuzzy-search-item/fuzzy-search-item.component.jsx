@@ -20,7 +20,7 @@ const FuzzySearchItem = ({ item }) => {
 
   useEffect(() => {
     const trrigerSubmit = () => {
-      dispatch(setSearch_ACTION(item));
+      dispatch(setSearch_ACTION(item)); //////
       dispatch(setIsFuzzySearch_ACTION(isSubmit));
     };
     //只有本组件内可以改变isSubmit
@@ -29,7 +29,11 @@ const FuzzySearchItem = ({ item }) => {
   }, [dispatch, isSubmit]);
 
   return (
-    <Button type="ghost" onClick={onClickHandler}>
+    <Button
+      block
+      type="ghost"
+      style={{ textAlign: "left", color: "grey" }}
+      onClick={onClickHandler}>
       {item}
     </Button>
   );
