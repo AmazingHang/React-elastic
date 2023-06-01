@@ -5,7 +5,7 @@ import fakeData from "./fake-data";
 
 // 创建 Axios 实例
 const instance = axios.create({
-  baseURL: "http://10.128.233.242:3000/", // 设置请求的基础URL
+  baseURL: "http://localhost:3000/", // 设置请求的基础URL
   timeout: 5000, // 设置请求超时时间
 });
 
