@@ -6,6 +6,7 @@ const INITIANL_STATE = {
   isFuzzySearch: false,
   fuzzySearch: "",
   fuzzySearchArray: [],
+  isLoading: false,
 };
 
 export const searchReducer = (state = INITIANL_STATE, action = {}) => {
@@ -26,6 +27,8 @@ export const searchReducer = (state = INITIANL_STATE, action = {}) => {
     case SEARCH_TYPE.FUZZY_SEARCH_ARRAY:
       return { ...state, fuzzySearchArray: payload };
 
+    case SEARCH_TYPE.IS_LOADING:
+      return { ...state, isLoading: payload };
     default:
       return state;
   }

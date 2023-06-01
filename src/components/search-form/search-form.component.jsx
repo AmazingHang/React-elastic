@@ -8,10 +8,12 @@ import {
   setIsClearedSearch_ACTION,
   setIsFuzzySearch_ACTION,
   setFuzzySearch_ACTION,
+  setIsLoading_ACTION,
 } from "../../store/search/search.action";
 //selectors---------------------------------------------------------------
-import { selectSearch_SELECTOR } from "../../store/search/search.selector";
 import {
+  selectSearch_SELECTOR,
+  selectIsLoading_SELECTOR,
   selectIsFuzzySearch_SELECTOR,
   selectFuzzySearch_SELECTOR,
 } from "../../store/search/search.selector";
@@ -26,13 +28,16 @@ const SearchFrom = ({ fuzzyFiledData }) => {
   const isDropDownOpenFromRedux = useSelector(selectIsFuzzySearch_SELECTOR);
   const searchesFromRedux = useSelector(selectSearch_SELECTOR);
   const fuzzySearchFromRedux = useSelector(selectFuzzySearch_SELECTOR);
+  const isLoadingFromRedux = useSelector(selectIsLoading_SELECTOR);
   //-----------------------------------------------------------------------
-  const [searchString, setSearchString] = useState("");
+  const [searchString, setSearchString] = useState(searchesFromRedux);
   const [isFuzzySearch, setIsFuzzySearch] = useState(isDropDownOpenFromRedux);
   const [isSearchCleared, setIsSearchCleared] = useState(false);
   const [fuzzySearch, setFuzzySearch] = useState("");
+  const [loading, setLoading] = useState(isLoadingFromRedux);
   //-----------------------------------------------------------------------
   const onSearchHandler = value => {
+    setLoading(true);
     setSearchString(value);
   };
   const onChangeHandler = e => {
@@ -104,6 +109,13 @@ const SearchFrom = ({ fuzzyFiledData }) => {
     fuzzySearchFromRedux.length !== 0 && updateSearchStringFromFuzzy();
   }, [dispatch, fuzzySearchFromRedux]);
 
+  useEffect(() => {
+    const submitLoading = () => {
+      dispatch(setIsLoading_ACTION(loading));
+    };
+    submitLoading();
+  }, [dispatch, loading]);
+
   return (
     <Form style={{ marginBottom: "5%" }}>
       <Search
@@ -111,6 +123,7 @@ const SearchFrom = ({ fuzzyFiledData }) => {
         enterButton="搜索"
         value={fuzzySearch}
         suffix={suffix}
+        loading={isLoadingFromRedux}
         size="large"
         onChange={onChangeHandler}
         onSearch={onSearchHandler}

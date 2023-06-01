@@ -11,8 +11,8 @@ import {
 
 const FuzzySearchItem = ({ item }) => {
   const dispatch = useDispatch();
-  const isCartOpen = useSelector(selectIsFuzzySearch_SELECTOR);
-  const [isSubmit, setIsSubmit] = useState(isCartOpen);
+  const isDropDownOpenFromRedux = useSelector(selectIsFuzzySearch_SELECTOR);
+  const [isSubmit, setIsSubmit] = useState(isDropDownOpenFromRedux);
 
   const onClickHandler = () => {
     setIsSubmit(!isSubmit);
@@ -25,8 +25,7 @@ const FuzzySearchItem = ({ item }) => {
     };
     //只有本组件内可以改变isSubmit
     !isSubmit && trrigerSubmit();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dispatch, isSubmit]);
+  }, [dispatch, isSubmit, item]);
 
   return (
     <Button

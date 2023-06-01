@@ -18,6 +18,7 @@ const HomePage = ({
   fuzzySearchFiled,
 }) => {
   //生成要展示的数据
+
   const contentData = Array.from(
     jobsData.map(job => <JobCardItem key={job.id} props={job} />)
   );

@@ -8,3 +8,5 @@ export const selectFuzzySearch_SELECTOR = state => state.search.fuzzySearch;
 
 export const selectFuzzySearchArray_SELECTOR = state =>
   state.search.fuzzySearchArray;
+
+export const selectIsLoading_SELECTOR = state => state.search.isLoading;

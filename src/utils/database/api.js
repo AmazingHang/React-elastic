@@ -2,18 +2,18 @@ import axios from "axios";
 
 import originJobsData from "./origin-data";
 import fakeData from "./fake-data";
-
+//baseURL: "http://10.28.218.94:8000",
 // 创建 Axios 实例
 const instance = axios.create({
-  baseURL: "http://10.28.242.136:3000", // 设置请求的基础URL
-  timeout: 5000, // 设置请求超时时间
+  // 设置请求的基础URL
+  baseURL: "http://localhost:3000",
 });
 
 // 请求拦截器
 instance.interceptors.request.use(
   config => {
     // 在请求发送前可以对请求进行修改，例如添加请求头
-    config.headers.Authorization = "Bearer your_token_here";
+
     return config;
   },
   error => {
@@ -40,15 +40,14 @@ instance.interceptors.response.use(
 );
 
 // 封装请求函数
-export const getDataFromDatabase = () => {
-  return originJobsData;
-};
+export const getDataFromDatabase = () =>
+  instance.get("/").then(data => {
+    return (data = originJobsData);
+  });
 export const getSearchedData = () =>
-  instance.get("/").then(
-    data =>
-      //dev-设置返回结果
-      (data = fakeData)
-  );
+  instance.get("/").then(data => {
+    return (data = fakeData);
+  });
 export const getHitsdData = () =>
   instance.get("/").then(data => {
     //dev-设置返回结果

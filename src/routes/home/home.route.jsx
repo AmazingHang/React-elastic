@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 //渲染组件
 import HomePage from "../../components/home/home.component";
 //公共项
+//import originJobsData from "../../utils/database/origin-data";
 import { leftSideData, dateFilter } from "../../utils/database/utils";
 //发送axios请求从API中获得数据---------------------------------------------
 import {
@@ -18,6 +19,7 @@ import { setTotalJobs_ACTION } from "../../store/jobs/jobs.action";
 import {
   setSearch_ACTION,
   setFuzzySearchArray_ACTION,
+  setIsLoading_ACTION,
 } from "../../store/search/search.action";
 //selectors-------------------------------------------------------------------
 import { selectTotalJobs_SELECTOR } from "../../store/jobs/jobs.selector";
@@ -31,8 +33,6 @@ import { selectChecks_SELECTOR } from "../../store/checkbox/checkbox.selector";
 //------------------------------------------------------------------------------
 const Home = () => {
   const dispatch = useDispatch();
-  //从后端获得的初始数据
-  const jobsArray = getDataFromDatabase();
   //从redux中获得的 jobs,checks,searchFiled,clearSearch---------------------------
   const totalJobs = useSelector(selectTotalJobs_SELECTOR);
   const checks = useSelector(selectChecks_SELECTOR);
@@ -41,13 +41,20 @@ const Home = () => {
   const fuzzySearch = useSelector(selectFuzzySearch_SELECTOR);
   const fuzzySearchFiled = useSelector(selectFuzzySearchArray_SELECTOR);
   //传入组件的数据-----------------------------------------------------------------
+  const [jobsArray, setJobsArray] = useState([]);
   const [jobsData, setJobsData] = useState(totalJobs);
   const [rightSideData, setRightSideData] = useState([]);
+
+  //从后端获得的初始数据
+  useEffect(() => {
+    getDataFromDatabase().then(data => setJobsArray(data));
+  }, []);
 
   //设置热门搜索
   useEffect(() => {
     getHitsdData().then(data => setRightSideData(data));
   }, []);
+
   //数据录入redux中
   useEffect(() => {
     const setReducerJobsArray = () => {
@@ -55,10 +62,11 @@ const Home = () => {
     };
     //使用searches调用API，获得搜索数据
     const jobsSearcherSetter = () => {
-      //console.log(searches);
-      getSearchedData().then(data => dispatch(setTotalJobs_ACTION(data)));
+      getSearchedData().then(data => {
+        dispatch(setIsLoading_ACTION(false));
+        dispatch(setTotalJobs_ACTION(data));
+      });
     };
-
     //搜索框里没有内容，则录入原始数据
     searches.length === 0 && setReducerJobsArray();
     //搜索框里有内容，则录入搜索结果
@@ -92,6 +100,7 @@ const Home = () => {
   useEffect(() => {
     const clearLocalJobs = () => {
       dispatch(setSearch_ACTION(""));
+      dispatch(setIsLoading_ACTION(false));
     };
     clearLocalJobs();
   }, [dispatch, isSearchCleared]);
