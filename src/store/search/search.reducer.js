@@ -6,6 +6,7 @@ const INITIANL_STATE = {
   isFuzzySearch: false,
   fuzzySearch: "",
   fuzzySearchArray: [],
+  error: null,
   isLoading: false,
 };
 
@@ -15,20 +16,24 @@ export const searchReducer = (state = INITIANL_STATE, action = {}) => {
     case SEARCH_TYPE.SET_SEARCH:
       return { ...state, search: payload };
 
-    case SEARCH_TYPE.IS_CLEARED_SEARCH:
-      return { ...state, isClearedSearch: payload };
-
     case SEARCH_TYPE.IS_FUZZY_SEARCH:
       return { ...state, isFuzzySearch: payload };
 
     case SEARCH_TYPE.FUZZY_SEARCH:
       return { ...state, fuzzySearch: payload };
 
-    case SEARCH_TYPE.FUZZY_SEARCH_ARRAY:
-      return { ...state, fuzzySearchArray: payload };
+    // case SEARCH_TYPE.FUZZY_SEARCH_ARRAY:
+    //   return { ...state, fuzzySearchArray: payload };
 
-    case SEARCH_TYPE.IS_LOADING:
-      return { ...state, isLoading: payload };
+    case SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_START:
+      return {
+        ...state,
+        isLoading: true,
+      };
+    case SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_SUCCESS:
+      return { ...state, isLoading: false, fuzzySearchArray: payload };
+    case SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_FAILED:
+      return { ...state, isLoading: false, error: payload };
     default:
       return state;
   }

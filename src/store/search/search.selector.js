@@ -1,12 +1,28 @@
-export const selectSearch_SELECTOR = state => state.search.search;
+import { createSelector } from "reselect";
 
-export const selectIsCleared_SELECTOR = state => state.search.isClearedSearch;
+const selectSearchesFromReducer = state => state.search;
 
-export const selectIsFuzzySearch_SELECTOR = state => state.search.isFuzzySearch;
+export const selectSearch_SELECTOR = createSelector(
+  [selectSearchesFromReducer],
+  searchSlice => searchSlice.search
+);
 
-export const selectFuzzySearch_SELECTOR = state => state.search.fuzzySearch;
+export const selectIsFuzzySearch_SELECTOR = createSelector(
+  [selectSearchesFromReducer],
+  searchSlice => searchSlice.isFuzzySearch
+);
 
-export const selectFuzzySearchArray_SELECTOR = state =>
-  state.search.fuzzySearchArray;
+export const selectFuzzySearch_SELECTOR = createSelector(
+  [selectSearchesFromReducer],
+  searchSlice => searchSlice.fuzzySearch
+);
 
-export const selectIsLoading_SELECTOR = state => state.search.isLoading;
+export const selectFuzzySearchArray_SELECTOR = createSelector(
+  [selectSearchesFromReducer],
+  searchSlice => searchSlice.fuzzySearchArray
+);
+
+export const selectIsLoading_SELECTOR = createSelector(
+  [selectSearchesFromReducer],
+  searchSlice => searchSlice.isLoading
+);

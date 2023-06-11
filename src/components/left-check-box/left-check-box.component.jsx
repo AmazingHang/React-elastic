@@ -1,19 +1,18 @@
 import { Checkbox } from "antd";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+//-----------------------------------------------------------------------------
 import {
   setChecks_ACTION,
   reduceChecks_ACTION,
-  clearChecks_ACTION,
 } from "../../store/checkbox/checkbox.action";
 import { selectChecks_SELECTOR } from "../../store/checkbox/checkbox.selector";
-
+//-----------------------------------------------------------------------------
 const LeftCheckBox = ({ list, ...otherProps }) => {
   const dispatch = useDispatch();
   //redux记录的checks
   const crurrentChecks = useSelector(selectChecks_SELECTOR);
-  const { setFalse } = otherProps;
+  const { setChecked } = otherProps;
   //本地记录的checks
   const [checkedList, setCheckedList] = useState(crurrentChecks);
   const [lastChecks, setLastChecks] = useState(checkedList);
@@ -21,7 +20,7 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
   const onChange = list => {
     setCheckedList(list);
   };
-
+  //-----------------------------------------------------------------------------
   //使用了一个名为 updateChecks 的回调函数来确保在 useEffect 中使用最新的 checkedList 值。这样，无论异步操作是否完成，都会正确地传递最新的 checkedList 值给 dispatch。
   useEffect(() => {
     const updateAddedChecks = () => {
@@ -44,13 +43,11 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
       updateAddedChecks();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkedList, dispatch]);
-
   //重新初始化数据
   useEffect(() => {
     setCheckedList([]);
-    dispatch(clearChecks_ACTION());
-  }, [dispatch, setFalse]);
-
+  }, [dispatch, setChecked]);
+  //-----------------------------------------------------------------------------
   return (
     <Checkbox.Group
       options={list}

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-
+//-----------------------------------------------------------------------------
 import { setFuzzySearch_ACTION } from "../../store/search/search.action";
-
+//-----------------------------------------------------------------------------
 import { Button } from "antd";
-
+//-----------------------------------------------------------------------------
 const RightTitles = ({ item }) => {
   const dispatch = useDispatch();
   const [hitSelected, setHitSelected] = useState("");

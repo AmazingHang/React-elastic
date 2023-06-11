@@ -14,7 +14,7 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
   const [checked, setChecked] = useState(true);
 
   const onClearHandler = () => {
-    console.log("clear trrigered");
+    console.log("Clearing checkbox");
     setChecked(!checked);
   };
 
@@ -33,7 +33,7 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
               key={item.title}
               title={item.title}
               style={{ width: "auto", height: "auto", margin: 7 }}>
-              <LeftCheckBox setFalse={checked} list={item.list} />
+              <LeftCheckBox setChecked={checked} list={item.list} />
             </Card>
           ))}
         {TYPE === "right" && items && (

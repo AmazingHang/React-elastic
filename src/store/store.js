@@ -1,13 +1,38 @@
 import { compose, applyMiddleware } from "redux";
 import { legacy_createStore as createStore } from "redux";
-//它允许你在 Redux 中分发函数，而不仅仅是对象。函数可以包含异步逻辑，并且在完成异步操作后再分发普通的 action 对象。
+import { persistStore, persistReducer } from "redux-persist";
+
+import storage from "redux-persist/lib/storage";
+import logger from "redux-logger";
 import thunk from "redux-thunk";
-// import logger from "redux-logger";
 import { rootReducer } from "./root-reducer";
 
 //列出中间件
-const middlerWares = [thunk];
+const middlewares = [
+  process.env.NODE_ENV === "development" && logger,
+  thunk,
+].filter(Boolean);
+
+const composeEnhancer =
+  (process.env.NODE_ENV !== "production" &&
+    window &&
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+  compose;
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ["searchHistory"],
+};
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 //集成中间件
-const composeEnhancers = compose(applyMiddleware(...middlerWares));
+const composedEnhancers = composeEnhancer(applyMiddleware(...middlewares));
+
 //创建redux存储
-export const store = createStore(rootReducer, undefined, composeEnhancers);
+export const store = createStore(
+  persistedReducer,
+  undefined,
+  composedEnhancers
+);
+export const persistor = persistStore(store);

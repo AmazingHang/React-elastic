@@ -1,4 +1,4 @@
-//组件
+//-----------------------------------------------------------------------------
 import LayoutFooter from "../layout-footer/layout-footer.component";
 import JobItemContent from "../job-item-content/job-item-content.component";
 import SearchFrom from "../search-form/search-form.component";
@@ -6,7 +6,7 @@ import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import RightSidebar from "../right-sidebar/right-sidebar.component";
 import JobCardItem from "../job-card-item/job-card-item.compoent";
 import FuzzySearchItem from "../fuzzy-search-item/fuzzy-search-item.component";
-//样式
+//-----------------------------------------------------------------------------
 import { Layout, Typography } from "antd";
 const { Header } = Layout;
 const { Title } = Typography;
@@ -18,7 +18,6 @@ const HomePage = ({
   fuzzySearchFiled,
 }) => {
   //生成要展示的数据
-
   const contentData = Array.from(
     jobsData.map(job => <JobCardItem key={job.id} props={job} />)
   );
@@ -27,6 +26,10 @@ const HomePage = ({
   );
   return (
     <>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+      </style>
       <Layout hasSider>
         <LeftSidebar leftSideData={leftSideData} />
         <Layout
@@ -41,7 +44,14 @@ const HomePage = ({
               margin: "0% 1%",
               background: "#F6F1F1",
             }}>
-            <Title>Welcome to use JobFinder APP !</Title>
+            <Title
+              style={{
+                fontFamily: "'Source Code Pro', monospace",
+                fontSize: "30px",
+                textAlign: "center",
+              }}>
+              Welcome to use JobFinder APP !
+            </Title>
             <SearchFrom fuzzyFiledData={fuzzyFiledData} />
           </Header>
           <JobItemContent contentData={contentData} />

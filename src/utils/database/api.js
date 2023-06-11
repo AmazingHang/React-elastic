@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 
 import originJobsData from "./origin-data";
@@ -40,24 +41,48 @@ instance.interceptors.response.use(
 );
 
 // 封装请求函数
-export const getDataFromDatabase = () =>
-  instance.get("/").then(data => {
-    return (data = originJobsData);
-  });
-export const getSearchedData = () =>
-  instance.get("/").then(data => {
-    return (data = fakeData);
-  });
-export const getHitsdData = () =>
-  instance.get("/").then(data => {
-    //dev-设置返回结果
-    const rightSideData = ["前端开发", "后端开发", "上海市", "北京市", "运维"];
-    return (data = rightSideData);
-  });
+export const getDataFromDatabase = async () => {
+  try {
+    const response = await instance.get("/");
+    return response.data || originJobsData;
+  } catch (error) {
+    // 处理请求错误
+    console.error("Error fetching data from database:", error);
+    return originJobsData;
+  }
+};
+export const getSearchedData = async searchString => {
+  try {
+    const response = await instance.get("/", {
+      params: {
+        key_words: searchString,
+      },
+    });
+    return response.data || fakeData;
+  } catch (error) {
+    console.error("Error fetching searched data:", error);
+    return fakeData;
+  }
+};
 
-export const getFuzzySearchData = () =>
-  instance.get("/").then(data => {
-    //dev-设置返回结果
+export const getHitsData = async () => {
+  try {
+    const response = await instance.get("/");
+    const rightSideData = ["前端开发", "后端开发", "上海市", "北京市", "运维"];
+    return rightSideData;
+  } catch (error) {
+    console.error("Error fetching hits data:", error);
+    return [];
+  }
+};
+
+export const getFuzzySearchData = async fuzzySearch => {
+  try {
+    const response = await instance.get("/", {
+      params: {
+        fuzzySearch: fuzzySearch,
+      },
+    });
     const fuzzySearchData = [
       "前端开发",
       "后端开发",
@@ -65,6 +90,11 @@ export const getFuzzySearchData = () =>
       "北京市",
       "运维",
     ];
-    return (data = fuzzySearchData);
-  });
+    return fuzzySearchData;
+  } catch (error) {
+    console.error("Error fetching fuzzy search data:", error);
+    return [];
+  }
+};
+
 export const createPost = postData => instance.post("/posts", postData);

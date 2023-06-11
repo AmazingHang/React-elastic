@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,25 +7,20 @@ import HomePage from "../../components/home/home.component";
 //公共项
 //import originJobsData from "../../utils/database/origin-data";
 import { leftSideData, dateFilter } from "../../utils/database/utils";
-//发送axios请求从API中获得数据---------------------------------------------
-import {
-  getSearchedData,
-  getHitsdData,
-  getDataFromDatabase,
-  getFuzzySearchData,
-} from "../../utils/database/api";
 //actions---------------------------------------------------------------------
-import { setTotalJobs_ACTION } from "../../store/jobs/jobs.action";
 import {
-  setSearch_ACTION,
-  setFuzzySearchArray_ACTION,
-  setIsLoading_ACTION,
-} from "../../store/search/search.action";
+  fetchHitsJobsStartAsync,
+  fetchTotalJobsStartAsync,
+  fetchSearchedJobsStartAsync,
+} from "../../store/jobs/jobs.action";
+import { fetchFuzzySearchArrayStartAsync } from "../../store/search/search.action";
 //selectors-------------------------------------------------------------------
-import { selectTotalJobs_SELECTOR } from "../../store/jobs/jobs.selector";
+import {
+  selectTotalJobs_SELECTOR,
+  selectHitsJobs_SELECTOR,
+} from "../../store/jobs/jobs.selector";
 import {
   selectSearch_SELECTOR,
-  selectIsCleared_SELECTOR,
   selectFuzzySearch_SELECTOR,
   selectFuzzySearchArray_SELECTOR,
 } from "../../store/search/search.selector";
@@ -36,43 +31,24 @@ const Home = () => {
   //从redux中获得的 jobs,checks,searchFiled,clearSearch---------------------------
   const totalJobs = useSelector(selectTotalJobs_SELECTOR);
   const checks = useSelector(selectChecks_SELECTOR);
+  const hits = useSelector(selectHitsJobs_SELECTOR);
   const searches = useSelector(selectSearch_SELECTOR);
-  const isSearchCleared = useSelector(selectIsCleared_SELECTOR);
   const fuzzySearch = useSelector(selectFuzzySearch_SELECTOR);
-  const fuzzySearchFiled = useSelector(selectFuzzySearchArray_SELECTOR);
-  //传入组件的数据-----------------------------------------------------------------
-  const [jobsArray, setJobsArray] = useState([]);
+  const fuzzySearchArray = useSelector(selectFuzzySearchArray_SELECTOR);
+  //-----------------------------------------------------------------------------
   const [jobsData, setJobsData] = useState(totalJobs);
-  const [rightSideData, setRightSideData] = useState([]);
-
-  //从后端获得的初始数据
+  //-----------------------------------------------------------------------------
+  //从后端获得数据
   useEffect(() => {
-    getDataFromDatabase().then(data => setJobsArray(data));
-  }, []);
-
-  //设置热门搜索
-  useEffect(() => {
-    getHitsdData().then(data => setRightSideData(data));
-  }, []);
-
+    dispatch(fetchHitsJobsStartAsync());
+    dispatch(fetchTotalJobsStartAsync());
+  }, [dispatch]);
   //数据录入redux中
   useEffect(() => {
-    const setReducerJobsArray = () => {
-      dispatch(setTotalJobs_ACTION(jobsArray));
-    };
-    //使用searches调用API，获得搜索数据
-    const jobsSearcherSetter = () => {
-      getSearchedData().then(data => {
-        dispatch(setIsLoading_ACTION(false));
-        dispatch(setTotalJobs_ACTION(data));
-      });
-    };
-    //搜索框里没有内容，则录入原始数据
-    searches.length === 0 && setReducerJobsArray();
     //搜索框里有内容，则录入搜索结果
-    searches.length !== 0 && jobsSearcherSetter();
-  }, [dispatch, jobsArray, searches]);
-
+    searches.length === 0 && dispatch(fetchTotalJobsStartAsync());
+    searches.length !== 0 && dispatch(fetchSearchedJobsStartAsync(searches));
+  }, [dispatch, searches]);
   //数据筛选后传入到内容组件中，其中checks由left-sidebar设置
   useEffect(() => {
     const setFilteredLocalJobs = () => {
@@ -84,35 +60,20 @@ const Home = () => {
     //如果存在筛选，则返回筛选后的数据
     checks.length !== 0 && setFilteredLocalJobs();
   }, [checks, totalJobs]);
-
-  //使用fuzzySearch调用API，获得模糊搜索使用的数据，其中fuzzySearch由search-input设置
+  //用fuzzySearch的值改变fuzzSearchArray的值
   useEffect(() => {
-    const setFuzzySearch = () => {
-      // console.log(fuzzySearch);
-      getFuzzySearchData().then(data =>
-        dispatch(setFuzzySearchArray_ACTION(data))
-      );
-    };
-    setFuzzySearch();
+    fuzzySearch.length !== 0 &&
+      dispatch(fetchFuzzySearchArrayStartAsync(fuzzySearch));
   }, [dispatch, fuzzySearch]);
-
-  //清除搜索带来的影响
-  useEffect(() => {
-    const clearLocalJobs = () => {
-      dispatch(setSearch_ACTION(""));
-      dispatch(setIsLoading_ACTION(false));
-    };
-    clearLocalJobs();
-  }, [dispatch, isSearchCleared]);
-
+  //-----------------------------------------------------------------------------
   return (
     <>
       <Outlet />
       <HomePage
         leftSideData={leftSideData}
-        rightSideData={rightSideData}
+        rightSideData={hits}
         jobsData={jobsData}
-        fuzzySearchFiled={fuzzySearchFiled}
+        fuzzySearchFiled={fuzzySearchArray}
       />
     </>
   );

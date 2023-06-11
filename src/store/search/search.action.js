@@ -1,11 +1,16 @@
 import { createAction } from "../../utils/reducer/reducer.utils";
 import { SEARCH_TYPE } from "./search.types";
+import { getFuzzySearchData } from "../../utils/database/api";
+
+const fetchFuzzySeachesStart = () =>
+  createAction(SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_START);
+const fetchFuzzySeachesSuccess = fuzzySeachesArray =>
+  createAction(SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_SUCCESS, fuzzySeachesArray);
+const fetchFuzzySeachesFailure = error =>
+  createAction(SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_FAILED, error);
 
 export const setSearch_ACTION = search =>
   createAction(SEARCH_TYPE.SET_SEARCH, search);
-
-export const setIsClearedSearch_ACTION = isClearedSearch =>
-  createAction(SEARCH_TYPE.IS_CLEARED_SEARCH, isClearedSearch);
 
 export const setIsFuzzySearch_ACTION = isFuzzySearch =>
   createAction(SEARCH_TYPE.IS_FUZZY_SEARCH, isFuzzySearch);
@@ -13,8 +18,14 @@ export const setIsFuzzySearch_ACTION = isFuzzySearch =>
 export const setFuzzySearch_ACTION = fuzzySearch =>
   createAction(SEARCH_TYPE.FUZZY_SEARCH, fuzzySearch);
 
-export const setFuzzySearchArray_ACTION = fuzzySearchArray =>
-  createAction(SEARCH_TYPE.FUZZY_SEARCH_ARRAY, fuzzySearchArray);
-
-export const setIsLoading_ACTION = isLoading =>
-  createAction(SEARCH_TYPE.IS_LOADING, isLoading);
+export const fetchFuzzySearchArrayStartAsync = fuzzySearch => {
+  return async dispatch => {
+    dispatch(fetchFuzzySeachesStart());
+    try {
+      const fuzzySearchArray = await getFuzzySearchData(fuzzySearch);
+      dispatch(fetchFuzzySeachesSuccess(fuzzySearchArray));
+    } catch (error) {
+      dispatch(fetchFuzzySeachesFailure(error));
+    }
+  };
+};
