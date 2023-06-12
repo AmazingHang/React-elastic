@@ -19,7 +19,7 @@ const JobItemContent = ({ contentData }) => {
           }}
           style={{
             padding: "2%",
-            background: "#AFD3E2",
+            background: "#526D82",
             textAlign: "center",
           }}
           dataSource={contentData}

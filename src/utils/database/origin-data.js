@@ -3,8 +3,8 @@ const originJobsData = [
     id: "baidu_J58445",
     company: "百度",
     name: "2024AIDU-机器学习/数据挖掘方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-研究数据挖掘或统计学习领域的前沿技术,并用于实际问题的解决和优化\n-大规模机器学习算法研究及并行化实现,为各种大规模机器学习应用研发核心技术\n-通过对数据的敏锐洞察,深入挖掘产品潜在价值和需求,进而提供更有价值的产品和服务,通过技术创新推动产品成长",
@@ -14,10 +14,10 @@ const originJobsData = [
   },
   {
     id: "baidu_J58555",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "2024AIDU-搜索产品研发方向",
-    location: "深圳市",
-    type: "AIDU项目",
+    location: "深圳",
+    type: "全职",
     category: "技术",
     description:
       "-负责搜索产品的服务端研发工作\n-参与搜索整体研发效能和稳定性的提升工作\n-负责优化搜索垂类在线检索系统，参与服务架构设计，独立完成业务需求分析和软件设计\n-负责线上复杂性并发问题的解决",
@@ -27,10 +27,10 @@ const originJobsData = [
   },
   {
     id: "baidu_J58553",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "2024AIDU-向量检索方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责基于向量索引技术，以及与倒排索引等技术相融合的检索引擎设计与开发，并落地搜索等业务业务场景；\n-负责ANN(Approximate Nearest Neighbor)算法的设计与原型验证，协同软硬件实现大容量、高吞吐、高精度、低成本的向量索引算法，持续构建业界领先的产品竞争力；\n-持续跟踪学术界与产业界主流的向量索引算法与产品框架的最新进展",
@@ -42,8 +42,8 @@ const originJobsData = [
     id: "baidu_J58554",
     company: "百度",
     name: "2024AIDU-模型工程师方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责机器学习工程架构研发工作，包括推荐模型、CV、NLP等方向，包括预估架构、特征工程、模型训练、推理优化、混部调度等。 \n-负责大数据处理、系统稳定性、扩展技术研发，优化在线的高并发高可用服务架构以及离线的高负载大数据量的服务架构 \n-和团队一起攻克高性能、高并发、高可用性等各种不同技术场景下的技术挑战",
@@ -55,8 +55,8 @@ const originJobsData = [
     id: "baidu_J58446",
     company: "百度",
     name: "2024AIDU-自然语言处理方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-研究自然语言处理、机器学习等方向的前沿技术问题，打造领先技术影响力，方向包括但不限于NLP大模型、对话、翻译、问答、生成、信息抽取、强化学习、图神经网络等方向\n-解决真实业务中的自然语言处理、机器学习等通用性技术问题，支持应用研发\n-为推进技术问题的发展和技术影响力建设，建设开源、开放的数据集与算法",
@@ -68,8 +68,8 @@ const originJobsData = [
     id: "baidu_J58447",
     company: "百度",
     name: "2024AIDU-计算机视觉方向",
-    location: "北京市,上海市",
-    type: "AIDU项目",
+    location: "北京,上海",
+    type: "全职",
     category: "技术",
     description:
       "-负责百度计算机视觉相关的技术(含无人车自定位、地图重建、图像点云物体识别分类算法、医疗影像AI分析）、系统、产品的研发工作\n-包括但不限于：移动图像技术应用、图像内容搜索、人脸检测识别、图像分类标注、OCR、增强现实、图像质量评价、图像处理、点云视觉定位、三维视觉重建、物体分类识别等\n-将技术创新推向亿万用户",
@@ -81,8 +81,8 @@ const originJobsData = [
     id: "baidu_J58448",
     company: "百度",
     name: "2024AIDU-自动驾驶方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责百度自动驾驶汽车预测决策规划系统的研发、调试和测试工作\n-设计核心驾驶场景处理策略,完成相关算法研发和效果验证\n-与自动驾驶汽车其他各模块的工程师协同完成系统集成和调试工作",
@@ -94,8 +94,8 @@ const originJobsData = [
     id: "baidu_J58449",
     company: "百度",
     name: "2024AIDU-昆仑芯片方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "芯片设计方向\n-AI芯片SoC的前端研发\n-负责微架构设计，RTL开发\n-参与时序分析优化，PPA优化\n-参与微电路架构，电路设计实现\n-参与ip集成验证并且tape out等全流程\n\n高性能研发方向\n-AI芯片接入PaddlePaddle、Pytorch、Tensorflow等深度学习框架和性能优化工作 \n-负责主流AI模型对昆仑AI芯片的适配和性能优化工作 \n-探索昆仑AI芯片分布式训练方案，解决芯片互联、通讯库等关键问题",
@@ -107,8 +107,8 @@ const originJobsData = [
     id: "baidu_J58450",
     company: "百度",
     name: "2024AIDU-语音技术方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-责海量无标数据下的预训练语音识别和生成算法的设计与实现\n–负责语音识别和合成前沿算法和应用技术研发 \n-负责语音信号处理、唤醒、声纹和情感识别等技术及产品研发 \n-负责语音语义一体化交互技术及产品研发",
@@ -120,8 +120,8 @@ const originJobsData = [
     id: "baidu_J58451",
     company: "百度",
     name: "2024AIDU-跨模态算法方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-从事文本-图像、文本-视频等跨模态算法研发和优化，跟进并保持业界技术领先\n-推进跨模态内容理解/生成前沿技术的创新落地，提升应用效果和性能\n-从事AIGC等技术产品策略研发，提升端到端产品体验和效果\n-构建多模态数据的内容理解、内容分类、标签体系、内容结构化，质量度等标注体系和技术方案",
@@ -133,20 +133,20 @@ const originJobsData = [
     id: "baidu_J58905",
     company: "百度",
     name: "Feed及文娱评估分析组_用户研究实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       "-深度洞察短视频/直播类行业和产品，并进行深入细致的用户研究，为公司业务/创新业务战略迭代提供用户侧分析支持\n-以定量和定性方法解决产品、运营、增长等相关的用户分析问题，能够独立完成项目方案设计分析呈现\n-参与各种研究执行工作，包括但不限于深度访谈，焦点小组，可用性测试等，可独立撰写调研问卷\n-能独立完成分析呈现，结合用户反馈和数据分析，研究用户特征、拆解用户需求，行为模式等 ， 为产品等相关部门提供有价值的数据洞察和分析报告",
     requirement:
-      "-本科及以上在读同学\n-善于深度思考问题，较强的结构化思考能力和分析能力\n-良好的定量与定性研究能力，熟练掌握SPSS等分析工具的候选人优先\n-拥有互联网用户研究、市场调研等相关领域经验优先\n-可实习6个月优先",
+      "-本科及以上在读同学\n-善于深度思考问题，较强的结构化思考能力和分析能力\n-良好的定量与定性研究能力，熟练掌握SPSS等分析工具的候选人优先\n-拥有互联网用户研究、场调研等相关领域经验优先\n-可实习6个月优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/3ebfccad-8b0c-4ab8-806f-8e38e1807bc4",
   },
   {
     id: "baidu_J58946",
     company: "百度",
     name: "AI应用产品部_计算机视觉实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -159,7 +159,7 @@ const originJobsData = [
     id: "baidu_J58814",
     company: "百度",
     name: "百度APP产品研发部_PMO",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -172,7 +172,7 @@ const originJobsData = [
     id: "baidu_J12182",
     company: "百度",
     name: "百度云-HR实习生(招聘方向)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -183,22 +183,22 @@ const originJobsData = [
   },
   {
     id: "baidu_J58704",
-    company: "阿里",
-    name: "市场策略与中台组_市场实习生",
-    location: "北京市",
+    company: "蚂蚁集团",
+    name: "场策略与中台组_场实习生",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
-      "-协助市场营销活动的策划与执行，与相关合作方进行对接\n-协助市场采购、合同等相关内部流程\n-协助整理相关数据，进行数据分析与总结\n-协助进行其他相关市场工作支持",
+      "-协助场营销活动的策划与执行，与相关合作方进行对接\n-协助场采购、合同等相关内部流程\n-协助整理相关数据，进行数据分析与总结\n-协助进行其他相关场工作支持",
     requirement:
-      "-市场营销相关专业有限，2023年及以后毕业的本科或研究生优先\n-抗压能力强，有责任心，有较强的逻辑思维能力，做事细致有条理\n-熟悉使用各种OFFICE办公软件，电脑操作熟练\n-至少全勤实习3-6个月，尽快入职",
+      "-场营销相关专业有限，2023年及以后毕业的本科或研究生优先\n-抗压能力强，有责任心，有较强的逻辑思维能力，做事细致有条理\n-熟悉使用各种OFFICE办公软件，电脑操作熟练\n-至少全勤实习3-6个月，尽快入职",
     url: "https://talent.baidu.com/jobs/detail/INTERN/ad8f80e0-3975-431d-ba73-13919319e22c",
   },
   {
     id: "baidu_J58768",
     company: "百度",
     name: "AI能力引擎研发组_计算机视觉方向研发实习生",
-    location: "北京市,上海市,成都市",
+    location: "北京,上海,成都",
     type: "日常",
     category: "技术",
     description:
@@ -211,7 +211,7 @@ const originJobsData = [
     id: "baidu_J58747",
     company: "百度",
     name: "运营架构组_大模型实践专员",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -222,9 +222,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58692",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "元宇宙应用研发组_U3D实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -237,7 +237,7 @@ const originJobsData = [
     id: "baidu_J58495",
     company: "百度",
     name: "质量效能研发组_服务端研发实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "技术",
     description:
@@ -250,7 +250,7 @@ const originJobsData = [
     id: "baidu_J58559",
     company: "百度",
     name: "质量效能研发组_java开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -263,7 +263,7 @@ const originJobsData = [
     id: "baidu_J55501",
     company: "百度",
     name: "深圳-计算机视觉算法研发工程师",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "技术",
     description:
@@ -276,7 +276,7 @@ const originJobsData = [
     id: "baidu_J55500",
     company: "百度",
     name: "北京-计算机视觉算法研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -289,7 +289,7 @@ const originJobsData = [
     id: "baidu_J55499",
     company: "百度",
     name: "深圳-机器学习/数据挖掘/自然语言处理工程师",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "技术",
     description:
@@ -302,7 +302,7 @@ const originJobsData = [
     id: "baidu_J55503",
     company: "百度",
     name: "北京-语音技术工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -315,7 +315,7 @@ const originJobsData = [
     id: "baidu_J55509",
     company: "百度",
     name: "深圳-高性能计算研发工程师",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "技术",
     description:
@@ -328,7 +328,7 @@ const originJobsData = [
     id: "baidu_J58613",
     company: "百度",
     name: "商业质量效能组_测试开发实习生（商业）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -341,7 +341,7 @@ const originJobsData = [
     id: "baidu_J58638",
     company: "百度",
     name: "度目及人脸人体产品组_端侧SDK产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -354,7 +354,7 @@ const originJobsData = [
     id: "baidu_J58568",
     company: "百度",
     name: "度家产品组_NLP产品经理实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "产品",
     description:
@@ -367,20 +367,20 @@ const originJobsData = [
     id: "baidu_J58574",
     company: "百度",
     name: "智能客服及服务型数字人产品组_AI产品运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       "-对话模型搭建，了解行业模型特点，收集数据并搭建行业会话模型\n-收集、评测友商对话机器人流程，分析并产出报告\n-制定引流计划，通过线上线下活动等手段提升产品用户新增规模，通过运营漏斗分析用户转化率，基于数据驱动发现问题并进行产品、营销、渠道模式优化，提升运营效能、推动增长\n-建设更新全产品系列售前材料，赋能销售体系",
     requirement:
-      "-具备良好的商业思维、创新思维、有市场前瞻性，对技术变革敏感\n-有出色的沟通能力，团队合作精神，并能整合多方力量达成业务目标\n-对数据敏感，有一定的数据分析能力，能从数据背后发掘商机，驱动业务增长\n-喜欢挑战性的工作，工作激情饱满，能承受工作压力",
+      "-具备良好的商业思维、创新思维、有场前瞻性，对技术变革敏感\n-有出色的沟通能力，团队合作精神，并能整合多方力量达成业务目标\n-对数据敏感，有一定的数据分析能力，能从数据背后发掘商机，驱动业务增长\n-喜欢挑战性的工作，工作激情饱满，能承受工作压力",
     url: "https://talent.baidu.com/jobs/detail/INTERN/9a814e60-c541-4d28-a23a-ccbac0f8756e",
   },
   {
     id: "baidu_J58536",
     company: "百度",
     name: "内容风险管理部_舆情运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -393,11 +393,11 @@ const originJobsData = [
     id: "baidu_J57357",
     company: "百度",
     name: "北京-资金分析专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
-      "1、定期进行现金流分析和预测，编制资金管理报告\n2、了解业务，支持供应链相关产品分析\n3、支持理财产品分析，协助制定理财计划，产品配置\n4、支持融资和授信项目的推进，协助贷后管理\n5、研究宏观经济、监管政策、资本市场动态，以及支持资金内部分析工作，为资金管理决策提供支持",
+      "1、定期进行现金流分析和预测，编制资金管理报告\n2、了解业务，支持供应链相关产品分析\n3、支持理财产品分析，协助制定理财计划，产品配置\n4、支持融资和授信项目的推进，协助贷后管理\n5、研究宏观经济、监管政策、资本场动态，以及支持资金内部分析工作，为资金管理决策提供支持",
     requirement:
       "1、金融相关专业，专业基础扎实，CFA/CPA优先\n2、良好的英语听说及书写能力\n3、良好的沟通和协调解决问题的能力\n4、学习能力强、责任心强，工作细致、严谨",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/04c20374-c857-4f28-9785-dbfed175266d",
@@ -406,7 +406,7 @@ const originJobsData = [
     id: "baidu_J57352",
     company: "百度",
     name: "北京-应付会计",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -419,7 +419,7 @@ const originJobsData = [
     id: "baidu_J55553",
     company: "百度",
     name: "北京-采购系统运营专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -432,7 +432,7 @@ const originJobsData = [
     id: "baidu_J55552",
     company: "百度",
     name: "北京-信控分析专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -445,7 +445,7 @@ const originJobsData = [
     id: "baidu_J55818",
     company: "百度",
     name: "北京-资金出纳专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -458,11 +458,11 @@ const originJobsData = [
     id: "baidu_J55550",
     company: "百度",
     name: "北京-商业分析师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
-      "-开展移动互联网各个细分领域的行业研究,包括整体市场环境、细分领域发展、竞争对手分析、新商业模式探索、新技术研究等 -支持顶层规划设计,包括整体战略目标设定、组织设计和定位、场景决策、用户体验设计、基础设施建设等 -拆解目标并设计管控机制,对目标进行跟踪、管理、监督,确保战略落地和目标达成 -对细分业务的经营情况进行数据分析,及时发现业务问题并提出相应的解决方案和路径",
+      "-开展移动互联网各个细分领域的行业研究,包括整体场环境、细分领域发展、竞争对手分析、新商业模式探索、新技术研究等 -支持顶层规划设计,包括整体战略目标设定、组织设计和定位、场景决策、用户体验设计、基础设施建设等 -拆解目标并设计管控机制,对目标进行跟踪、管理、监督,确保战略落地和目标达成 -对细分业务的经营情况进行数据分析,及时发现业务问题并提出相应的解决方案和路径",
     requirement:
       "-本科及以上学历,经管类专业优先 -具备互联网商业分析、战略分析、咨询公司经历优先 -具备结构化思考能力、思辨能力优先 - 具备优秀的自我驱动意识，有韧性",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/6f42329e-455e-4915-b423-89b0a4c707cd",
@@ -471,20 +471,20 @@ const originJobsData = [
     id: "baidu_J55532",
     company: "百度",
     name: "北京-产品经理",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
       "-关注并分析互联网用户行为，能从用户行为中发现所负责产品的潜在用户需求\r\n-针对用户需求进行研究，并设计出相应的产品功能\r\n-与各其他团队密切配合一起工作，推动产品功能实现并取得预期的效果\r\n-对产品进行数据分析，验证产品的健康状况并及时发现产品的潜在问题\r\n-跟进用户反馈并与用户交流，深入了解用户的心声",
     requirement:
-      "-专业不限，有计算机相关专业背景者优先\r\n-热爱互联网，对互联网市场的敏感度高\r\n-对用户需求有正确的理解和判断\r\n-注重细节，具备针对用户需求设计出优秀产品的潜质\r\n-拥有良好的沟通和协作能力，思维活跃，领悟力强，乐于接受新鲜事物",
+      "-专业不限，有计算机相关专业背景者优先\r\n-热爱互联网，对互联网场的敏感度高\r\n-对用户需求有正确的理解和判断\r\n-注重细节，具备针对用户需求设计出优秀产品的潜质\r\n-拥有良好的沟通和协作能力，思维活跃，领悟力强，乐于接受新鲜事物",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/f08c6966-f56f-45a0-9463-8a99cd0d9e6d",
   },
   {
     id: "baidu_J55508",
     company: "百度",
     name: "上海-用户增长数据科学工程师",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "技术",
     description:
@@ -497,7 +497,7 @@ const originJobsData = [
     id: "baidu_J55507",
     company: "百度",
     name: "深圳-生物计算工程师",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "技术",
     description:
@@ -510,7 +510,7 @@ const originJobsData = [
     id: "baidu_J55506",
     company: "百度",
     name: "北京-高性能计算研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -523,7 +523,7 @@ const originJobsData = [
     id: "baidu_J55505",
     company: "百度",
     name: "上海-分布式计算研发工程师",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "技术",
     description:
@@ -536,7 +536,7 @@ const originJobsData = [
     id: "baidu_J55504",
     company: "百度",
     name: "北京-分布式计算研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -549,7 +549,7 @@ const originJobsData = [
     id: "baidu_J58498",
     company: "百度",
     name: "工业与金融业务运营组_经营和财务分析实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -562,7 +562,7 @@ const originJobsData = [
     id: "baidu_J58291",
     company: "百度",
     name: "用户质量效能组_服务端开发测试工程师(推荐业务)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -575,7 +575,7 @@ const originJobsData = [
     id: "baidu_J58379",
     company: "百度",
     name: "平台及应用产品组_能源产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -586,9 +586,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58342",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "演艺数字人及机器人产品组_数字人产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -601,7 +601,7 @@ const originJobsData = [
     id: "baidu_J55531",
     company: "百度",
     name: "北京-开发测试工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -614,7 +614,7 @@ const originJobsData = [
     id: "baidu_J55519",
     company: "百度",
     name: "北京-Web前端研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -627,11 +627,11 @@ const originJobsData = [
     id: "baidu_J55517",
     company: "百度",
     name: "北京-移动软件研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
-      "-开发移动互联网应用产品或框架\r\n-移动应用核心技术研发\r\n-学习和研究移动客户端新技术\r\n-根据开发过程中的体验对产品提出改进建议\r\n-配合市场等其他部门,提供产品相关技术支持",
+      "-开发移动互联网应用产品或框架\r\n-移动应用核心技术研发\r\n-学习和研究移动客户端新技术\r\n-根据开发过程中的体验对产品提出改进建议\r\n-配合场等其他部门,提供产品相关技术支持",
     requirement:
       "-计算机软件、通讯相关专业\r\n-热爱移动互联网，对移动软件开发有浓厚的兴趣\r\n-优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情\r\n-熟悉一门常用编程语言(C/C++/Java/Objective C) \r\n-对数据结构和算法设计有较为深刻的理解\r\n-学习能力强，具有良好的沟通能力和良好的团队合作精神\r\n具有以下条件者优先：\r\n-熟悉手机研发平台(Android/iPhone/Windows Phone 7等)者优先 \r\n-熟悉HTML/WML/CSS等相关规范\r\n-熟悉Javascript与DOM规范\r\n-熟悉webkit或其他任意一种浏览器内核\r\n-熟悉HTML5编程技术\r\n-熟悉Linux操作系统\r\n-熟悉数据库原理和技术，熟练使用SQL\r\n-熟悉TCP/IP，HTTP，HTTPS等网络协议优先",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/127b3e69-7f95-4289-8c71-0ebd407fec54",
@@ -640,7 +640,7 @@ const originJobsData = [
     id: "baidu_J55514",
     company: "百度",
     name: "上海-C++/PHP/GO研发工程师",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "技术",
     description:
@@ -653,7 +653,7 @@ const originJobsData = [
     id: "baidu_J55512",
     company: "百度",
     name: "上海-Java研发工程师",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "技术",
     description:
@@ -666,7 +666,7 @@ const originJobsData = [
     id: "baidu_J55510",
     company: "百度",
     name: "北京-数据分析研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -679,7 +679,7 @@ const originJobsData = [
     id: "baidu_J55520",
     company: "百度",
     name: "上海-Web前端研发工程师",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "技术",
     description:
@@ -692,11 +692,11 @@ const originJobsData = [
     id: "baidu_J55518",
     company: "百度",
     name: "大连-移动软件研发工程师",
-    location: "大连市",
+    location: "大连",
     type: "校招",
     category: "技术",
     description:
-      "-开发移动互联网应用产品或框架\r\n-移动应用核心技术研发\r\n-学习和研究移动客户端新技术\r\n-根据开发过程中的体验对产品提出改进建议\r\n-配合市场等其他部门,提供产品相关技术支持",
+      "-开发移动互联网应用产品或框架\r\n-移动应用核心技术研发\r\n-学习和研究移动客户端新技术\r\n-根据开发过程中的体验对产品提出改进建议\r\n-配合场等其他部门,提供产品相关技术支持",
     requirement:
       "-计算机软件、通讯相关专业\r\n-热爱移动互联网，对移动软件开发有浓厚的兴趣\r\n-优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情\r\n-熟悉一门常用编程语言(C/C++/Java/Objective C) \r\n-对数据结构和算法设计有较为深刻的理解\r\n-学习能力强，具有良好的沟通能力和良好的团队合作精神\r\n具有以下条件者优先：\r\n-熟悉手机研发平台(Android/iPhone/Windows Phone 7等)者优先 \r\n-熟悉HTML/WML/CSS等相关规范\r\n-熟悉Javascript与DOM规范\r\n-熟悉webkit或其他任意一种浏览器内核\r\n-熟悉HTML5编程技术\r\n-熟悉Linux操作系统\r\n-熟悉数据库原理和技术，熟练使用SQL\r\n-熟悉TCP/IP，HTTP，HTTPS等网络协议优先",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/2d6b2eb6-cea6-4f03-8908-36eb37694f1a",
@@ -705,7 +705,7 @@ const originJobsData = [
     id: "baidu_J55516",
     company: "百度",
     name: "大连-C++/PHP/GO研发工程师",
-    location: "大连市",
+    location: "大连",
     type: "校招",
     category: "技术",
     description:
@@ -718,7 +718,7 @@ const originJobsData = [
     id: "baidu_J55515",
     company: "百度",
     name: "深圳-C++/PHP/GO研发工程师",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "技术",
     description:
@@ -731,7 +731,7 @@ const originJobsData = [
     id: "baidu_J55526",
     company: "百度",
     name: "北京-底层软硬件研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -744,7 +744,7 @@ const originJobsData = [
     id: "baidu_J55525",
     company: "百度",
     name: "北京-数据库云平台研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -757,7 +757,7 @@ const originJobsData = [
     id: "baidu_J55524",
     company: "百度",
     name: "北京-数据库内核研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -770,7 +770,7 @@ const originJobsData = [
     id: "baidu_J58139",
     company: "百度",
     name: "用户质量效能组_测试开发实习生(内容技术方向)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -783,7 +783,7 @@ const originJobsData = [
     id: "baidu_J58244",
     company: "百度",
     name: "商业质量效能组_测试开发实习生（TO B业务）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -796,7 +796,7 @@ const originJobsData = [
     id: "baidu_J55821",
     company: "百度",
     name: "电商经营规划部_招聘实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -809,7 +809,7 @@ const originJobsData = [
     id: "baidu_J58173",
     company: "百度",
     name: "元宇宙质量效能组_元宇宙质量效能组 测试开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -822,7 +822,7 @@ const originJobsData = [
     id: "baidu_J52666",
     company: "百度",
     name: "用户质量效能部_测试开发实习生-搜索策略",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -835,20 +835,20 @@ const originJobsData = [
     id: "baidu_J55544",
     company: "百度",
     name: "北京-整合营销策略专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
       "-与行业大客户沟通,挖掘客户需求,利用各类相关产品资源优化组合,为大客户提供搜索引擎营销解决方案\r\n-分析解读营销数据,策划制定百度全商业产品推广方案与策略,不断优化其推广效果,促进大客户营销工作\r\n-利用百度业务系统及相关工具有效管理大客户搜索推广账户\r\n-具备数据挖掘、分析和模型搭建的能力",
     requirement:
-      "-本科以上学历，广告学、市场营销、统计学、工商管理类相关专业优先\r\n-有相关媒体or广告公司实习经验优先\r\n-出色的沟通表达能力、数据分析能力、逻辑思维能力及文案写作能力\r\n-对互联网用户行为有一定的理解，熟悉搜索引擎产品及运营模式\r\n-熟练使用Word、Excel、PPT等办公软件\r\n-英文书写和口语表达能力良好\r\n-认真细致、敬业负责，有很强的进取心与合作意识，喜欢创新和挑战",
+      "-本科以上学历，广告学、场营销、统计学、工商管理类相关专业优先\r\n-有相关媒体or广告公司实习经验优先\r\n-出色的沟通表达能力、数据分析能力、逻辑思维能力及文案写作能力\r\n-对互联网用户行为有一定的理解，熟悉搜索引擎产品及运营模式\r\n-熟练使用Word、Excel、PPT等办公软件\r\n-英文书写和口语表达能力良好\r\n-认真细致、敬业负责，有很强的进取心与合作意识，喜欢创新和挑战",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/355499f1-4d95-49e5-b6b7-3f39b270517d",
   },
   {
     id: "baidu_J55549",
     company: "百度",
     name: "北京-法务专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -861,7 +861,7 @@ const originJobsData = [
     id: "baidu_J55548",
     company: "百度",
     name: "北京-人力资源专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -874,7 +874,7 @@ const originJobsData = [
     id: "baidu_J55547",
     company: "百度",
     name: "北京-策略运营专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -887,20 +887,20 @@ const originJobsData = [
     id: "baidu_J55554",
     company: "百度",
     name: "深圳-整合营销策略专员",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "专业服务和管理支持",
     description:
       "-与大客户沟通,挖掘客户需求,利用各类相关产品资源优化组合,为大客户提供搜索引擎营销解决方案\r\n-分析解读营销数据,策划制定百度全商业产品推广方案与策略,不断优化其推广效果,促进大客户营销工作\r\n-利用百度业务系统及相关工具有效管理大客户搜索推广账户\r\n-具备数据挖掘、分析和模型搭建的能力",
     requirement:
-      "-本科以上学历，广告学、市场营销、统计学、工商管理类相关专业优先\r\n-有相关媒体or广告公司实习经验优先\r\n-出色的沟通表达能力、数据分析能力、逻辑思维能力及文案写作能力\r\n-对互联网用户行为有一定的理解，熟悉搜索引擎产品及运营模式\r\n-熟练使用Word、Excel、PPT等办公软件\r\n-英文书写和口语表达能力良好\r\n-认真细致、敬业负责，有很强的进取心与合作意识，喜欢创新和挑战",
+      "-本科以上学历，广告学、场营销、统计学、工商管理类相关专业优先\r\n-有相关媒体or广告公司实习经验优先\r\n-出色的沟通表达能力、数据分析能力、逻辑思维能力及文案写作能力\r\n-对互联网用户行为有一定的理解，熟悉搜索引擎产品及运营模式\r\n-熟练使用Word、Excel、PPT等办公软件\r\n-英文书写和口语表达能力良好\r\n-认真细致、敬业负责，有很强的进取心与合作意识，喜欢创新和挑战",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/881bd095-ff59-47ab-ab45-758dc0b93c75",
   },
   {
     id: "baidu_J55551",
     company: "百度",
     name: "北京-经营分析",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -913,7 +913,7 @@ const originJobsData = [
     id: "baidu_J55556",
     company: "百度",
     name: "北京-销售运营管理",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -926,7 +926,7 @@ const originJobsData = [
     id: "baidu_J55534",
     company: "百度",
     name: "北京-商业产品经理",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
@@ -939,11 +939,11 @@ const originJobsData = [
     id: "baidu_J55533",
     company: "百度",
     name: "北京-数据分析师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
-      "-根据业务需求，充分利用现有数据资源，进行数据提取、整理和挖掘\r\n-建立和沉淀合适的数据分析模型，进行业务诊断和分析、收入监控，构建指标体系定期输出分析报告，给出业务问题诊断和提升策略\r\n-包括产品运营指标分析、市场分析、竞品分析等，为变现策略、产品方向和运作支持提供建议\r\n-与产品、技术及其他运营团队紧密配合，快速、高效推动项目进展",
+      "-根据业务需求，充分利用现有数据资源，进行数据提取、整理和挖掘\r\n-建立和沉淀合适的数据分析模型，进行业务诊断和分析、收入监控，构建指标体系定期输出分析报告，给出业务问题诊断和提升策略\r\n-包括产品运营指标分析、场分析、竞品分析等，为变现策略、产品方向和运作支持提供建议\r\n-与产品、技术及其他运营团队紧密配合，快速、高效推动项目进展",
     requirement:
       "-有过数据分析/挖掘项目经验，学习能力强；有的互联网行业实习经验优先\r\n-具备优秀的开拓能力和沟通技巧，善于协调沟通、组织资源推动任务进展 \r\n-有较强的数学、统计和计算机知识，熟悉相关、回归、聚类分析等统计方法\r\n-精通SQL等数据查询语言，至少熟练使用一门统计工具，如spss，R，sas等，精通excel\r\n-善用PPT搭建分析框架，并形成报告\r\n-善与人交流、沟通，事业心强，具有跨团队协作精神，能承受工作压力",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/729fb436-2ac6-4ee5-b46c-14de5e8c9908",
@@ -952,7 +952,7 @@ const originJobsData = [
     id: "baidu_J55543",
     company: "百度",
     name: "成都-3D设计师",
-    location: "成都市",
+    location: "成都",
     type: "校招",
     category: "产品",
     description:
@@ -965,7 +965,7 @@ const originJobsData = [
     id: "baidu_J55542",
     company: "百度",
     name: "北京-视觉设计师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
@@ -978,7 +978,7 @@ const originJobsData = [
     id: "baidu_J55541",
     company: "百度",
     name: "深圳-交互设计师",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "产品",
     description:
@@ -991,7 +991,7 @@ const originJobsData = [
     id: "baidu_J55540",
     company: "百度",
     name: "北京-交互设计师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
@@ -1004,20 +1004,20 @@ const originJobsData = [
     id: "baidu_J55539",
     company: "百度",
     name: "深圳-政企客户运营",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "产品",
     description:
-      "-客户策略：结合业务发展需要开展市场调研分析，摸排梳理客户地图，优化迭代客户及伙伴策略，跨部门协同完成收入目标\r\n-客户活动：策划企业级活动运营，包括但不限于基于业务策略的方案设计、议程设置、执行落地等，引入或转化精准目标客户 \r\n-客户成功：识别并锁定重要客户，主动策划全面的服务支持促成标杆性企业合作；持续服务推进客户从应用转化到商业采购\r\n-品牌塑造：策划输出飞桨面向企业的资源展示、案例包装和概念传递，推动市场团队协同建设产品B端品牌形象",
+      "-客户策略：结合业务发展需要开展场调研分析，摸排梳理客户地图，优化迭代客户及伙伴策略，跨部门协同完成收入目标\r\n-客户活动：策划企业级活动运营，包括但不限于基于业务策略的方案设计、议程设置、执行落地等，引入或转化精准目标客户 \r\n-客户成功：识别并锁定重要客户，主动策划全面的服务支持促成标杆性企业合作；持续服务推进客户从应用转化到商业采购\r\n-品牌塑造：策划输出飞桨面向企业的资源展示、案例包装和概念传递，推动场团队协同建设产品B端品牌形象",
     requirement:
-      "-计算机/信息科学/经济学/数理统计相关专业硕士应届毕业生优先\r\n-企业IT、云计算、AI等厂商实习经验，有过硬市场活动基本功优先\r\n-极强的学习力、思考力和逻辑性，能快速理解业务并体现在工作成果中，能够一定程度完成自我工作规划\r\n-认同客户成功理念，善于并乐于与客户交流沟通，并敏锐发现卡点问题\r\n-案头工作细致准确，责任心强，执行力强，工作推进能力强",
+      "-计算机/信息科学/经济学/数理统计相关专业硕士应届毕业生优先\r\n-企业IT、云计算、AI等厂商实习经验，有过硬场活动基本功优先\r\n-极强的学习力、思考力和逻辑性，能快速理解业务并体现在工作成果中，能够一定程度完成自我工作规划\r\n-认同客户成功理念，善于并乐于与客户交流沟通，并敏锐发现卡点问题\r\n-案头工作细致准确，责任心强，执行力强，工作推进能力强",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/4748ed2f-d2f2-4bb5-958f-d4a92e2b7177",
   },
   {
     id: "baidu_J54927",
     company: "百度",
     name: "服务体验发展中心_前端开发实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "技术",
     description:
@@ -1030,7 +1030,7 @@ const originJobsData = [
     id: "baidu_J52599",
     company: "百度",
     name: "语音技术部_AI产品经理实习生",
-    location: "重庆市",
+    location: "重庆",
     type: "日常",
     category: "产品",
     description:
@@ -1043,7 +1043,7 @@ const originJobsData = [
     id: "baidu_J52563",
     company: "百度",
     name: "移动生态战略规划部_数据挖掘实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1056,7 +1056,7 @@ const originJobsData = [
     id: "baidu_J47339",
     company: "百度",
     name: "公共事务部_政府事务实习生(汽车相关)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -1069,11 +1069,11 @@ const originJobsData = [
     id: "baidu_J47082",
     company: "百度",
     name: "业务监察部_业务监察实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
-      "一、业务监察部-实习生1\n-了解商业产品模式，负责主动排查发现公司内商业产品的高危风险及漏洞\n-配合或主动通过数据分析，识别客户、行业、运营单位的风险\n-敏锐感知业务风险变化，协同推进部门项目或商业一道防线的管控手段、政策优化等\n-协同完成部门交办事宜\n\n二、业务监察部-实习生2\n-了解百度医疗健康以及市场上互联网医疗相关产品模式，负责主动排查发现公司内医疗健康产品的高危风险及漏洞\n-配合或主动通过数据分析，识别客户、行业、运营单位的风险\n-敏锐感知业务风险变化，协同推进部门项目或业务部门的管控手段、政策优化等\n-调研并了解医疗行业市场发展以及相关政策方向",
+      "一、业务监察部-实习生1\n-了解商业产品模式，负责主动排查发现公司内商业产品的高危风险及漏洞\n-配合或主动通过数据分析，识别客户、行业、运营单位的风险\n-敏锐感知业务风险变化，协同推进部门项目或商业一道防线的管控手段、政策优化等\n-协同完成部门交办事宜\n\n二、业务监察部-实习生2\n-了解百度医疗健康以及场上互联网医疗相关产品模式，负责主动排查发现公司内医疗健康产品的高危风险及漏洞\n-配合或主动通过数据分析，识别客户、行业、运营单位的风险\n-敏锐感知业务风险变化，协同推进部门项目或业务部门的管控手段、政策优化等\n-调研并了解医疗行业场发展以及相关政策方向",
     requirement:
       "一、业务监察-实习生1\n-全日制本科及以上学历优先\n-每周到岗5天，有转正意向者优先\n-熟练运用word、excel、ppt、xmind等工具\n-具备良好的沟通表达能力、逻辑思维、计划及执行能力，具有一定的商业敏感性\n-工作积极主动，能承受一定的工作压力，敢于接受挑战\n\n二、业务监察-实习生2\n-临床医学或药学相关专业本科及以上学历\n-每周到岗5天，有转正意向者优先\n-熟练运用word、excel、ppt、xmind等工具\n-熟悉国内外相关专业领域现况及研究进展，具有专业敏感度，能够对专业内容进行很好的把控\n-对互联网医疗行业较为了解\n-有较好的语言文字功底和逻辑思维，具有较好的沟通和协调能力",
     url: "https://talent.baidu.com/jobs/detail/INTERN/5846ccba-ccc3-473b-89f7-a4d7ed75bae7",
@@ -1082,7 +1082,7 @@ const originJobsData = [
     id: "baidu_J55513",
     company: "百度",
     name: "北京-C++/PHP/GO研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1095,7 +1095,7 @@ const originJobsData = [
     id: "baidu_J55511",
     company: "百度",
     name: "北京-Java研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1108,7 +1108,7 @@ const originJobsData = [
     id: "baidu_J55497",
     company: "百度",
     name: "北京-机器学习/数据挖掘/自然语言处理工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1121,7 +1121,7 @@ const originJobsData = [
     id: "baidu_J58213",
     company: "百度",
     name: "上海-人力资源专员",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -1134,7 +1134,7 @@ const originJobsData = [
     id: "baidu_J55777",
     company: "百度",
     name: "春季补招-深圳-生物计算工程师-自然语言处理部b-非联合",
-    location: "深圳市",
+    location: "深圳",
     type: "校招",
     category: "技术",
     description:
@@ -1147,7 +1147,7 @@ const originJobsData = [
     id: "baidu_J57957",
     company: "百度",
     name: "垂类质量效能组_测试开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1160,7 +1160,7 @@ const originJobsData = [
     id: "baidu_J57937",
     company: "百度",
     name: "垂类质量效能组_测试开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1171,9 +1171,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J57874",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "商业质量效能组_测试开发实习生（电商方向）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1186,7 +1186,7 @@ const originJobsData = [
     id: "baidu_J57492",
     company: "百度",
     name: "演艺数字人及机器人产品组_数字人产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1199,7 +1199,7 @@ const originJobsData = [
     id: "baidu_J53146",
     company: "百度",
     name: "自然语言处理部_数据标注分析实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1212,7 +1212,7 @@ const originJobsData = [
     id: "baidu_J55225",
     company: "百度",
     name: "用户质量效能组_前端开发工程师",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1225,11 +1225,11 @@ const originJobsData = [
     id: "baidu_J55555",
     company: "百度",
     name: "上海-文案策略专员",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "专业服务和管理支持",
     description:
-      "‘-根据客户的投放需求，负责移动端及PC端落地页框架（原型）搭建，针对客户及行业痛点给予优质页面解决方案\r\n-负责搜索推广及信息流广告文案条目撰写，在保持高水准行文能力同时，把控好与视觉设计之间的场景协调，并结合市场需求人群洞察及吸睛热点进行爆款输出\r\n-把控广告风险政策，了解新广告法下各行业审核状况，通过前期风险规避及后期排查等手段推动设计层面审核风险规避\r\n-针对行业创意迭代需要，定期收集行业高质量创意分析，产出创意报告协助提升投放效果",
+      "‘-根据客户的投放需求，负责移动端及PC端落地页框架（原型）搭建，针对客户及行业痛点给予优质页面解决方案\r\n-负责搜索推广及信息流广告文案条目撰写，在保持高水准行文能力同时，把控好与视觉设计之间的场景协调，并结合场需求人群洞察及吸睛热点进行爆款输出\r\n-把控广告风险政策，了解新广告法下各行业审核状况，通过前期风险规避及后期排查等手段推动设计层面审核风险规避\r\n-针对行业创意迭代需要，定期收集行业高质量创意分析，产出创意报告协助提升投放效果",
     requirement:
       "’-本科及以上学历；\r\n-2年及以上文案策划经验，具备社会化媒体、广告公司、网络营销、品牌管理从业经验优先；\r\n-理解互联网广告业务及行业客户特性需求，具备良好的理解沟通、用户分析、策划及编辑能力，熟知媒体各类营销方法，文字功底较好，具备相关成功创意作品、能够熟练使Axure/figma等原型软件，具备良好的业务理解、客户洞察、沟通协调学习创新及抗压能力。",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/c5666968-1ddf-44a9-acb5-6f407e4927ff",
@@ -1237,25 +1237,25 @@ const originJobsData = [
   {
     id: "baidu_J55560",
     company: "百度",
-    name: "北京-市场营销专员",
-    location: "北京市",
+    name: "北京-场营销专员",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
       "\r\n-围绕百度集团及相关业务品牌进行IP内容运营及活动策划\r\n-定期收集相关行业的政策、舆情，定期分享并输出有效信息建议\r\n-协调沟通内外部资源，配合项目执行落地\r\n",
     requirement:
-      "\r\n-本科及以上学历，广告学，市场营销学相关专业\r\n-积极主动,具备极强的沟通与判断能力,能够承担较大的工作压力 \r\n-具有良好的职业道德和职业操守及良好的团队合作意识",
+      "\r\n-本科及以上学历，广告学，场营销学相关专业\r\n-积极主动,具备极强的沟通与判断能力,能够承担较大的工作压力 \r\n-具有良好的职业道德和职业操守及良好的团队合作意识",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/46b51dd9-49df-46f3-9c4e-c419847b1470",
   },
   {
     id: "baidu_J55559",
     company: "百度",
     name: "北京-AI技术战略分析师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
-      "-支持AIGC+垂直行业/场景、开源商业化等专题研究，形成独立观点，完成调研报告\r\n-跟踪政策/市场/友商重要动态，调研海内外前沿AI产品，输出对业务有建设性的策略建议\r\n-协助挖掘潜在的战略投资标的，进行赛道扫描、数据分析、纪要撰写等工作\r\n",
+      "-支持AIGC+垂直行业/场景、开源商业化等专题研究，形成独立观点，完成调研报告\r\n-跟踪政策/场/友商重要动态，调研海内外前沿AI产品，输出对业务有建设性的策略建议\r\n-协助挖掘潜在的战略投资标的，进行赛道扫描、数据分析、纪要撰写等工作\r\n",
     requirement:
       "-本科及以上学历，具有互联网产品、咨询、行研实习经历的优先考虑\r\n-学习能力强，具有较强的信息搜集、归纳分析、文档撰写能力\r\n-踏实靠谱，具备出色的横向沟通与协调能力，有强自驱力与责任心\r\n-优先考虑了解人工智能技术、关注AIGC领域的同学\r\n",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/1d72a32a-4276-4ac5-bf37-4026a9afdbf2",
@@ -1264,20 +1264,20 @@ const originJobsData = [
     id: "baidu_J55538",
     company: "百度",
     name: "北京-政企客户运营",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
-      "-客户策略：结合业务发展需要开展市场调研分析，摸排梳理客户地图，优化迭代客户及伙伴策略，跨部门协同完成收入目标\r\n-客户活动：策划企业级活动运营，包括但不限于基于业务策略的方案设计、议程设置、执行落地等，引入或转化精准目标客户 \r\n-客户成功：识别并锁定重要客户，主动策划全面的服务支持促成标杆性企业合作；持续服务推进客户从应用转化到商业采购\r\n-品牌塑造：策划输出飞桨面向企业的资源展示、案例包装和概念传递，推动市场团队协同建设产品B端品牌形象",
+      "-客户策略：结合业务发展需要开展场调研分析，摸排梳理客户地图，优化迭代客户及伙伴策略，跨部门协同完成收入目标\r\n-客户活动：策划企业级活动运营，包括但不限于基于业务策略的方案设计、议程设置、执行落地等，引入或转化精准目标客户 \r\n-客户成功：识别并锁定重要客户，主动策划全面的服务支持促成标杆性企业合作；持续服务推进客户从应用转化到商业采购\r\n-品牌塑造：策划输出飞桨面向企业的资源展示、案例包装和概念传递，推动场团队协同建设产品B端品牌形象",
     requirement:
-      "-计算机/信息科学/经济学/数理统计相关专业硕士应届毕业生优先\r\n-企业IT、云计算、AI等厂商实习经验，有过硬市场活动基本功优先\r\n-极强的学习力、思考力和逻辑性，能快速理解业务并体现在工作成果中，能够一定程度完成自我工作规划\r\n-认同客户成功理念，善于并乐于与客户交流沟通，并敏锐发现卡点问题\r\n-案头工作细致准确，责任心强，执行力强，工作推进能力强",
+      "-计算机/信息科学/经济学/数理统计相关专业硕士应届毕业生优先\r\n-企业IT、云计算、AI等厂商实习经验，有过硬场活动基本功优先\r\n-极强的学习力、思考力和逻辑性，能快速理解业务并体现在工作成果中，能够一定程度完成自我工作规划\r\n-认同客户成功理念，善于并乐于与客户交流沟通，并敏锐发现卡点问题\r\n-案头工作细致准确，责任心强，执行力强，工作推进能力强",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/7af0773d-d264-44f1-b334-61d5595a96fa",
   },
   {
     id: "baidu_J55546",
     company: "百度",
     name: "北京-文创设计师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -1290,20 +1290,20 @@ const originJobsData = [
     id: "baidu_J55545",
     company: "百度",
     name: "上海-整合营销策略专员",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "专业服务和管理支持",
     description:
       "-与大客户沟通,挖掘客户需求,利用各类相关产品资源优化组合,为大客户提供搜索引擎营销解决方案\r\n-分析解读营销数据,策划制定百度全商业产品推广方案与策略,不断优化其推广效果,促进大客户营销工作\r\n-利用百度业务系统及相关工具有效管理大客户搜索推广账户\r\n-具备数据挖掘、分析和模型搭建的能力",
     requirement:
-      "-本科以上学历，广告学、市场营销、统计学、工商管理类相关专业优先\r\n-有相关媒体or广告公司实习经验优先\r\n-出色的沟通表达能力、数据分析能力、逻辑思维能力及文案写作能力\r\n-对互联网用户行为有一定的理解，熟悉搜索引擎产品及运营模式\r\n-熟练使用Word、Excel、PPT等办公软件\r\n-英文书写和口语表达能力良好\r\n-认真细致、敬业负责，有很强的进取心与合作意识，喜欢创新和挑战",
+      "-本科以上学历，广告学、场营销、统计学、工商管理类相关专业优先\r\n-有相关媒体or广告公司实习经验优先\r\n-出色的沟通表达能力、数据分析能力、逻辑思维能力及文案写作能力\r\n-对互联网用户行为有一定的理解，熟悉搜索引擎产品及运营模式\r\n-熟练使用Word、Excel、PPT等办公软件\r\n-英文书写和口语表达能力良好\r\n-认真细致、敬业负责，有很强的进取心与合作意识，喜欢创新和挑战",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/94c84e66-a38a-4d3e-b6be-60e50e162a63",
   },
   {
     id: "baidu_J55523",
     company: "百度",
     name: "北京-云计算虚拟化研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1316,7 +1316,7 @@ const originJobsData = [
     id: "baidu_J55522",
     company: "百度",
     name: "北京-安全工程师",
-    location: "重庆市",
+    location: "重庆",
     type: "校招",
     category: "技术",
     description:
@@ -1329,7 +1329,7 @@ const originJobsData = [
     id: "baidu_J55521",
     company: "百度",
     name: "北京-大数据研发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1342,7 +1342,7 @@ const originJobsData = [
     id: "baidu_J55530",
     company: "百度",
     name: "北京-网络系统工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1355,7 +1355,7 @@ const originJobsData = [
     id: "baidu_J58770",
     company: "百度",
     name: "信息分发运营管理部_品牌运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -1368,7 +1368,7 @@ const originJobsData = [
     id: "baidu_J58788",
     company: "百度",
     name: "汽车用户增长组_有驾产品运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1381,7 +1381,7 @@ const originJobsData = [
     id: "baidu_J55112",
     company: "百度",
     name: "知道产品部_内容运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1394,7 +1394,7 @@ const originJobsData = [
     id: "baidu_J58892",
     company: "百度",
     name: "移动客户端部_算法研究实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "技术",
     description:
@@ -1407,7 +1407,7 @@ const originJobsData = [
     id: "baidu_J58893",
     company: "百度",
     name: "移动客户端部_后端研发实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "技术",
     description:
@@ -1420,7 +1420,7 @@ const originJobsData = [
     id: "baidu_J58050",
     company: "百度",
     name: "百家号内容运营部_大健康服务端工程师",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1433,7 +1433,7 @@ const originJobsData = [
     id: "baidu_J58800",
     company: "百度",
     name: "视频推荐产品组_数据分析实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1446,7 +1446,7 @@ const originJobsData = [
     id: "baidu_J58796",
     company: "百度",
     name: "视频推荐产品组_功能产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1459,7 +1459,7 @@ const originJobsData = [
     id: "baidu_J58782",
     company: "百度",
     name: "黄油业务组_工具产品内容运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1472,7 +1472,7 @@ const originJobsData = [
     id: "baidu_J58992",
     company: "百度",
     name: "收入运营组_问一问法律垂类用户运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1483,22 +1483,22 @@ const originJobsData = [
   },
   {
     id: "baidu_J58621",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "知识图谱部_C端产品运营",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
-      "-负责百度AI绘画产品文心一格的运营工作，制定关键产品的整体运营策略和计划，通过用户运营、活动运营、内容运营及渠道推广、产品优化等运营工作，促进产品核心数据及用户口碑提升\n-通过用户画像分析，梳理用户转化路径，建立用户转化模型\n-驱动跨部门合作，包括产品、运营和开发等，推动增长项目落地实施，验证结果并快速迭代\n-对网络推广、渠道运营等情况跟踪，收集市场信息竞争信息，提出推广运营思路、做出分析报告",
+      "-负责百度AI绘画产品文心一格的运营工作，制定关键产品的整体运营策略和计划，通过用户运营、活动运营、内容运营及渠道推广、产品优化等运营工作，促进产品核心数据及用户口碑提升\n-通过用户画像分析，梳理用户转化路径，建立用户转化模型\n-驱动跨部门合作，包括产品、运营和开发等，推动增长项目落地实施，验证结果并快速迭代\n-对网络推广、渠道运营等情况跟踪，收集场信息竞争信息，提出推广运营思路、做出分析报告",
     requirement:
-      "-本科及以上在校生，有运营实习相关经历，有AI公司/项目经验更佳\n-热爱项目跟进、资源协调等整合类事情，喜欢策划推广\n-具备一定的数据分析能力和逻辑性，能快速分析和定位问题并找到解决方案\n-对市场动向有较好敏感度，能站在用户角度思考\n-具备强烈的责任心、内驱力，较强的沟通和协调能力\n-有UserGrowth、aigc和用户运营经验者优先",
+      "-本科及以上在校生，有运营实习相关经历，有AI公司/项目经验更佳\n-热爱项目跟进、资源协调等整合类事情，喜欢策划推广\n-具备一定的数据分析能力和逻辑性，能快速分析和定位问题并找到解决方案\n-对场动向有较好敏感度，能站在用户角度思考\n-具备强烈的责任心、内驱力，较强的沟通和协调能力\n-有UserGrowth、aigc和用户运营经验者优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/9574e9b3-ec1c-4cd4-b775-d2f244c3a8ec",
   },
   {
     id: "baidu_J57097",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "健康内容业务部_百度健康平台运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1511,7 +1511,7 @@ const originJobsData = [
     id: "baidu_J58769",
     company: "百度",
     name: "问一问业务部_高考项目运营实习生",
-    location: "重庆市",
+    location: "重庆",
     type: "日常",
     category: "产品",
     description:
@@ -1524,7 +1524,7 @@ const originJobsData = [
     id: "baidu_J57677",
     company: "百度",
     name: "组织文化部_设计实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -1537,7 +1537,7 @@ const originJobsData = [
     id: "baidu_J58622",
     company: "百度",
     name: "人力资源信息化组_人力数据系统实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -1550,7 +1550,7 @@ const originJobsData = [
     id: "baidu_J58780",
     company: "百度",
     name: "工业前端工程组_web前端研发工程师实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1563,7 +1563,7 @@ const originJobsData = [
     id: "baidu_J58781",
     company: "百度",
     name: "百科产品部_运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1576,7 +1576,7 @@ const originJobsData = [
     id: "baidu_J38976",
     company: "百度",
     name: "小度应用与服务业务部_语文AI教育实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1589,7 +1589,7 @@ const originJobsData = [
     id: "baidu_J15148",
     company: "百度",
     name: "小度应用与服务业务部_语文AI教育老师",
-    location: "大连市",
+    location: "大连",
     type: "日常",
     category: "产品",
     description:
@@ -1602,11 +1602,11 @@ const originJobsData = [
     id: "baidu_J58763",
     company: "百度",
     name: "移动生态战略规划部_战略分析实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
-      "-支持对互联网行业(尤其是广告商业化、文娱内容赛道）的研究，包括整体市场环境、细分业务领域发展、新商业模式、新技术发展等的分析和研究，参与专家访谈、桌面研究、用户研究、数据搜索和分析、报告撰写\n-支持行业对标研究、国内外竞争对手研究，研究其战略部署、追踪其战略动态，并据此提出对公司有建设性的竞争策略的建议\n-对内部相关业务进行分析和洞察，能及时发现业务问题，并结合市场研究、竞对对标，对内部问题拆解和分析，提出解决方案",
+      "-支持对互联网行业(尤其是广告商业化、文娱内容赛道）的研究，包括整体场环境、细分业务领域发展、新商业模式、新技术发展等的分析和研究，参与专家访谈、桌面研究、用户研究、数据搜索和分析、报告撰写\n-支持行业对标研究、国内外竞争对手研究，研究其战略部署、追踪其战略动态，并据此提出对公司有建设性的竞争策略的建议\n-对内部相关业务进行分析和洞察，能及时发现业务问题，并结合场研究、竞对对标，对内部问题拆解和分析，提出解决方案",
     requirement:
       "-本科及以上学历，具有互联网、咨询公司、券商行研、投资银行等实习经历\n-性格踏实靠谱，做事认真，积极主动有责任心，有较好的逻辑思维能力\n-具有较强的信息搜集能力，熟练使用办公软件，在PPT方面具有一定审美\n-能够保证三个月及以上的实习时间",
     url: "https://talent.baidu.com/jobs/detail/INTERN/b16e79aa-e5e6-4348-951b-18a1c94bc5ef",
@@ -1615,11 +1615,11 @@ const originJobsData = [
     id: "baidu_J57487",
     company: "百度",
     name: "北京-百度智能云解决方案架构师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "政企行业解决方案和服务",
     description:
-      "-负责面向泛互联网领域、创新科技类领域市场客户提供基础架构、业务架构方案\n-构建百度智能云云计算、人工智能研发领域协同模式，形成基于百度集团内部业务在云计算、人工智能领域的最佳实践以及技术优势点\n-针对泛互联网行业（包括不限于电商、游戏、视频、社交等）和创新科技类行业（包括不限于自动驾驶、生命科学、芯片制造等）某一行业做深入的行业调研、行业洞察、行业方案、行业拓展做系统性的输出\n-为技术实现市场化，让技术创造市场价值，结合百度在云计算、人工智能领域的技术点，创新出产品、方案，自主搭建和拉通资源搭建产品方案环境，为匹配泛互联网和创新科技类企业在企业发展，市场业务创新需求，创新产品和方案",
+      "-负责面向泛互联网领域、创新科技类领域场客户提供基础架构、业务架构方案\n-构建百度智能云云计算、人工智能研发领域协同模式，形成基于百度集团内部业务在云计算、人工智能领域的最佳实践以及技术优势点\n-针对泛互联网行业（包括不限于电商、游戏、视频、社交等）和创新科技类行业（包括不限于自动驾驶、生命科学、芯片制造等）某一行业做深入的行业调研、行业洞察、行业方案、行业拓展做系统性的输出\n-为技术实现场化，让技术创造场价值，结合百度在云计算、人工智能领域的技术点，创新出产品、方案，自主搭建和拉通资源搭建产品方案环境，为匹配泛互联网和创新科技类企业在企业发展，场业务创新需求，创新产品和方案",
     requirement:
       "-计算机科学及相关专业应届毕业生 \n-熟练掌握一个或多个专业领域的计算机知识和技能：计算机原理、数据结构、云计算、虚拟化技术、分布式系统、存储系统、机器学习、深度学习等\n-熟练掌握C/Python/Shell/Go/C++...等1种以上语言，熟悉一个或多个深度学习框架如：Pytorch、TensorFlow、PaddlePaddle等开源框架，有对Kernel、KVM、Openstack、容器、数据库、大数据、操作系统等相关技术有一项或多项了解\n-优秀的技术钻研精神、分析和解决问题的能力，对挑战性问题充满激情；渴望技术创新，渴望用技术改变世界 \n-有很好的团队协作及沟通能力\n-有很好的系统性思维和归纳总结能力",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/e0405355-26f4-4242-99c6-33b3a627d22b",
@@ -1628,7 +1628,7 @@ const originJobsData = [
     id: "baidu_J57355",
     company: "百度",
     name: "北京-财务分析师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "专业服务和管理支持",
     description:
@@ -1641,7 +1641,7 @@ const originJobsData = [
     id: "baidu_J54146",
     company: "百度",
     name: "北京-PMO",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1654,7 +1654,7 @@ const originJobsData = [
     id: "baidu_J55498",
     company: "百度",
     name: "上海-机器学习/数据挖掘/自然语言处理工程师",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "技术",
     description:
@@ -1667,7 +1667,7 @@ const originJobsData = [
     id: "baidu_J55502",
     company: "百度",
     name: "北京-搜索架构工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1680,7 +1680,7 @@ const originJobsData = [
     id: "baidu_J58604",
     company: "百度",
     name: "百科产品部_权威侧运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1693,7 +1693,7 @@ const originJobsData = [
     id: "baidu_J58470",
     company: "百度",
     name: "百科产品部_创新运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1706,7 +1706,7 @@ const originJobsData = [
     id: "baidu_J56884",
     company: "百度",
     name: "语音技术部_语音语义一体化研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -1719,7 +1719,7 @@ const originJobsData = [
     id: "baidu_J58592",
     company: "百度",
     name: "汽车用户增长组_用户增长产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1730,9 +1730,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58690",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "问一问业务部_实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1745,20 +1745,20 @@ const originJobsData = [
     id: "baidu_J58677",
     company: "百度",
     name: "贴吧业务部_用户产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       "-参与贴吧成长体系及贴吧内AIGC产品化设计，对用户体验负责\n-通过用户需求调研及竞品分析等方式，梳理产品需求并推进落地 \n-监控并分析日常数据，能够通过数据分析问题并推动解决\n-项目协同管理，能与合作方高效配合，保证项目高质量按期上线",
     requirement:
-      "-本科及以上学历，有社区类产品实习经验优先（24届及以后毕业）\n-每周保证5天在岗时间，实习时长不少于4个月\n-数据分析能力强，熟练使用SQL等工具，善于发现问题、解决问题\n-有创新意识且自驱力强，关注行业动态，熟悉国内外市场主流社区、社交产品",
+      "-本科及以上学历，有社区类产品实习经验优先（24届及以后毕业）\n-每周保证5天在岗时间，实习时长不少于4个月\n-数据分析能力强，熟练使用SQL等工具，善于发现问题、解决问题\n-有创新意识且自驱力强，关注行业动态，熟悉国内外场主流社区、社交产品",
     url: "https://talent.baidu.com/jobs/detail/INTERN/9978863a-2f0f-4c6d-8e71-cfae9abc78d8",
   },
   {
     id: "baidu_J58665",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "百度APP业务部_基础设施中台实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1769,9 +1769,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58641",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "矩阵产品组_产品实习生（视频方向）",
-    location: "大连市",
+    location: "大连",
     type: "日常",
     category: "产品",
     description:
@@ -1784,7 +1784,7 @@ const originJobsData = [
     id: "baidu_J55529",
     company: "百度",
     name: "北京-SRE工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1797,7 +1797,7 @@ const originJobsData = [
     id: "baidu_J55528",
     company: "百度",
     name: "北京-射频开发工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1810,7 +1810,7 @@ const originJobsData = [
     id: "baidu_J55527",
     company: "百度",
     name: "北京-硬件基带工程师",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "技术",
     description:
@@ -1823,33 +1823,33 @@ const originJobsData = [
     id: "baidu_J55537",
     company: "百度",
     name: "北京-产品运营",
-    location: "北京市",
+    location: "北京",
     type: "校招",
     category: "产品",
     description:
-      "-项目开始前对市场需求进行调研，设计产品，制定一系列完善的产品整体运营规划并执行\r\n-产品上线后，检测市场发展动态，进行数据跟踪分析，根据数据效果，推进产品的改进和营销策略的改变\r\n-顺利且有效完成商务谈判，策划合作项目计划并有效执行之，为双方带来良好效益，且和合作伙伴维持长期友好的合作关系\r\n-对网络推广、渠道运营等情况跟踪，收集市场信息竞争信息，提出推广运营思路、做出分析报告\r\n-结合产品推广或是品牌宣传，策划活动营销方案并有力执行之，促使达到提高产品和品牌知名度的目的",
+      "-项目开始前对场需求进行调研，设计产品，制定一系列完善的产品整体运营规划并执行\r\n-产品上线后，检测场发展动态，进行数据跟踪分析，根据数据效果，推进产品的改进和营销策略的改变\r\n-顺利且有效完成商务谈判，策划合作项目计划并有效执行之，为双方带来良好效益，且和合作伙伴维持长期友好的合作关系\r\n-对网络推广、渠道运营等情况跟踪，收集场信息竞争信息，提出推广运营思路、做出分析报告\r\n-结合产品推广或是品牌宣传，策划活动营销方案并有力执行之，促使达到提高产品和品牌知名度的目的",
     requirement:
-      "-熟悉网站产品和各类营销手段，对市场动向有较好敏感度，对用户有深刻洞察，能站在用户角度思考\r\n-具有强烈的内驱力和执行力；熟悉和热爱运营工作，具有良好沟通技巧\r\n-热爱项目跟进、资源协调等整合类事情，喜欢策划推广\r\n-思维逻辑强，有扎实的数据分析功底，对数据敏感，有独立完整的数据分析经验，能快速发掘业务和数据的联系\r\n-对产品周期流程，设计、策略、分析、理解、评估、执行均有浓厚兴趣优先，有UserGrowth、用户运营经验经验者优先，有社团活动类经验优先",
+      "-熟悉网站产品和各类营销手段，对场动向有较好敏感度，对用户有深刻洞察，能站在用户角度思考\r\n-具有强烈的内驱力和执行力；熟悉和热爱运营工作，具有良好沟通技巧\r\n-热爱项目跟进、资源协调等整合类事情，喜欢策划推广\r\n-思维逻辑强，有扎实的数据分析功底，对数据敏感，有独立完整的数据分析经验，能快速发掘业务和数据的联系\r\n-对产品周期流程，设计、策略、分析、理解、评估、执行均有浓厚兴趣优先，有UserGrowth、用户运营经验经验者优先，有社团活动类经验优先",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/81401ca8-003d-4693-bc70-0f468f8d261f",
   },
   {
     id: "baidu_J55536",
     company: "百度",
     name: "大连-产品经理(日语)",
-    location: "大连市",
+    location: "大连",
     type: "校招",
     category: "产品",
     description:
       "-关注并分析互联网用户行为，能从用户行为中发现所负责产品的潜在用户需求；\r\n-针对用户需求进行研究，并设计出相应的产品功能；\r\n-与各其他团队密切配合一起工作，推动产品功能实现并取得预期的效果；\r\n-对产品进行数据分析，验证产品的运作状况并及时发现产品的潜在问题；\r\n-跟进用户反馈并与用户交流，深入了解用户的心声。",
     requirement:
-      "-本科及以上学历毕业生，精通日语，有日本留学经验者优先；\r\n-热爱互联网，对互联网市场的敏感度高；思维活跃，领悟力强，乐于接受新鲜事物；\r\n-对用户需求有正确的理解和判断；\r\n-注重细节，具备针对用户需求设计出优秀产品的潜质；\r\n-拥有良好的沟通和团队协作能力，抗压能力强，有强烈责任心。",
+      "-本科及以上学历毕业生，精通日语，有日本留学经验者优先；\r\n-热爱互联网，对互联网场的敏感度高；思维活跃，领悟力强，乐于接受新鲜事物；\r\n-对用户需求有正确的理解和判断；\r\n-注重细节，具备针对用户需求设计出优秀产品的潜质；\r\n-拥有良好的沟通和团队协作能力，抗压能力强，有强烈责任心。",
     url: "https://talent.baidu.com/jobs/detail/GRADUATE/2c6c562e-00d9-4765-a82a-edf3e1f2e62e",
   },
   {
     id: "baidu_J55535",
     company: "百度",
     name: "上海-商业产品经理",
-    location: "上海市",
+    location: "上海",
     type: "校招",
     category: "产品",
     description:
@@ -1862,7 +1862,7 @@ const originJobsData = [
     id: "baidu_J58838",
     company: "百度",
     name: "矩阵产品组_增长用户运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1875,7 +1875,7 @@ const originJobsData = [
     id: "baidu_J58837",
     company: "百度",
     name: "创作者运营部_PUGC运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1888,20 +1888,20 @@ const originJobsData = [
     id: "baidu_J58654",
     company: "百度",
     name: "矩阵产品组_产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       "-参与百度APP极速版基础方向的产品建设，含发版、组织需求发布、评审等相关\n-参与用户需求调研，对目标用户的使用场景、用户特点、偏好等需求进行分析，创新设计和优化当前产品方案\n-对产品功能用户体验体验进行客观全面的评估，发现问题，推动优化，并带来体验的提升\n-参与竞品调研，创新产品增长路径",
     requirement:
-      "-本科及以上学历，2024届毕业生及以后毕业的学生；市场营销，管理相关专业优先\n-实习时间不少于4个月，每周到岗时间不少于4天\n-逻辑清晰，有较强的学习能力和学习意愿，踏实努力\n-自驱、结果导向；喜欢挑战性的工作，工作激情饱满，性格开朗，能承受工作压力\n-有用户增长产品实习经验、用户研究经验优先",
+      "-本科及以上学历，2024届毕业生及以后毕业的学生；场营销，管理相关专业优先\n-实习时间不少于4个月，每周到岗时间不少于4天\n-逻辑清晰，有较强的学习能力和学习意愿，踏实努力\n-自驱、结果导向；喜欢挑战性的工作，工作激情饱满，性格开朗，能承受工作压力\n-有用户增长产品实习经验、用户研究经验优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/0cdfd052-df01-4975-b80d-29511c6f9f26",
   },
   {
     id: "baidu_J58631",
     company: "百度",
     name: "车路协同研发组_机器视觉算法实习生",
-    location: "北京市,深圳市",
+    location: "北京,深圳",
     type: "日常",
     category: "技术",
     description:
@@ -1914,7 +1914,7 @@ const originJobsData = [
     id: "baidu_J58094",
     company: "百度",
     name: "知道产品部_用户运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1927,7 +1927,7 @@ const originJobsData = [
     id: "baidu_J58603",
     company: "百度",
     name: "知道产品部_内容运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1940,7 +1940,7 @@ const originJobsData = [
     id: "baidu_J58558",
     company: "百度",
     name: "问一问业务部_生态质量运营实习",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1953,7 +1953,7 @@ const originJobsData = [
     id: "baidu_J56794",
     company: "百度",
     name: "自然语言处理部深圳组_算法实习生",
-    location: "深圳市",
+    location: "深圳",
     type: "日常",
     category: "技术",
     description:
@@ -1966,20 +1966,20 @@ const originJobsData = [
     id: "baidu_J55932",
     company: "百度",
     name: "AI应用产品部_智能创作产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
-      "-产品实施：收集用户需求进行分析，进行功能设计与产品迭代跟进，产品上线后进行分析，完成产品实施的整个闭环管理\n-项目管理：推进项目的需求对接，并对内输入产品需求，跟进项目中的问题，保障项目上线\n-市场调研：从事智能创作产品的市场/用户调研，行业产品分析等工作，形成调研分析结论，对内形成观察输出\n-数据运营：可进行业务相关数据的收集与数据分析",
+      "-产品实施：收集用户需求进行分析，进行功能设计与产品迭代跟进，产品上线后进行分析，完成产品实施的整个闭环管理\n-项目管理：推进项目的需求对接，并对内输入产品需求，跟进项目中的问题，保障项目上线\n-场调研：从事智能创作产品的场/用户调研，行业产品分析等工作，形成调研分析结论，对内形成观察输出\n-数据运营：可进行业务相关数据的收集与数据分析",
     requirement:
-      "-至少实习半年以上，每周4天以上，计算机/新闻传播相关专业优先\n-学习能力强，拥有优秀的逻辑思维能力\n-热爱互联网行业，具备良好的创新思维，市场洞察力与产品前瞻思考能力\n-优秀的沟通能力，强大的执行力，开放的合作意识\n-有创作相关经验的优先考虑",
+      "-至少实习半年以上，每周4天以上，计算机/新闻传播相关专业优先\n-学习能力强，拥有优秀的逻辑思维能力\n-热爱互联网行业，具备良好的创新思维，场洞察力与产品前瞻思考能力\n-优秀的沟通能力，强大的执行力，开放的合作意识\n-有创作相关经验的优先考虑",
     url: "https://talent.baidu.com/jobs/detail/INTERN/4df53658-a2cd-4fba-92bc-a31aaa75ad0a",
   },
   {
     id: "baidu_J58540",
     company: "百度",
     name: "内容生态策略部_策略产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -1992,20 +1992,20 @@ const originJobsData = [
     id: "baidu_J56919",
     company: "百度",
     name: "行业一部_文创实习生",
-    location: "深圳市",
+    location: "深圳",
     type: "日常",
     category: "专业服务和管理支持",
     description:
       "-熟悉互联网媒体广告，结合客户业务和用户需求，进行创意文案撰写\n-支持客户落地页需求，输出落地页原型，跟进页面设计及交互表达，把关输出质量\n-跟踪客户广告投放数据，分析并迭代创意内容，提升客户广告效果\n-定期盘点优秀创意案例及产出行业创意方法论，协助运营为客户带来更好的投放效果",
     requirement:
-      "-本科及以上学历，新闻传播、广告学、市场营销、心理学、中文等相关专业优先\n-具有营销文案经验，较强的创意文案撰写提炼能力，掌握Axure/figma等原型软件\n-具备优秀的理解沟通能力和从数据中观察分析并沉淀规律的能力，具备对网民需求的洞察力\n-具备出彩的创新策划能力和强执行力，能够独立分析及解决问题，有强烈的责任心\n-具备强烈的好奇心及文字功底，想象力丰富，创意思维活跃，能承受一定压力",
+      "-本科及以上学历，新闻传播、广告学、场营销、心理学、中文等相关专业优先\n-具有营销文案经验，较强的创意文案撰写提炼能力，掌握Axure/figma等原型软件\n-具备优秀的理解沟通能力和从数据中观察分析并沉淀规律的能力，具备对网民需求的洞察力\n-具备出彩的创新策划能力和强执行力，能够独立分析及解决问题，有强烈的责任心\n-具备强烈的好奇心及文字功底，想象力丰富，创意思维活跃，能承受一定压力",
     url: "https://talent.baidu.com/jobs/detail/INTERN/6842dadf-8da3-498c-8e38-911e6a90061d",
   },
   {
     id: "baidu_J58502",
     company: "百度",
     name: "视频推荐产品组_数据分析师实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2018,7 +2018,7 @@ const originJobsData = [
     id: "baidu_J58372",
     company: "百度",
     name: "百度APP业务部_百度APP端产品经理实习",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2031,7 +2031,7 @@ const originJobsData = [
     id: "baidu_J58327",
     company: "百度",
     name: "用户质量效能组_测试开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2044,7 +2044,7 @@ const originJobsData = [
     id: "baidu_J58305",
     company: "百度",
     name: "用户质量效能组_客户端开发测试实习生（推荐业务）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2057,7 +2057,7 @@ const originJobsData = [
     id: "baidu_J58264",
     company: "百度",
     name: "质量效能研发组_C++开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2070,7 +2070,7 @@ const originJobsData = [
     id: "baidu_J54657",
     company: "百度",
     name: "应用产品质量效能部_测试开发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2089,27 +2089,27 @@ const originJobsData = [
     description:
       "-负责金融行业销售工作，客群包含头部的城商行、农商行、农信社，财产保险、人寿保险、证券、基金等行业客户，负责客户关系的维系和解决方案的销售工作，推动项目落单，并能并能与客户共同推进金融科技创新和应用相关合作\r\n-负责结合客户和业绩指标情况，进行具体的客户销售策略和规划制定，并能够完成公司阶段性、全年的销售目标和工作任务\r\n-负责同客户沟通各种业务需求，能够有效识别客户商机，结合公司解决方案，进行项目商务跟进和商机管理，对外能够同客户业务、科技等条线进行沟通协调，对内能够痛售前和产品研发等团队进行资源协调推动，最终推动项目落单\r\n-负责同客户的各个部门的人员进行客户关系的维系，定期拜访客户高层和各业务、科技条线，能够进行商务进度的把控和项目的跟进\r\n-对金融云、AI、智能客服、大数据应用等解决方案有一定的了解，能够独立承担能项目机会的挖掘和商务推进，推动项目落单",
     requirement:
-      "-有丰富的金融行业销售经验，熟悉头部城商行、农商行、农信社，财产保险、人寿保险、证券、基金等行业客户情况，并拥有丰富的客户资源，能够深度挖掘金融云、AI、金融数据类等产品与服务项目机会，结合公司解决方案推动落单\r\n-深耕细作客户经验至少5年以上，客群如头部的城商行、农商行、农信社客户，或头部的财产保险、人寿保险、证券、基金客户，负责的客户数量不低于5个，熟知客户内部组织架构并具备非常深的关系和良好的客户口碑\r\n-具有一定的客户高层资源，擅长高层客户经营，拥有丰富的业务和科技条线客户经营经验者优先\r\n-具备金融行业产品和解决方案5年以上销售经验，具备金融云、AI、金融数据类产品和服务的销售经验者优先\r\n-具有丰富的和牢固的金融行业合作伙伴资源，并能在客户覆盖、客户响应、客户服务及落地方面形成生态力量\r\n-良好的沟通能力、表达能力以及较强的抗压能力，以狼性思维和行动力的业务拓展和客户维护\r\n-具有敏锐的市场洞察力、较强的学习能力及专业的销售能力、客户谈判技巧，勇于接受挑战，善于开拓创新，能够快速响应客户和内部的需求\r\n-具备一定跨部门合作能力，积极促进部门间的协同和配合，通过团队合作快速达成共同目标",
+      "-有丰富的金融行业销售经验，熟悉头部城商行、农商行、农信社，财产保险、人寿保险、证券、基金等行业客户情况，并拥有丰富的客户资源，能够深度挖掘金融云、AI、金融数据类等产品与服务项目机会，结合公司解决方案推动落单\r\n-深耕细作客户经验至少5年以上，客群如头部的城商行、农商行、农信社客户，或头部的财产保险、人寿保险、证券、基金客户，负责的客户数量不低于5个，熟知客户内部组织架构并具备非常深的关系和良好的客户口碑\r\n-具有一定的客户高层资源，擅长高层客户经营，拥有丰富的业务和科技条线客户经营经验者优先\r\n-具备金融行业产品和解决方案5年以上销售经验，具备金融云、AI、金融数据类产品和服务的销售经验者优先\r\n-具有丰富的和牢固的金融行业合作伙伴资源，并能在客户覆盖、客户响应、客户服务及落地方面形成生态力量\r\n-良好的沟通能力、表达能力以及较强的抗压能力，以狼性思维和行动力的业务拓展和客户维护\r\n-具有敏锐的场洞察力、较强的学习能力及专业的销售能力、客户谈判技巧，勇于接受挑战，善于开拓创新，能够快速响应客户和内部的需求\r\n-具备一定跨部门合作能力，积极促进部门间的协同和配合，通过团队合作快速达成共同目标",
     url: "https://talent.baidu.com/jobs/detail/INTERN/8ca91456-f4bd-4790-9857-7a994c901a85",
   },
   {
     id: "baidu_J58138",
     company: "百度",
     name: "集团战略规划管理部_用户研究实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
-      "- 参与百度核心赛道产品的用户体验评估工作，协助用户研究同学对相关产品进行研究规划和体验评估\n- 对内接洽业务同学需求，对外监测市场、产品动向，整理并优化现有的评估指标及问卷体系\n- 协助开展日常用户研究专项工作，深度参与定性、定量等研究环节，并输出有价值的相关洞察\n- 积极主动的监控、推动项目进程，独立负责部分体验工作，发现、跟进并解决存在的体验问题",
+      "- 参与百度核心赛道产品的用户体验评估工作，协助用户研究同学对相关产品进行研究规划和体验评估\n- 对内接洽业务同学需求，对外监测场、产品动向，整理并优化现有的评估指标及问卷体系\n- 协助开展日常用户研究专项工作，深度参与定性、定量等研究环节，并输出有价值的相关洞察\n- 积极主动的监控、推动项目进程，独立负责部分体验工作，发现、跟进并解决存在的体验问题",
     requirement:
-      "- 心理学、社会学、工业设计、市场等相关专业背景；有互联网大厂、第三方咨询公司用户研究经验优先\n- 具备基本的数据分析能力，能够熟练使用SPSS、Excel等常用统计分析工具 \n- 有一定的定性分析能力，有独立负责过用户访谈、焦点小组、可用性测试的项目经验者更佳\n- 具有一定的用户研究报告撰写能力，能产出结构清晰、观点明确、有见地和落地价值的调研成果\n- 有较强的执行力和沟通表达能力，主动性强，能够快速学习各种知识，热爱用户研究工作\n- 有满意度调研、NPS研究经验者优先\n- 能够保证每周至少工作4天，实习期在三个月以上；能够长期实习的优先",
+      "- 心理学、社会学、工业设计、场等相关专业背景；有互联网大厂、第三方咨询公司用户研究经验优先\n- 具备基本的数据分析能力，能够熟练使用SPSS、Excel等常用统计分析工具 \n- 有一定的定性分析能力，有独立负责过用户访谈、焦点小组、可用性测试的项目经验者更佳\n- 具有一定的用户研究报告撰写能力，能产出结构清晰、观点明确、有见地和落地价值的调研成果\n- 有较强的执行力和沟通表达能力，主动性强，能够快速学习各种知识，热爱用户研究工作\n- 有满意度调研、NPS研究经验者优先\n- 能够保证每周至少工作4天，实习期在三个月以上；能够长期实习的优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/e515bcc2-17f5-4efb-a51f-c193577f6308",
   },
   {
     id: "baidu_J56038",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "自然语言处理部北京组_NLP研发实习生",
-    location: "大连市",
+    location: "大连",
     type: "日常",
     category: "技术",
     description:
@@ -2122,7 +2122,7 @@ const originJobsData = [
     id: "baidu_J58722",
     company: "百度",
     name: "端边缘ECS研发组_边缘AI工程化研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2133,9 +2133,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58538",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "健康商城业务部_消费医疗实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2148,7 +2148,7 @@ const originJobsData = [
     id: "baidu_J58527",
     company: "百度",
     name: "好看业务部_评论运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2159,9 +2159,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58216",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "搜索技术平台研发部_搜索产品服务化策略实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2174,7 +2174,7 @@ const originJobsData = [
     id: "baidu_J58214",
     company: "百度",
     name: "搜索技术平台研发部_搜索产品研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2187,7 +2187,7 @@ const originJobsData = [
     id: "baidu_J56778",
     company: "百度",
     name: "贴吧业务部_主端用户产品(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2200,7 +2200,7 @@ const originJobsData = [
     id: "baidu_J58095",
     company: "百度",
     name: "热点运营部_产品助理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2213,7 +2213,7 @@ const originJobsData = [
     id: "baidu_J57862",
     company: "百度",
     name: "视频推荐产品部_视频产品运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2224,9 +2224,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J57861",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "视频推荐产品部_视频推荐策略产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2237,9 +2237,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J55036",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "百科研发组_GO/PHP研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2252,7 +2252,7 @@ const originJobsData = [
     id: "baidu_J53096",
     company: "百度",
     name: "个人云部_交互设计实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2265,7 +2265,7 @@ const originJobsData = [
     id: "baidu_J55986",
     company: "百度",
     name: "健康在线医疗业务部_产品实习生岗位",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2278,7 +2278,7 @@ const originJobsData = [
     id: "baidu_J57674",
     company: "百度",
     name: "移动生态数据研发部_风控策略算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2291,7 +2291,7 @@ const originJobsData = [
     id: "baidu_J58078",
     company: "百度",
     name: "内容收录组_自然语言处理算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2304,7 +2304,7 @@ const originJobsData = [
     id: "baidu_J57916",
     company: "百度",
     name: "知道产品部_流量策略产品经理（实习岗）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2317,7 +2317,7 @@ const originJobsData = [
     id: "baidu_J54373",
     company: "百度",
     name: "商业研发部_广告算法实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "技术",
     description:
@@ -2329,21 +2329,21 @@ const originJobsData = [
   {
     id: "baidu_J57994",
     company: "百度",
-    name: "智能交通业务拓展部_市场营销实习生",
-    location: "成都市",
+    name: "智能交通业务拓展部_场营销实习生",
+    location: "成都",
     type: "日常",
     category: "专业服务和管理支持",
     description:
-      "-按行业、产品、地市等方面进行数据分析，从数据结果发现问题或业务增长点，给拓展计划提供建设性方案\n-搜集行业、企业、政策等信息，形成对行业的理解和判断\n-监控并分析相关竞品数据，形成细分市场竞争分析报告\n-协助团队完成公司内部流程等工作",
+      "-按行业、产品、地等方面进行数据分析，从数据结果发现问题或业务增长点，给拓展计划提供建设性方案\n-搜集行业、企业、政策等信息，形成对行业的理解和判断\n-监控并分析相关竞品数据，形成细分场竞争分析报告\n-协助团队完成公司内部流程等工作",
     requirement:
-      "-本科及以上学历，商业分析、市场营销、统计学等相关专业优先\n-拥有较为全面的AI及智能驾驶领域相关理论知识\n-出色的沟通能力、学习能力，逻辑思维强，用心对待每项工作及交办事项",
+      "-本科及以上学历，商业分析、场营销、统计学等相关专业优先\n-拥有较为全面的AI及智能驾驶领域相关理论知识\n-出色的沟通能力、学习能力，逻辑思维强，用心对待每项工作及交办事项",
     url: "https://talent.baidu.com/jobs/detail/INTERN/b8bc03cc-950b-4aad-98a4-85a2c92ac99e",
   },
   {
     id: "baidu_J56799",
     company: "百度",
     name: "商业中台技术研发组_C++/Java/Go研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2356,7 +2356,7 @@ const originJobsData = [
     id: "baidu_J57733",
     company: "百度",
     name: "百家号内容运营部_短视频运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2369,7 +2369,7 @@ const originJobsData = [
     id: "baidu_J47805",
     company: "百度",
     name: "运维部_运维开发工程师实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2382,7 +2382,7 @@ const originJobsData = [
     id: "baidu_J57959",
     company: "百度",
     name: "短视频研发部_Go/Php研发工程师实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2395,7 +2395,7 @@ const originJobsData = [
     id: "baidu_J55064",
     company: "百度",
     name: "百度APP技术平台研发部_golang实习工程师",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2406,22 +2406,22 @@ const originJobsData = [
   },
   {
     id: "baidu_J57266",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "自然语言处理部北京组_百度翻译PC用户产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       " -协助产品经理，进行百度翻译PC端、百度AI同传相关产品设计，撰写需求文档，推动项目落地。\n -协助产品经理，进行产品数据分析和线上监控，及时发现问题并推动技术解决。\n -进行用户需求调研和竞品调研，产出高质量分析报告。\n -跟进用户反馈并与用户交流，持续更新用户需求列表，推进产品策略进行升级改进。",
     requirement:
-      " -本科及以上学历，英语、翻译、设计相关专业同学优先。\n -有产品实习经验，学习能力、沟通理解能力强，工作认真细致，熟练使用 Office、Axure、Markdown等。\n -对互联网市场的敏感度高，对机器翻译和人工翻译有一定的见解。\n -每周可到岗5天，2024-2025年毕业，可以连续进行实习工作6个月以上优先，北京学校优先。",
+      " -本科及以上学历，英语、翻译、设计相关专业同学优先。\n -有产品实习经验，学习能力、沟通理解能力强，工作认真细致，熟练使用 Office、Axure、Markdown等。\n -对互联网场的敏感度高，对机器翻译和人工翻译有一定的见解。\n -每周可到岗5天，2024-2025年毕业，可以连续进行实习工作6个月以上优先，北京学校优先。",
     url: "https://talent.baidu.com/jobs/detail/INTERN/560b9147-91ee-4488-abe1-ab9336e17976",
   },
   {
     id: "baidu_J57071",
     company: "百度",
     name: "视频推荐产品部_业务助理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -2434,7 +2434,7 @@ const originJobsData = [
     id: "baidu_J53655",
     company: "百度",
     name: "自然语言处理部_自然语言处理算法实习生",
-    location: "深圳市",
+    location: "深圳",
     type: "日常",
     category: "技术",
     description:
@@ -2445,9 +2445,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56815",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "贴吧业务部_热点/事件运营（实习生）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2460,7 +2460,7 @@ const originJobsData = [
     id: "baidu_J58659",
     company: "百度",
     name: "度加业务组_素材设计实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2471,9 +2471,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58614",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "视频推荐产品组_视频推荐策略产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2486,7 +2486,7 @@ const originJobsData = [
     id: "baidu_J57859",
     company: "百度",
     name: "问一问业务部_产品运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2499,7 +2499,7 @@ const originJobsData = [
     id: "baidu_J57856",
     company: "百度",
     name: "移动客户端部_产品运营实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "产品",
     description:
@@ -2512,7 +2512,7 @@ const originJobsData = [
     id: "baidu_J57795",
     company: "百度",
     name: "热点运营部_运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2525,7 +2525,7 @@ const originJobsData = [
     id: "baidu_J57370",
     company: "百度",
     name: "RT6组_自动驾驶无人车系统测试工程师（实习生）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2538,7 +2538,7 @@ const originJobsData = [
     id: "baidu_J57705",
     company: "百度",
     name: "问一问业务部_律师端产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2549,9 +2549,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56897",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "业务监察部_业务监察部实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -2564,11 +2564,11 @@ const originJobsData = [
     id: "baidu_J55302",
     company: "百度",
     name: "电商商家运营部_直播电商商家运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
-      "-深度理解直播电商行业特点，配合运营推动方案落地，参与部门目标达成过程\n-参与分析业务数据，优化相关运营策略，协助showcase的打造，沉淀对应的方法论\n-负责行业市场及竞品分析，定期调研，收集及评估商家需求，帮助推动业务不断完善\n-从消费者体验出发，总结和分析产品及服务链路中的问题，期待提出建设性建议并能够推动落地",
+      "-深度理解直播电商行业特点，配合运营推动方案落地，参与部门目标达成过程\n-参与分析业务数据，优化相关运营策略，协助showcase的打造，沉淀对应的方法论\n-负责行业场及竞品分析，定期调研，收集及评估商家需求，帮助推动业务不断完善\n-从消费者体验出发，总结和分析产品及服务链路中的问题，期待提出建设性建议并能够推动落地",
     requirement:
       "-2023届、2024届获得本科及以上学历应届生优先，有服饰，食品，珠宝，美妆，时尚行业运营实习经验者优先，电子商务专业优先，有实习经历、能长期实习者优先； \n-每周需要保证5天以上的工作时间，不少于3-4个月；\n-思维严谨，逻辑性强，具备量好的数据分析能力，擅长EXCEL等办公软件，懂PS或者SQL加分\n-有较强的逻辑思维和分析能力，沟通及协调能力较强\n-工作积极高效，主动寻找高效的解决办法，踏实稳重，学习能力强，能承受一定工作压力。",
     url: "https://talent.baidu.com/jobs/detail/INTERN/2153fbbd-ad57-4fe9-8979-61137989f8d7",
@@ -2577,7 +2577,7 @@ const originJobsData = [
     id: "baidu_J51378",
     company: "百度",
     name: "视觉技术部_技术运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2590,7 +2590,7 @@ const originJobsData = [
     id: "baidu_J57177",
     company: "百度",
     name: "度咔业务组_内容运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2603,7 +2603,7 @@ const originJobsData = [
     id: "baidu_J58606",
     company: "百度",
     name: "推荐策略部_推荐算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2616,7 +2616,7 @@ const originJobsData = [
     id: "baidu_J58566",
     company: "百度",
     name: "热点运营部_娱乐品类实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2629,11 +2629,11 @@ const originJobsData = [
     id: "baidu_J58550",
     company: "百度",
     name: "大数据产品组_大数据产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
-      "-参与商业化大数据产品的需求分析、产品设计、产品迭代全流程，提升客户体验及商业化规模\n-参与产品的市场分析、竞品调研，明确产品建设方向，持续提升产品竞争力\n-支持项目落地，通过客户访谈梳理客户需求，明确需求优先级，产出优化方案并推进落地\n-撰写产品功能介绍、使用手册、最佳实践、FAQ等文档资料，提升产品易用性",
+      "-参与商业化大数据产品的需求分析、产品设计、产品迭代全流程，提升客户体验及商业化规模\n-参与产品的场分析、竞品调研，明确产品建设方向，持续提升产品竞争力\n-支持项目落地，通过客户访谈梳理客户需求，明确需求优先级，产出优化方案并推进落地\n-撰写产品功能介绍、使用手册、最佳实践、FAQ等文档资料，提升产品易用性",
     requirement:
       "-本科或以上学历在读，实习时间不少于4个月，每周到岗时间不少于4天\n-具有较强的数据分析、逻辑思维、沟通表达、归纳总结能力，学习能力强，有一定的抗压能力\n-熟练使用Excel、Word、PPT、Axure、思维导图等办公软件\n-有商业化数据类产品实习经验，或具有云计算、大数据、信息检索、数据分析相关专业背景者优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/5eb78382-cc9b-4f99-a349-ae7e6155bda8",
@@ -2642,7 +2642,7 @@ const originJobsData = [
     id: "baidu_J58504",
     company: "百度",
     name: "问一问业务部_运营实习生（生态运营）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2655,7 +2655,7 @@ const originJobsData = [
     id: "baidu_J58481",
     company: "百度",
     name: "内容风控研发组_图像算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2666,9 +2666,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58480",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "内容风控研发组_自然语言算法工程师实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2681,7 +2681,7 @@ const originJobsData = [
     id: "baidu_J58462",
     company: "百度",
     name: "商业中台技术研发组_Web前端研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2692,9 +2692,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58457",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "统管通办研发组_生成式大模型数据标注专员",
-    location: "北京市,深圳市",
+    location: "北京,深圳",
     type: "日常",
     category: "技术",
     description:
@@ -2705,9 +2705,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58246",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "数字阅读业务部_产品经理实习生（作家平台方向）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2720,7 +2720,7 @@ const originJobsData = [
     id: "baidu_J58340",
     company: "百度",
     name: "商业质量效能组_测试开发实习生(商业方向)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2731,9 +2731,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58278",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "视频推荐产品部_视频推荐策略产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2744,9 +2744,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J17286",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "ACG渠道生态部_HRBP实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "",
     description:
@@ -2759,7 +2759,7 @@ const originJobsData = [
     id: "baidu_J58114",
     company: "百度",
     name: "百度APP业务部_增长策略产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2772,7 +2772,7 @@ const originJobsData = [
     id: "baidu_J55908",
     company: "百度",
     name: "商业经营发展部_HR实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -2785,7 +2785,7 @@ const originJobsData = [
     id: "baidu_J55191",
     company: "百度",
     name: "问一问业务部_策略产品实习",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2798,7 +2798,7 @@ const originJobsData = [
     id: "baidu_J58143",
     company: "百度",
     name: "内容架构组_分布式计算研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2811,7 +2811,7 @@ const originJobsData = [
     id: "baidu_J57798",
     company: "百度",
     name: "AI平台产品组_AI开发平台产品经理实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "产品",
     description:
@@ -2824,7 +2824,7 @@ const originJobsData = [
     id: "baidu_J57860",
     company: "百度",
     name: "视频推荐产品部_短视频产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2835,9 +2835,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J58024",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "智能客服及服务型数字人产品组_AI产品运营实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "产品",
     description:
@@ -2848,7 +2848,7 @@ const originJobsData = [
   },
   {
     id: "baidu_J18230",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "国际化产品研发中心(深圳)_HR实习生",
     location: "海淀区",
     type: "日常",
@@ -2861,9 +2861,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J57363",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "用户画像组_用户建模方向数据挖掘工程师（实习生）",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -2876,20 +2876,20 @@ const originJobsData = [
     id: "baidu_J56973",
     company: "百度",
     name: "如流产品组_产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
-      "-产品实施：收集客户需求进行分析，进行功能设计与产品迭代跟进，产品上线后进行分析，完成产品实施的整个闭环管理\n-项目管理：推进项目的需求对接，并对内输入产品需求，跟进项目中的问题，保障项目上线\n-市场调研：从事TOB产品的市场/用户调研、行业产品分析等工作，形成调研分析结论，对内形成观察输出\n-产品运营：协助销售团队进行产品市场推广，提升产品品牌知名度和市场份额",
+      "-产品实施：收集客户需求进行分析，进行功能设计与产品迭代跟进，产品上线后进行分析，完成产品实施的整个闭环管理\n-项目管理：推进项目的需求对接，并对内输入产品需求，跟进项目中的问题，保障项目上线\n-场调研：从事TOB产品的场/用户调研、行业产品分析等工作，形成调研分析结论，对内形成观察输出\n-产品运营：协助销售团队进行产品场推广，提升产品品牌知名度和场份额",
     requirement:
-      "-至少实习半年以上，每周4天以上，计算机相关专业优先\n-学习能力强，拥有优秀的逻辑思维能力\n-具备良好的创新思维，市场洞察力与产品前瞻思考能力\n-具备优秀的沟通能力和团队协作能力，强大的执行力，开放的合作意识\n-具有良好的文档能力，能够根据需要准确的撰写产品文档",
+      "-至少实习半年以上，每周4天以上，计算机相关专业优先\n-学习能力强，拥有优秀的逻辑思维能力\n-具备良好的创新思维，场洞察力与产品前瞻思考能力\n-具备优秀的沟通能力和团队协作能力，强大的执行力，开放的合作意识\n-具有良好的文档能力，能够根据需要准确的撰写产品文档",
     url: "https://talent.baidu.com/jobs/detail/INTERN/27aa212b-cb88-4fbe-a159-8fd8a77dd400",
   },
   {
     id: "baidu_J57267",
     company: "百度",
     name: "移动生态数据研发部_大数据研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2902,7 +2902,7 @@ const originJobsData = [
     id: "baidu_J56808",
     company: "百度",
     name: "推荐策略部_机器学习/数据挖掘/自然语言处理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2915,7 +2915,7 @@ const originJobsData = [
     id: "baidu_J57164",
     company: "百度",
     name: "人工智能创作研发组_计算机视觉算法工程师 - 多模态方向",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2928,7 +2928,7 @@ const originJobsData = [
     id: "baidu_J51947",
     company: "百度",
     name: "知识图谱部_数据挖掘/NLP算法工程师(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -2941,7 +2941,7 @@ const originJobsData = [
     id: "baidu_J57118",
     company: "百度",
     name: "问一问业务部_付费用户运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2954,20 +2954,20 @@ const originJobsData = [
     id: "baidu_J57018",
     company: "百度",
     name: "政务产品运营组_产品运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       "-协助政务产品营销工作，参与产品售前物料优化完善、产品宣传视频制作、产品实操培训等\n-协助重点产品的商机/项目跟踪，配合构建产品运营数据分析模型，识别影响因素，推动产品提升售卖效率\n-协助定向宣传推广活动，不限于活动准备、组织、宣传及统计分析\n-协助重点产品的生态引入，负责建立生态推进计划，积极推进落实，提升生态建设效率",
     requirement:
-      "-理工科背景本科及以上学历在校生，有ToG\\ToB项目实习经验优先\n-具备一定AI背景技术，了解政务项目运作和市场推广优先\n-学习能力强，能快速掌握产品及业务基础知识\n-沟通能力强，擅长解决问题，适应跨部门协作\n-每周到岗3天以上，实习时间3个月以上",
+      "-理工科背景本科及以上学历在校生，有ToG\\ToB项目实习经验优先\n-具备一定AI背景技术，了解政务项目运作和场推广优先\n-学习能力强，能快速掌握产品及业务基础知识\n-沟通能力强，擅长解决问题，适应跨部门协作\n-每周到岗3天以上，实习时间3个月以上",
     url: "https://talent.baidu.com/jobs/detail/INTERN/b965cbe5-ece1-4310-97ad-cf1bd6dd61b8",
   },
   {
     id: "baidu_J45410",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "百家号内容运营部_人力实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2978,9 +2978,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56902",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "内容生态策略部_运营平台产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -2991,9 +2991,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J55397",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "策略算法工程师",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3004,9 +3004,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56912",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "问一问研发组_后端研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3017,9 +3017,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56737",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "健康商城业务部_产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3030,9 +3030,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56798",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "商业中台技术研发组_机器学习/自然语言处理算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3043,9 +3043,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J55992",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "在线行业业务部_商业策略产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3056,9 +3056,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56780",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "贴吧业务部_社群运营(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3069,9 +3069,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56776",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "贴吧业务部_大神挖掘、分享型内容运营、校园资源拓展(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3082,9 +3082,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56774",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "贴吧业务部_直播运营(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3097,7 +3097,7 @@ const originJobsData = [
     id: "baidu_J56781",
     company: "百度",
     name: "贴吧业务部_用户运营(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3110,7 +3110,7 @@ const originJobsData = [
     id: "baidu_J56782",
     company: "百度",
     name: "贴吧业务部_吧主运营(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3121,9 +3121,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56767",
-    company: "腾阿里",
+    company: "腾蚂蚁集团",
     name: "问一问业务部_增长交易实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3134,9 +3134,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56046",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "搜索客户端研发组_移动端研发实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -3147,9 +3147,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J55920",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "问一问业务部_生态运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3160,9 +3160,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J56012",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "首页推荐产品部_商业策略实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3173,9 +3173,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J14160",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "知识图谱部_HR实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3184,12 +3184,12 @@ const originJobsData = [
       "-本科及以上学历，人力资源、心理学等相关专业优先 \r\n-人力资源方向实习经验优先，熟练应用办公软件的同学优先 \r\n-沟通表达能力好，计划及执行能力好，善于与别人沟通 \r\n-工作积极主动，能承担一定的工作压力，敢于接受挑战",
     url: "https://talent.baidu.com/jobs/detail/INTERN/f8f10296-dee3-4672-8845-6c79d90e5989",
   },
-  
+
   {
     id: "baidu_J55865",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "首页推荐产品部_功能产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3200,9 +3200,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J55475",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "百家号内容运营部_MCN机构运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3215,7 +3215,7 @@ const originJobsData = [
     id: "baidu_J55488",
     company: "百度",
     name: "移动生态数据研发部_大数据研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3228,7 +3228,7 @@ const originJobsData = [
     id: "baidu_J55491",
     company: "百度",
     name: "搜索技术平台研发部_搜索产品研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3241,7 +3241,7 @@ const originJobsData = [
     id: "baidu_J52645",
     company: "百度",
     name: "To B业务运营部_数据运营",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3252,9 +3252,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J12063",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "昆仑芯_HR招聘实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3265,9 +3265,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10335",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "昆仑芯_芯片设计工程师实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -3278,9 +3278,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J12182",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "ACG-GTM_HR实习生(招聘方向)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3291,9 +3291,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J54056",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "云产品质量效能部_云产品测试开发实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -3304,9 +3304,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J55239",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "商业化运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3317,9 +3317,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J54990",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "国际化产品研发中心（深圳）_广告运营实习生",
-    location: "深圳市",
+    location: "深圳",
     type: "日常",
     category: "产品",
     description:
@@ -3332,7 +3332,7 @@ const originJobsData = [
     id: "baidu_J54519",
     company: "百度",
     name: "剪辑工具产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3345,7 +3345,7 @@ const originJobsData = [
     id: "baidu_J51562",
     company: "百度",
     name: "商业架构部_搜索广告架构师",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3358,7 +3358,7 @@ const originJobsData = [
     id: "baidu_J51499",
     company: "百度",
     name: "商业架构部_云原生开发工程师",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "技术",
     description:
@@ -3369,9 +3369,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J51498",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "商业架构部_C++研发工程师",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -3382,7 +3382,7 @@ const originJobsData = [
   },
   {
     id: "baidu_J54205",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "智能小程序业务部_校园推广实习生",
     location: "海淀区",
     type: "日常",
@@ -3397,7 +3397,7 @@ const originJobsData = [
     id: "baidu_J54559",
     company: "百度",
     name: "问一问生态运营实习生(J50558)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3410,7 +3410,7 @@ const originJobsData = [
     id: "baidu_J55059",
     company: "百度",
     name: "问一问研发组_前端研发实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3423,20 +3423,20 @@ const originJobsData = [
     id: "baidu_J19109",
     company: "百度",
     name: "知识图谱部_产品运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
-      "-负责百度AI产品的运营工作，制定关键产品的整体运营策略和计划，通过用户运营、活动运营、内容运营及渠道推广、产品优化等运营工作，促进产品核心数据及用户口碑提升\n-通过用户画像分析，梳理用户转化路径，建立用户转化模型\n-驱动跨部门合作，包括产品、运营和开发等，推动增长项目落地实施，验证结果并快速迭代\n-对重要用户/客户维持长期友好的合作关系，有效完成商务谈判，策划合作项目计划并有效执行之\n-对网络推广、渠道运营等情况跟踪，收集市场信息竞争信息，提出推广运营思路、做出分析报告",
+      "-负责百度AI产品的运营工作，制定关键产品的整体运营策略和计划，通过用户运营、活动运营、内容运营及渠道推广、产品优化等运营工作，促进产品核心数据及用户口碑提升\n-通过用户画像分析，梳理用户转化路径，建立用户转化模型\n-驱动跨部门合作，包括产品、运营和开发等，推动增长项目落地实施，验证结果并快速迭代\n-对重要用户/客户维持长期友好的合作关系，有效完成商务谈判，策划合作项目计划并有效执行之\n-对网络推广、渠道运营等情况跟踪，收集场信息竞争信息，提出推广运营思路、做出分析报告",
     requirement:
-      "-本科及以上学历，运营经验更佳\n-热爱项目跟进、资源协调等整合类事情，喜欢策划推广\n-具备熟练的数据分析能力和较强的逻辑性，能快速分析和定位问题并找到解决方案\n-熟悉产品各类营销手段，对市场动向有较好敏感度，对用户有深刻洞察，能站在用户角度思考\n-具备强烈的责任心、内驱力，较强的沟通和协调能力，驱动团队快速产出\n-有UserGrowth、用户运营经验经验者优先，有社团活动类经验优先",
+      "-本科及以上学历，运营经验更佳\n-热爱项目跟进、资源协调等整合类事情，喜欢策划推广\n-具备熟练的数据分析能力和较强的逻辑性，能快速分析和定位问题并找到解决方案\n-熟悉产品各类营销手段，对场动向有较好敏感度，对用户有深刻洞察，能站在用户角度思考\n-具备强烈的责任心、内驱力，较强的沟通和协调能力，驱动团队快速产出\n-有UserGrowth、用户运营经验经验者优先，有社团活动类经验优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/5a6299b2-60cc-4054-b703-35b65837d6b7",
   },
   {
     id: "baidu_J55046",
     company: "百度",
     name: "健康研发业务部_golang方向实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3462,7 +3462,7 @@ const originJobsData = [
     id: "baidu_J12063",
     company: "百度",
     name: "昆仑芯-人力资源部_HR招聘实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3473,9 +3473,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10655",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "昆仑芯-综合管理部_设计实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3486,9 +3486,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J13963",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "自然语言处理部_生物计算算法实习生",
-    location: "深圳市",
+    location: "深圳",
     type: "日常",
     category: "技术",
     description:
@@ -3499,9 +3499,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10678",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "政务产品部_人力资源实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3512,9 +3512,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J54638",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "度咔业务组_内容运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3527,7 +3527,7 @@ const originJobsData = [
     id: "baidu_J52796",
     company: "百度",
     name: "商业产品部_HR实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3540,7 +3540,7 @@ const originJobsData = [
     id: "baidu_J47892",
     company: "百度",
     name: "语音技术部_TTS合成产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3553,11 +3553,11 @@ const originJobsData = [
     id: "baidu_J52186",
     company: "百度",
     name: "采购部_供应商管理组实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
-      "-供应商入库咨询及审批\n-供应商账户开通\n-供应商资审信息维护\n-供应商资料收集\n-市场类供应商认证类合同签署\n-具体系统解冻操作\n-供应商绩效考核支持\n-为业务侧提供关于采购流程系统操作的问题答疑；并收集汇总相关问题构建知识库，提升答疑沟通效率；\n-支持团队的其它工作，例如：预订会议室、对齐会议时间、安排会议等。",
+      "-供应商入库咨询及审批\n-供应商账户开通\n-供应商资审信息维护\n-供应商资料收集\n-场类供应商认证类合同签署\n-具体系统解冻操作\n-供应商绩效考核支持\n-为业务侧提供关于采购流程系统操作的问题答疑；并收集汇总相关问题构建知识库，提升答疑沟通效率；\n-支持团队的其它工作，例如：预订会议室、对齐会议时间、安排会议等。",
     requirement:
       "-物流采购、供应链管理、审计等专业优先\n-一周出勤4-5天，能够长期实习者优先录用\n-积极主动、勤奋踏实、主动思考、对数据有一定敏感度，逻辑分析能力强，能够应用Excel进行基本数据处理\n-具备较好的沟通协调能力和学习能力",
     url: "https://talent.baidu.com/jobs/detail/INTERN/04be3467-e13a-4fc7-b607-b1a86e1f9c8e",
@@ -3566,7 +3566,7 @@ const originJobsData = [
     id: "baidu_J54067",
     company: "百度",
     name: "问一问业务部_垂类运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3579,7 +3579,7 @@ const originJobsData = [
     id: "baidu_J51702",
     company: "百度",
     name: "推荐策略部_机器学习/数据挖掘/自然语言处理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3592,11 +3592,11 @@ const originJobsData = [
     id: "baidu_J17912",
     company: "百度",
     name: "小度IOT生态业务部_产品经理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
-      "-负责智能家居/全屋智能市场和产品的行业分析、竞品分析、用户研究\n-负责智能家居产品的硬件产品定义，包括硬件规格定义及关键器件选型，与ID、研发、ODM等紧密配合，分析和论证关键技术、方案可行性\n-负责智能家居产品的软件需求定义，包括设备端功能、语音交互、App等能力的定义，输出需求原型\n-负责review ODM产品的ID、软硬件产品定义、包装设计等，输出优化需求，推动ODM进行产品迭代 \n-负责产品全生命周期管理，追踪产品上市后的用户数据与销量，持续迭代",
+      "-负责智能家居/全屋智能场和产品的行业分析、竞品分析、用户研究\n-负责智能家居产品的硬件产品定义，包括硬件规格定义及关键器件选型，与ID、研发、ODM等紧密配合，分析和论证关键技术、方案可行性\n-负责智能家居产品的软件需求定义，包括设备端功能、语音交互、App等能力的定义，输出需求原型\n-负责review ODM产品的ID、软硬件产品定义、包装设计等，输出优化需求，推动ODM进行产品迭代 \n-负责产品全生命周期管理，追踪产品上后的用户数据与销量，持续迭代",
     requirement:
       "-本科及以上在校同学，计算机、软件、信息管理信息系统等相关专业优先 \n-有IoT、智能硬件、互联网大厂的产品实习经历者优先 \n-具备良好的逻辑思维能力，沟通能力，承压能力\n-期望尽快到岗，实习时间3个月以上优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/4fcc47bf-87ad-4e18-b36e-a0fd3112ad40",
@@ -3605,7 +3605,7 @@ const originJobsData = [
     id: "baidu_J18370",
     company: "百度",
     name: "小度云平台部_NLP实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3618,7 +3618,7 @@ const originJobsData = [
     id: "baidu_J12464",
     company: "百度",
     name: "ACG AI产品业务部_招聘实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3631,7 +3631,7 @@ const originJobsData = [
     id: "baidu_J38341",
     company: "百度",
     name: "广州小度云平台部_服务端测试实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3644,7 +3644,7 @@ const originJobsData = [
     id: "baidu_J47780",
     company: "百度",
     name: "认知计算实验室_自动驾驶算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3657,7 +3657,7 @@ const originJobsData = [
     id: "baidu_J13817",
     company: "百度",
     name: "机器人与自动驾驶实验室_三维感知算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3668,9 +3668,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J12499",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "百家号业务部_HR实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3683,7 +3683,7 @@ const originJobsData = [
     id: "baidu_J52033",
     company: "百度",
     name: "汽车产品及运营部_内容运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3696,7 +3696,7 @@ const originJobsData = [
     id: "baidu_J11087",
     company: "百度",
     name: "昆仑芯片综合管理部_品牌实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3709,7 +3709,7 @@ const originJobsData = [
     id: "baidu_J52758",
     company: "百度",
     name: "推荐技术架构部_C++开发工程师",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3722,7 +3722,7 @@ const originJobsData = [
     id: "baidu_J18293",
     company: "百度",
     name: "智舱业务部_HR实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "",
     description:
@@ -3735,7 +3735,7 @@ const originJobsData = [
     id: "baidu_J45857",
     company: "百度",
     name: "ACG AI产品业务部_产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3747,8 +3747,8 @@ const originJobsData = [
   {
     id: "baidu_J52127",
     company: "百度",
-    name: "品牌市场部_数字人帐号运营实习",
-    location: "北京市",
+    name: "品牌场部_数字人帐号运营实习",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3761,7 +3761,7 @@ const originJobsData = [
     id: "baidu_J52102",
     company: "百度",
     name: "HCG智慧医疗部_智慧医疗产品实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3772,9 +3772,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J18438",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "视觉技术部_视觉算法实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "",
     description:
@@ -3785,22 +3785,22 @@ const originJobsData = [
   },
   {
     id: "baidu_J52117",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "ACG物联网部_智能硬件产品经理实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "产品",
     description:
-      "-参与智能硬件产品相关工作\n-参与竞品调研，用户调研，数据分析，和日常产品相关问题处理工作\n-根据用户和市场反馈，分析问题，参与产品原型设计并产出需求文档\n-和设计及开发测试人员协作，跟踪产品开发进度，把控产品质量与效率\n-支持产品生命周期中各环节的相关流程，保障产品整体的计划节奏",
+      "-参与智能硬件产品相关工作\n-参与竞品调研，用户调研，数据分析，和日常产品相关问题处理工作\n-根据用户和场反馈，分析问题，参与产品原型设计并产出需求文档\n-和设计及开发测试人员协作，跟踪产品开发进度，把控产品质量与效率\n-支持产品生命周期中各环节的相关流程，保障产品整体的计划节奏",
     requirement:
       "-逻辑清晰、细致认真，有较强的学习能力和学习意愿\n-良好的理解力和语言及文字表达能力\n-喜欢有挑战的工作，抗压能力强，执行力强\n-熟练使用常用办公软件及产品设计软件，能够输出合格的产品相关文档",
     url: "https://talent.baidu.com/jobs/detail/INTERN/50448668-d1cf-49ac-96c4-95a26f063b53",
   },
   {
     id: "baidu_J10597",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "小度IOT生态业务部_课程制作(拍摄剪辑)实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -3811,9 +3811,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J47867",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "深度学习技术平台部_深度学习技术平台部_算法实习生",
-    location: "深圳市",
+    location: "深圳",
     type: "日常",
     category: "技术",
     description:
@@ -3824,9 +3824,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10065",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "认知计算实验室_语言学实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3837,9 +3837,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10065",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "认知计算实验室_语言学实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3852,7 +3852,7 @@ const originJobsData = [
     id: "baidu_J10066",
     company: "百度",
     name: "认知计算实验室_NLP/机器学习/数据挖掘实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3865,7 +3865,7 @@ const originJobsData = [
     id: "baidu_J10700",
     company: "百度",
     name: "认知计算实验室_自然语言处理实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "技术",
     description:
@@ -3878,20 +3878,20 @@ const originJobsData = [
     id: "baidu_J46534",
     company: "百度",
     name: "短视频业务部_品牌运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
       "-协助完成品牌运营活动的策划、推动和落地执行\n-协助进行品牌自有新媒体渠道的内容编辑、推广及管理工作\n-完成日常的行业研究与案例分析工作\n-内外部的资源整合与联动",
     requirement:
-      "-市场营销 / 传播 / 广告 / 新闻等专业优先，对品牌和市场工作有热情，短视频深度使用用户优先\n-具备较强的文字功底及PPT制作能力，掌握 Photoshop、剪辑软件等技能优先\n-沟通能力佳，责任心强，较强的团队合作、跨部门协作能力\n-能保证每周5天的实习安排，能持续实习6个月以上者优先",
+      "-场营销 / 传播 / 广告 / 新闻等专业优先，对品牌和场工作有热情，短视频深度使用用户优先\n-具备较强的文字功底及PPT制作能力，掌握 Photoshop、剪辑软件等技能优先\n-沟通能力佳，责任心强，较强的团队合作、跨部门协作能力\n-能保证每周5天的实习安排，能持续实习6个月以上者优先",
     url: "https://talent.baidu.com/jobs/detail/INTERN/f2b04d66-8205-4178-8502-d8e115fdaf66",
   },
   {
     id: "baidu_J47325",
     company: "百度",
     name: "昆仑芯-财务部_采购实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3904,7 +3904,7 @@ const originJobsData = [
     id: "baidu_J10991",
     company: "百度",
     name: "昆仑芯-人力资源部_HR招聘实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "专业服务和管理支持",
     description:
@@ -3915,9 +3915,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10335",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "昆仑芯-芯片研发部_芯片设计工程师实习生",
-    location: "北京市,上海市",
+    location: "北京,上海",
     type: "日常",
     category: "技术",
     description:
@@ -3928,9 +3928,9 @@ const originJobsData = [
   },
   {
     id: "baidu_J10655",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "昆仑芯-综合管理部_设计实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "用户体验",
     description:
@@ -3941,22 +3941,22 @@ const originJobsData = [
   },
   {
     id: "baidu_J47718",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "智能小程序业务部_用户运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
-      "-通过对用户访购行为及市场、行业的洞察，挖掘并满足用户需求，制定用户从触达、转化及成长的运营策略，对平台用户增长及成长负责\n-分析洞察行业特性，分析消费者特征和习惯、需求动机，在用户购买链路上开拓适合行业的拓展方式，制定相应的解决方案和落地计划，并 \n  能提出产品/导购改造方案\n-协助进行系统操作，包括活动的上下线及数据输出等\n-协助相关营销活动，提供相关运营工作支持",
+      "-通过对用户访购行为及场、行业的洞察，挖掘并满足用户需求，制定用户从触达、转化及成长的运营策略，对平台用户增长及成长负责\n-分析洞察行业特性，分析消费者特征和习惯、需求动机，在用户购买链路上开拓适合行业的拓展方式，制定相应的解决方案和落地计划，并 \n  能提出产品/导购改造方案\n-协助进行系统操作，包括活动的上下线及数据输出等\n-协助相关营销活动，提供相关运营工作支持",
     requirement:
       "-对数据敏感，可以熟练使用办公软件,有良好的数据分析能力\n-具备快速学习和适应能力，工作严谨、责任心强、细心耐心\n-能够稳定实习 3个月及以上，每周可出勤4-5天\n-自信抗压，对所在领域有热情，相信方法总比困难多",
     url: "https://talent.baidu.com/jobs/detail/INTERN/cea3f62c-2e4f-498a-afa8-dcbfca2f4b1d",
   },
   {
     id: "baidu_J47697",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "HCG健康在线医疗中心_数据运营实习生",
-    location: "上海市",
+    location: "上海",
     type: "日常",
     category: "产品",
     description:

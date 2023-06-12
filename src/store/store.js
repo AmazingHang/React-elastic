@@ -9,8 +9,8 @@ import { rootReducer } from "./root-reducer";
 
 //列出中间件
 const middlewares = [
-  process.env.NODE_ENV === "development" && logger,
-  thunk,
+  process.env.NODE_ENV === "development" && thunk,
+  logger,
 ].filter(Boolean);
 
 const composeEnhancer =
@@ -22,7 +22,7 @@ const composeEnhancer =
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["searchHistory"],
+  whitelist: ["search"],
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

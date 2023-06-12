@@ -9,14 +9,17 @@ const fetchFuzzySeachesSuccess = fuzzySeachesArray =>
 const fetchFuzzySeachesFailure = error =>
   createAction(SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_FAILED, error);
 
-export const setSearch_ACTION = search =>
-  createAction(SEARCH_TYPE.SET_SEARCH, search);
+export const setHistorySearch_ACTION = search =>
+  createAction(SEARCH_TYPE.SET_HISTORY_SEARCH, search);
 
 export const setIsFuzzySearch_ACTION = isFuzzySearch =>
   createAction(SEARCH_TYPE.IS_FUZZY_SEARCH, isFuzzySearch);
 
 export const setFuzzySearch_ACTION = fuzzySearch =>
   createAction(SEARCH_TYPE.FUZZY_SEARCH, fuzzySearch);
+
+export const setFuzzySearchArray_ACTION = array =>
+  createAction(SEARCH_TYPE.SET_FUZZY_SEARCH_ARRAY, array);
 
 export const fetchFuzzySearchArrayStartAsync = fuzzySearch => {
   return async dispatch => {

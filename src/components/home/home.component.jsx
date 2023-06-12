@@ -1,4 +1,4 @@
-//-----------------------------------------------------------------------------
+import { useSelector } from "react-redux";
 import LayoutFooter from "../layout-footer/layout-footer.component";
 import JobItemContent from "../job-item-content/job-item-content.component";
 import SearchFrom from "../search-form/search-form.component";
@@ -6,18 +6,22 @@ import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import RightSidebar from "../right-sidebar/right-sidebar.component";
 import JobCardItem from "../job-card-item/job-card-item.compoent";
 import FuzzySearchItem from "../fuzzy-search-item/fuzzy-search-item.component";
+import Spinner from "../../components/spinner/spinner.component";
+//-----------------------------------------------------------------------------
+import { selectIsJobsLoading } from "../../store/jobs/jobs.selector";
 //-----------------------------------------------------------------------------
 import { Layout, Typography } from "antd";
+import { Content } from "antd/es/layout/layout";
 const { Header } = Layout;
 const { Title } = Typography;
-
+//-----------------------------------------------------------------------------
 const HomePage = ({
   leftSideData,
   rightSideData,
   jobsData,
   fuzzySearchFiled,
 }) => {
-  //生成要展示的数据
+  const isJobsLoading = useSelector(selectIsJobsLoading);
   const contentData = Array.from(
     jobsData.map(job => <JobCardItem key={job.id} props={job} />)
   );
@@ -35,26 +39,33 @@ const HomePage = ({
         <Layout
           className="site-layout"
           style={{
-            marginLeft: 193,
-            marginRight: 193,
+            marginLeft: "15.5%",
+            marginRight: "13%",
           }}>
           <Header
             style={{
               height: "auto",
               margin: "0% 1%",
-              background: "#F6F1F1",
+              background: "#27374D",
             }}>
             <Title
               style={{
                 fontFamily: "'Source Code Pro', monospace",
                 fontSize: "30px",
                 textAlign: "center",
+                color: "white",
               }}>
               Welcome to use JobFinder APP !
             </Title>
             <SearchFrom fuzzyFiledData={fuzzyFiledData} />
           </Header>
-          <JobItemContent contentData={contentData} />
+          {isJobsLoading ? (
+            <Content>
+              <Spinner />
+            </Content>
+          ) : (
+            <JobItemContent contentData={contentData} />
+          )}
           <LayoutFooter />
         </Layout>
         <RightSidebar rightSideData={rightSideData} />

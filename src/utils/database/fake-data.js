@@ -3,7 +3,7 @@ const fakeData = [
     id: "baidu_J55957",
     company: "百度",
     name: "健康内容业务部_商业化运营实习生",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -16,7 +16,7 @@ const fakeData = [
     id: "baidu_J56977",
     company: "百度",
     name: "智能小程序业务部_直播运营（主播）",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -29,7 +29,7 @@ const fakeData = [
     id: "baidu_J56975",
     company: "百度",
     name: "智能小程序业务部_直播运营（主播）",
-    location: "重庆市",
+    location: "重庆",
     type: "日常",
     category: "产品",
     description:
@@ -40,9 +40,9 @@ const fakeData = [
   },
   {
     id: "baidu_J56779",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "贴吧业务部_贴吧大神创作者运营(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -53,9 +53,9 @@ const fakeData = [
   },
   {
     id: "baidu_J56775",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "贴吧业务部_会员运营(实习生)",
-    location: "北京市",
+    location: "北京",
     type: "日常",
     category: "产品",
     description:
@@ -66,10 +66,10 @@ const fakeData = [
   },
   {
     id: "baidu_J58445",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "2024AIDU-机器学习/数据挖掘方向",
-    location: "北京市,上海市",
-    type: "AIDU项目",
+    location: "北京,上海",
+    type: "全职",
     category: "技术",
     description:
       "-研究数据挖掘或统计学习领域的前沿技术,并用于实际问题的解决和优化\n-大规模机器学习算法研究及并行化实现,为各种大规模机器学习应用研发核心技术\n-通过对数据的敏锐洞察,深入挖掘产品潜在价值和需求,进而提供更有价值的产品和服务,通过技术创新推动产品成长",
@@ -79,10 +79,10 @@ const fakeData = [
   },
   {
     id: "baidu_J58555",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "2024AIDU-搜索产品研发方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责搜索产品的服务端研发工作\n-参与搜索整体研发效能和稳定性的提升工作\n-负责优化搜索垂类在线检索系统，参与服务架构设计，独立完成业务需求分析和软件设计\n-负责线上复杂性并发问题的解决",
@@ -94,8 +94,8 @@ const fakeData = [
     id: "baidu_J58553",
     company: "百度",
     name: "2024AIDU-向量检索方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责基于向量索引技术，以及与倒排索引等技术相融合的检索引擎设计与开发，并落地搜索等业务业务场景；\n-负责ANN(Approximate Nearest Neighbor)算法的设计与原型验证，协同软硬件实现大容量、高吞吐、高精度、低成本的向量索引算法，持续构建业界领先的产品竞争力；\n-持续跟踪学术界与产业界主流的向量索引算法与产品框架的最新进展",
@@ -107,8 +107,8 @@ const fakeData = [
     id: "baidu_J58554",
     company: "百度",
     name: "2024AIDU-模型工程师方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责机器学习工程架构研发工作，包括推荐模型、CV、NLP等方向，包括预估架构、特征工程、模型训练、推理优化、混部调度等。 \n-负责大数据处理、系统稳定性、扩展技术研发，优化在线的高并发高可用服务架构以及离线的高负载大数据量的服务架构 \n-和团队一起攻克高性能、高并发、高可用性等各种不同技术场景下的技术挑战",
@@ -118,10 +118,10 @@ const fakeData = [
   },
   {
     id: "baidu_J58446",
-    company: "腾讯",
+    company: "哔哩哔哩",
     name: "2024AIDU-自然语言处理方向",
-    location: "北京市,深圳市",
-    type: "AIDU项目",
+    location: "北京,深圳",
+    type: "全职",
     category: "技术",
     description:
       "-研究自然语言处理、机器学习等方向的前沿技术问题，打造领先技术影响力，方向包括但不限于NLP大模型、对话、翻译、问答、生成、信息抽取、强化学习、图神经网络等方向\n-解决真实业务中的自然语言处理、机器学习等通用性技术问题，支持应用研发\n-为推进技术问题的发展和技术影响力建设，建设开源、开放的数据集与算法",
@@ -131,10 +131,10 @@ const fakeData = [
   },
   {
     id: "baidu_J58447",
-    company: "阿里",
+    company: "蚂蚁集团",
     name: "2024AIDU-计算机视觉方向",
-    location: "北京市,上海市",
-    type: "AIDU项目",
+    location: "北京,上海",
+    type: "全职",
     category: "技术",
     description:
       "-负责百度计算机视觉相关的技术(含无人车自定位、地图重建、图像点云物体识别分类算法、医疗影像AI分析）、系统、产品的研发工作\n-包括但不限于：移动图像技术应用、图像内容搜索、人脸检测识别、图像分类标注、OCR、增强现实、图像质量评价、图像处理、点云视觉定位、三维视觉重建、物体分类识别等\n-将技术创新推向亿万用户",
@@ -146,8 +146,8 @@ const fakeData = [
     id: "baidu_J58448",
     company: "百度",
     name: "2024AIDU-自动驾驶方向",
-    location: "北京市",
-    type: "AIDU项目",
+    location: "北京",
+    type: "全职",
     category: "技术",
     description:
       "-负责百度自动驾驶汽车预测决策规划系统的研发、调试和测试工作\n-设计核心驾驶场景处理策略,完成相关算法研发和效果验证\n-与自动驾驶汽车其他各模块的工程师协同完成系统集成和调试工作",

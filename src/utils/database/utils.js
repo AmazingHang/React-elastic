@@ -1,13 +1,13 @@
 export const leftSideData = [
-  { title: "公司", list: ["百度", "腾讯", "阿里"] },
+  { title: "公司", list: ["百度", "哔哩哔哩", "蚂蚁集团", "字节跳动"] },
   {
     title: "位置",
-    list: ["北京市", "上海市", "深圳市", "大连市", "成都市", "重庆市"],
+    list: ["北京", "上海", "深圳", "大连", "成都", "重庆"],
   },
-  { title: "类别", list: ["校招", "日常", "AIDU项目"] },
+  { title: "类别", list: ["正式", "校招", "日常", "全职"] },
   {
-    title: "职位",
-    list: ["技术", "产品", "用户体验", "专业服务和管理支持"],
+    title: "种类",
+    list: ["技术", "产品", "研发", "运营"],
   },
 ];
 
@@ -16,39 +16,49 @@ export const dateFilter = (checks, totalJobs) => {
     let filterFiled = true; // 默认为满足条件
     if (
       checks.includes("百度") ||
-      checks.includes("腾讯") ||
-      checks.includes("阿里")
+      checks.includes("哔哩哔哩") ||
+      checks.includes("蚂蚁集团") ||
+      checks.includes("字节跳动")
     ) {
       filterFiled =
-        filterFiled && checks.some(check => job.company.includes(check));
+        filterFiled &&
+        job.company &&
+        checks.some(check => job.company.includes(check));
     }
     if (
-      checks.includes("北京市") ||
-      checks.includes("上海市") ||
-      checks.includes("深圳市") ||
-      checks.includes("大连市") ||
-      checks.includes("成都市") ||
-      checks.includes("重庆市")
+      checks.includes("北京") ||
+      checks.includes("上海") ||
+      checks.includes("深圳") ||
+      checks.includes("大连") ||
+      checks.includes("成都") ||
+      checks.includes("重庆")
     ) {
       filterFiled =
-        filterFiled && checks.some(check => job.location.includes(check));
+        filterFiled &&
+        job.location &&
+        checks.some(check => job.location.includes(check));
     }
     if (
+      checks.includes("正式") ||
       checks.includes("校招") ||
       checks.includes("日常") ||
-      checks.includes("AIDU项目")
+      checks.includes("全职")
     ) {
       filterFiled =
-        filterFiled && checks.some(check => job.type.includes(check));
+        filterFiled &&
+        job.type &&
+        checks.some(check => job.type.includes(check));
     }
     if (
       checks.includes("技术") ||
       checks.includes("产品") ||
-      checks.includes("用户体验") ||
-      checks.includes("专业服务和管理支持")
+      checks.includes("研发") ||
+      checks.includes("运营")
     ) {
       filterFiled =
-        filterFiled && checks.some(check => job.category.includes(check));
+        filterFiled &&
+        job.category &&
+        checks.some(check => job.category.includes(check));
     }
     return filterFiled;
   });

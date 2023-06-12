@@ -1,13 +1,21 @@
 import { Descriptions, Typography } from "antd";
 const { Paragraph } = Typography;
 const JobDescription = ({ props }) => (
-  <Descriptions size="small">
-    <Descriptions.Item label="公司">{props.company}</Descriptions.Item>
-    <Descriptions.Item label="位置">{props.location}</Descriptions.Item>
+  <Descriptions size="small" column={3}>
+    <Descriptions.Item label="公司" span={1}>
+      {props.company}
+    </Descriptions.Item>
+    <Descriptions.Item label="位置" span={1}>
+      {props.location}
+    </Descriptions.Item>
     <br />
 
-    <Descriptions.Item label="类别">{props.type}</Descriptions.Item>
-    <Descriptions.Item label="岗位">{props.category}</Descriptions.Item>
+    <Descriptions.Item label="类别" span={1}>
+      {props.type}
+    </Descriptions.Item>
+    <Descriptions.Item label="岗位" span={1}>
+      {props.category}
+    </Descriptions.Item>
     <br />
 
     <Descriptions.Item label="简述" span={3}>

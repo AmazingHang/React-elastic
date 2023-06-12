@@ -12,7 +12,7 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
   const dispatch = useDispatch();
   //redux记录的checks
   const crurrentChecks = useSelector(selectChecks_SELECTOR);
-  const { setChecked } = otherProps;
+
   //本地记录的checks
   const [checkedList, setCheckedList] = useState(crurrentChecks);
   const [lastChecks, setLastChecks] = useState(checkedList);
@@ -45,8 +45,8 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
   }, [checkedList, dispatch]);
   //重新初始化数据
   useEffect(() => {
-    setCheckedList([]);
-  }, [dispatch, setChecked]);
+    crurrentChecks.length === 0 && setCheckedList([]);
+  }, [dispatch, crurrentChecks]);
   //-----------------------------------------------------------------------------
   return (
     <Checkbox.Group

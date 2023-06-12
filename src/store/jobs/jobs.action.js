@@ -8,8 +8,7 @@ import {
 } from "../../utils/database/api";
 
 const fetchJobsStart = () => createAction(JOBS_TYPE.FETCH_JOBS_START);
-const fetchHitsJobsStart = () =>
-  createAction(JOBS_TYPE.FETCH_HITS_JOBS_SUCCESS);
+const fetchHitsJobsStart = () => createAction(JOBS_TYPE.FETCH_HITS_JOBS_START);
 const fetchSearchJobsStart = () =>
   createAction(JOBS_TYPE.FETCH_SEARCH_JOBS_START);
 
@@ -21,6 +20,10 @@ const fetchHitsJobsSuccess = hitsData =>
 
 const fetchJobsFailure = error =>
   createAction(JOBS_TYPE.FETCH_JOBS_FAILED, error);
+
+export const setTotalJobs_ACTION = total => {
+  createAction(JOBS_TYPE.SET_TOTAL_JOBS, total);
+};
 
 export const fetchTotalJobsStartAsync = () => {
   return async dispatch => {

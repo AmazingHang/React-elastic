@@ -6,7 +6,7 @@ const LayoutFooter = () => (
     style={{
       margin: "0 1% ",
       color: "white",
-      background: "#19A7CE",
+      background: "#9DB2BF",
       textAlign: "center",
     }}>
     React & Django & Scrapy & Elasticsearch @2023

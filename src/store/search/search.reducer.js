@@ -1,8 +1,7 @@
 import { SEARCH_TYPE } from "./search.types";
 
 const INITIANL_STATE = {
-  search: "",
-  isClearedSearch: false,
+  historySearch: [],
   isFuzzySearch: false,
   fuzzySearch: "",
   fuzzySearchArray: [],
@@ -13,17 +12,15 @@ const INITIANL_STATE = {
 export const searchReducer = (state = INITIANL_STATE, action = {}) => {
   const { type, payload } = action;
   switch (type) {
-    case SEARCH_TYPE.SET_SEARCH:
-      return { ...state, search: payload };
-
+    case SEARCH_TYPE.SET_HISTORY_SEARCH:
+      return { ...state, historySearch: payload };
+    case SEARCH_TYPE.SET_FUZZY_SEARCH_ARRAY:
+      return { ...state, fuzzySearchArray: payload };
     case SEARCH_TYPE.IS_FUZZY_SEARCH:
       return { ...state, isFuzzySearch: payload };
 
     case SEARCH_TYPE.FUZZY_SEARCH:
       return { ...state, fuzzySearch: payload };
-
-    // case SEARCH_TYPE.FUZZY_SEARCH_ARRAY:
-    //   return { ...state, fuzzySearchArray: payload };
 
     case SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_START:
       return {
