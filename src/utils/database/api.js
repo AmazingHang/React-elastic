@@ -1,6 +1,5 @@
 import axios from "axios";
 
-//baseURL: "http://10.28.218.94:8000",
 // 创建 Axios 实例
 const instance = axios.create({
   // 设置请求的基础URL
