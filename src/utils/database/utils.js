@@ -1,5 +1,8 @@
 export const leftSideData = [
-  { title: "公司", list: ["百度", "哔哩哔哩", "蚂蚁集团", "字节跳动"] },
+  {
+    title: "公司",
+    list: ["阿里", "百度", "快手", "哔哩哔哩", "蚂蚁集团", "字节跳动"],
+  },
   {
     title: "位置",
     list: ["北京", "上海", "深圳", "大连", "成都", "重庆"],
@@ -15,6 +18,8 @@ export const dateFilter = (checks, totalJobs) => {
   const filteredJobsData = totalJobs.filter(job => {
     let filterFiled = true; // 默认为满足条件
     if (
+      checks.includes("快手") ||
+      checks.includes("阿里") ||
       checks.includes("百度") ||
       checks.includes("哔哩哔哩") ||
       checks.includes("蚂蚁集团") ||
