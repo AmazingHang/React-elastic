@@ -9,8 +9,8 @@ import { rootReducer } from "./root-reducer";
 
 //列出中间件
 const middlewares = [
-  process.env.NODE_ENV === "development" && thunk,
-  logger,
+  process.env.NODE_ENV === "development" && logger,
+  thunk,
 ].filter(Boolean);
 
 const composeEnhancer =
