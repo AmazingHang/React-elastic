@@ -28,7 +28,7 @@ const Home = () => {
   );
   const checks = useSelector(selectChecks_SELECTOR);
   //-----------------------------------------------------------------------------
-  const [totalJobs, setTotalJobs] = useState(totalJobsFromRedux);
+  const [currentJobs, setCurrentJobs] = useState(totalJobsFromRedux);
   //从后端获得数据
   useEffect(() => {
     console.log("首次渲染");
@@ -36,16 +36,18 @@ const Home = () => {
       dispatch(fetchHitsJobsStartAsync())
     );
   }, [dispatch]);
+
   useEffect(() => {
-    setTotalJobs(totalJobsFromRedux);
+    setCurrentJobs(totalJobsFromRedux);
   }, [totalJobsFromRedux]);
+
   useEffect(() => {
     const setFilteredLocalJobs = () => {
       const filtedData = dateFilter(checks, totalJobsFromRedux);
-      setTotalJobs(filtedData);
+      setCurrentJobs(filtedData);
     };
     //如果没有选择筛选，则返回原数据
-    checks.length === 0 && setTotalJobs(totalJobsFromRedux);
+    checks.length === 0 && setCurrentJobs(totalJobsFromRedux);
     //如果存在筛选，则返回筛选后的数据
     checks.length !== 0 && setFilteredLocalJobs();
   }, [checks, dispatch, totalJobsFromRedux]);
@@ -56,7 +58,7 @@ const Home = () => {
       <HomePage
         leftSideData={leftSideData}
         rightSideData={hitsFromRedux}
-        jobsData={totalJobs}
+        jobsData={currentJobs}
         fuzzySearchFiled={fuzzySearchArrayFromRedux}
       />
     </>

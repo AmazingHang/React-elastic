@@ -15,6 +15,7 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
 
   //本地记录的checks
   const [checkedList, setCheckedList] = useState(crurrentChecks);
+  //lastChecks用来辅助判断checks数组的增减
   const [lastChecks, setLastChecks] = useState(checkedList);
 
   const onChange = list => {
@@ -32,7 +33,8 @@ const LeftCheckBox = ({ list, ...otherProps }) => {
       setLastChecks(checkedList);
     };
     const updateReducedChecks = () => {
-      //注意diff是一个数组 ，而不是一个单独的元素，所以在 reducedChecks 的筛选过程中，不能直接将 item 与 diff 进行比较。
+      //注意diff是一个数组 ，而不是一个单独的元素，
+      //所以在 reducedChecks 的筛选过程中，不能直接将 item 与 diff 进行比较。
       const diff = lastChecks.filter(item => !checkedList.includes(item));
       dispatch(reduceChecks_ACTION(diff));
       setLastChecks(checkedList);

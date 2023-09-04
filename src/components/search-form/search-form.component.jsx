@@ -9,6 +9,7 @@ import {
 } from "../../store/search/search.action";
 import {
   fetchHitsJobsStartAsync,
+  fetchTotalJobsStartAsync,
   fetchSearchedJobsStartAsync,
 } from "../../store/jobs/jobs.action";
 //selectors---------------------------------------------------------------------
@@ -29,7 +30,7 @@ const { Search } = Input;
 const SearchFrom = ({ fuzzyFiledData }) => {
   const dispatch = useDispatch();
   //-----------------------------------------------------------------------
-  const isDropDownOpenFromRedux = useSelector(selectIsFuzzySearch_SELECTOR);
+  const isFuzzySearch = useSelector(selectIsFuzzySearch_SELECTOR);
   const fuzzySearchFromRedux = useSelector(selectFuzzySearch_SELECTOR);
   const isLoadingFromRedux = useSelector(selectIsLoading_SELECTOR);
   const historySearchFromRedux = useSelector(selectHistorySearch_SELECTOR);
@@ -63,6 +64,7 @@ const SearchFrom = ({ fuzzyFiledData }) => {
   const onClearHandler = () => {
     console.log("清空数据");
     dispatch(setFuzzySearch_ACTION(""));
+    dispatch(fetchTotalJobsStartAsync());
   };
 
   const handleOutsideClick = event => {
@@ -110,9 +112,7 @@ const SearchFrom = ({ fuzzyFiledData }) => {
         onChange={onChangeHandler}
         onSearch={onSearchHandler}
       />
-      {isDropDownOpenFromRedux && (
-        <FuzzySearchList fuzzyFiledData={fuzzyFiledData} />
-      )}
+      {isFuzzySearch && <FuzzySearchList fuzzyFiledData={fuzzyFiledData} />}
     </form>
   );
 };

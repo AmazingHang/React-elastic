@@ -4,7 +4,13 @@ const selectSearchesFromReducer = state => state.search;
 
 export const selectHistorySearch_SELECTOR = createSelector(
   [selectSearchesFromReducer],
-  searchSlice => searchSlice.historySearch
+  searchSlice => {
+    const historySearch = searchSlice.historySearch;
+    const recentSearches = historySearch.slice(-5);
+    const uniqueSearches = new Set(recentSearches);
+    const result = [...uniqueSearches].reverse();
+    return result;
+  }
 );
 
 export const selectIsFuzzySearch_SELECTOR = createSelector(

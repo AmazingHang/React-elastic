@@ -12,6 +12,7 @@ const { Title } = Typography;
 //-------------------------------------------------------------------------------
 const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
   const dispatch = useDispatch();
+  //对左侧数据的处理
   if (TYPE === "left") {
     //clear理清楚按钮的实现
     const { clear } = otherProps;
@@ -25,6 +26,7 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
           {title}
           {clear && <ClearButton onClearHandler={onClearHandler} />}
         </Title>
+
         <Divider />
         {items &&
           items.map(item => (
@@ -38,6 +40,7 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
       </Sider>
     );
   }
+  //对右侧数据的处理
   if (TYPE === "right") {
     return (
       <>
@@ -48,8 +51,8 @@ const Sidebar = ({ title, items, style, TYPE, ...otherProps }) => {
           <Divider />
           {items && (
             <Space direction="horizontal" wrap>
-              {items.map(([key, value]) => (
-                <RightTitles key={key} title={key} count={value} />
+              {items.map(key => (
+                <RightTitles key={key} title={key} />
               ))}
             </Space>
           )}

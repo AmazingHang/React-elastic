@@ -4,11 +4,10 @@ import {
   setFuzzySearch_ACTION,
   setIsFuzzySearch_ACTION,
 } from "../../store/search/search.action";
-
 //-----------------------------------------------------------------------------
 import { Button } from "antd";
 //-----------------------------------------------------------------------------
-const RightTitles = ({ title, count }) => {
+const RightTitles = ({ title }) => {
   const dispatch = useDispatch();
 
   const onClickHandler = e => {
@@ -22,7 +21,7 @@ const RightTitles = ({ title, count }) => {
 
   return (
     <Button size="large" type="text" onClick={onClickHandler}>
-      {title} : {count}
+      {title}
     </Button>
   );
 };

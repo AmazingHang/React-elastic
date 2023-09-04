@@ -1,62 +1,76 @@
 import axios from "axios";
+import homeJobsData from "./home-jobs-data";
+import fakeSearchData from "./fake-search-data";
 
 // 创建 Axios 实例
 const instance = axios.create({
-  // 设置请求的基础URL
-  baseURL: "http://10.28.218.94:8000",
+  baseURL: "http://localhost:3000/", // 设置请求的基础URL
+  timeout: 5000, // 设置请求超时时间
 });
 
-// 封装请求函数
-export const getDataFromDatabase = async () => {
-  try {
-    const response = await instance.get("/");
-    return response.data["data"];
-  } catch (error) {
-    // 处理请求错误
-    console.error("Error fetching data from database:", error);
+// 请求拦截器
+instance.interceptors.request.use(
+  config => {
+    // 在请求发送前可以对请求进行修改，例如添加请求头
+    config.headers.Authorization = "Bearer your_token_here";
+    return config;
+  },
+  error => {
+    // 请求发送失败时的处理
+    console.error("Request error:", error);
     return Promise.reject(error);
   }
-};
-export const getSearchedData = async searchString => {
-  try {
-    const response = await instance.get("/search", {
-      params: {
-        key_words: searchString,
-      },
-    });
-    return response.data["data"];
-  } catch (error) {
-    console.error("Error fetching searched data:", error);
+);
+
+// 响应拦截器
+instance.interceptors.response.use(
+  response => {
+    // 对响应数据进行处理，例如统一处理错误信息
+    if (response.data && response.data.error) {
+      console.error("API Error:", response.data.error);
+    }
+    return response.data;
+  },
+  error => {
+    // 响应错误时的处理
+    console.error("Response error:", error);
     return Promise.reject(error);
   }
+);
+
+// home data
+export const getDataFromDatabase = () => {
+  return homeJobsData;
 };
 
-export const getHitsData = async () => {
-  try {
-    const response = (await instance.get("/top-searches")).data;
-    // 将对象转换为数组
-    const entries = Object.entries(response);
-    // 按值进行排序
-    entries.sort((a, b) => b[1] - a[1]);
-    return entries;
-  } catch (error) {
-    console.error("Error fetching hits data:", error);
-    return error;
-  }
-};
+// search data
+export const getSearchedData = () =>
+  instance.get("/").then(
+    data =>
+      //dev-设置返回结果
+      (data = fakeSearchData)
+  );
 
-export const getFuzzySearchData = async fuzzySearch => {
-  try {
-    const response = await instance.get("/fuzzy", {
-      params: {
-        keyword: fuzzySearch,
-      },
-    });
-    return response.data["data"];
-  } catch (error) {
-    console.error("Error fetching fuzzy search data:", error);
-    return Promise.reject(error);
-  }
-};
+// left data
+export const getHitsData = () =>
+  instance.get("/").then(data => {
+    //dev-设置返回结果
+    const rightSideData = ["前端开发", "后端开发", "上海市", "北京市", "运维"];
+    return (data = rightSideData);
+  });
+
+// fuzzy search data
+export const getFuzzySearchData = () =>
+  instance.get("/").then(data => {
+    //dev-设置返回结果
+    const fuzzySearchData = [
+      "前端开发",
+      "后端开发",
+      "上海市",
+      "北京市",
+      "运维",
+    ];
+    return (data = fuzzySearchData);
+  });
 
 export const createPost = postData => instance.post("/posts", postData);

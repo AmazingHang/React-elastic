@@ -4,9 +4,14 @@ const ClearButton = ({ onClearHandler }) => {
   return (
     <Button
       type="primary"
-      size="small"
+      size="large"
       onClick={onClearHandler}
-      style={{ marginLeft: "40%", border: "0px" }}
+      style={{
+        position: "absolute",
+        textAlign: "right",
+        marginLeft: "20%",
+        border: "0",
+      }}
       ghost>
       清除
     </Button>
