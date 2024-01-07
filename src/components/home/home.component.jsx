@@ -1,33 +1,34 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import LayoutFooter from "../layout-footer/layout-footer.component";
-import JobItemContent from "../job-item-content/job-item-content.component";
+import JobsContent from "../jobs-content/jobs-content.component";
 import SearchFrom from "../search-form/search-form.component";
 import LeftSidebar from "../left-sidebar/left-sidebar.component";
 import RightSidebar from "../right-sidebar/right-sidebar.component";
-import JobCardItem from "../job-card-item/job-card-item.compoent";
-import FuzzySearchItem from "../fuzzy-search-item/fuzzy-search-item.component";
 import Spinner from "../../components/spinner/spinner.component";
+import {
+  fetchHitsJobsStartAsync,
+  fetchTotalJobsStartAsync,
+} from "../../store/jobs/jobs.action";
 //-----------------------------------------------------------------------------
 import { selectIsJobsLoading } from "../../store/jobs/jobs.selector";
 //-----------------------------------------------------------------------------
 import { Layout, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
+import { useEffect } from "react";
 const { Header } = Layout;
 const { Title } = Typography;
 //-----------------------------------------------------------------------------
-const HomePage = ({
-  leftSideData,
-  rightSideData,
-  jobsData,
-  fuzzySearchFiled,
-}) => {
+const HomePage = () => {
+  const dispatch = useDispatch();
   const isJobsLoading = useSelector(selectIsJobsLoading);
-  const contentData = Array.from(
-    jobsData.map(job => <JobCardItem key={job.id} props={job} />)
-  );
-  const fuzzyFiledData = Array.from(
-    fuzzySearchFiled.map(item => <FuzzySearchItem item={item} />)
-  );
+  //进入主页时从后端获得数据
+  useEffect(() => {
+    console.log("首次渲染");
+    dispatch(fetchTotalJobsStartAsync()).then(() =>
+      dispatch(fetchHitsJobsStartAsync())
+    );
+  }, [dispatch]);
+
   return (
     <>
       <style>
@@ -35,7 +36,7 @@ const HomePage = ({
         url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
       </style>
       <Layout hasSider>
-        <LeftSidebar leftSideData={leftSideData} />
+        <LeftSidebar />
         <Layout
           className="site-layout"
           style={{
@@ -57,18 +58,20 @@ const HomePage = ({
               }}>
               Welcome to use JobFinder APP !
             </Title>
-            <SearchFrom fuzzyFiledData={fuzzyFiledData} />
+            <SearchFrom />
           </Header>
+
           {isJobsLoading ? (
             <Content>
               <Spinner />
             </Content>
           ) : (
-            <JobItemContent contentData={contentData} />
+            <JobsContent />
           )}
+
           <LayoutFooter />
         </Layout>
-        <RightSidebar rightSideData={rightSideData} />
+        <RightSidebar />
       </Layout>
     </>
   );

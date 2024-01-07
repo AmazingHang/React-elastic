@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import {
   setFuzzySearch_ACTION,
   setIsFuzzySearch_ACTION,
-} from "../../store/search/search.action";
+} from "../../../store/search/search.action";
 //-----------------------------------------------------------------------------
 import { Button } from "antd";
 //-----------------------------------------------------------------------------

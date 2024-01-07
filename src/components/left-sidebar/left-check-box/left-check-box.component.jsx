@@ -5,10 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setChecks_ACTION,
   reduceChecks_ACTION,
-} from "../../store/checkbox/checkbox.action";
-import { selectChecks_SELECTOR } from "../../store/checkbox/checkbox.selector";
+} from "../../../store/checkbox/checkbox.action";
+import { selectChecks_SELECTOR } from "../../../store/checkbox/checkbox.selector";
 //-----------------------------------------------------------------------------
-const LeftCheckBox = ({ list, ...otherProps }) => {
+const LeftCheckBox = ({ list }) => {
   const dispatch = useDispatch();
   //redux记录的checks
   const crurrentChecks = useSelector(selectChecks_SELECTOR);

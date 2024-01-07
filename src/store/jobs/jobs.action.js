@@ -5,7 +5,7 @@ import {
   getHitsData,
   getDataFromDatabase,
   getSearchedData,
-} from "../../utils/database/api";
+} from "../../apis/jobs.js";
 
 const fetchJobsStart = () => createAction(JOBS_TYPE.FETCH_JOBS_START);
 const fetchHitsJobsStart = () => createAction(JOBS_TYPE.FETCH_HITS_JOBS_START);

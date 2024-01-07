@@ -1,6 +1,6 @@
 import { createAction } from "../../utils/reducer/reducer.utils";
 import { SEARCH_TYPE } from "./search.types";
-import { getFuzzySearchData } from "../../utils/database/api";
+import { getFuzzySearchData } from "../../apis/jobs";
 
 const fetchFuzzySeachesStart = () =>
   createAction(SEARCH_TYPE.FETCH_FUZZY_SEARCH_ARRAY_START);

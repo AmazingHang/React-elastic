@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+
 //改变redux中的数据---------------------------------------------------------------
 import {
   setIsFuzzySearch_ACTION,
@@ -19,6 +20,7 @@ import {
   selectFuzzySearch_SELECTOR,
   selectHistorySearch_SELECTOR,
 } from "../../store/search/search.selector";
+
 //-------------------------------------------------------------------------------
 import FuzzySearchList from "../fuzzy-search-list/fuzzy-search-list.component";
 //样式----------------------------------------------------------------------------
@@ -27,7 +29,7 @@ import { useEffect, useRef } from "react";
 
 const { Search } = Input;
 
-const SearchFrom = ({ fuzzyFiledData }) => {
+const SearchFrom = () => {
   const dispatch = useDispatch();
   //-----------------------------------------------------------------------
   const isFuzzySearch = useSelector(selectIsFuzzySearch_SELECTOR);
@@ -112,7 +114,7 @@ const SearchFrom = ({ fuzzyFiledData }) => {
         onChange={onChangeHandler}
         onSearch={onSearchHandler}
       />
-      {isFuzzySearch && <FuzzySearchList fuzzyFiledData={fuzzyFiledData} />}
+      {isFuzzySearch && <FuzzySearchList />}
     </form>
   );
 };

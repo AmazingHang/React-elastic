@@ -4,8 +4,8 @@ import { Button } from "antd";
 import {
   setIsFuzzySearch_ACTION,
   setFuzzySearch_ACTION,
-} from "../../store/search/search.action";
-import { fetchSearchedJobsStartAsync } from "../../store/jobs/jobs.action";
+} from "../../../store/search/search.action";
+import { fetchSearchedJobsStartAsync } from "../../../store/jobs/jobs.action";
 //-----------------------------------------------------------------------------
 const FuzzySearchItem = ({ item }) => {
   const dispatch = useDispatch();
